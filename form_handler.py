@@ -122,5 +122,5 @@ class FormHandler:
 
             result = self.model(**mapped_data)
             
-            # Rounds the result to 2 decimal places
-            st.success(f"Result: {result:.2f}")
+            # Result can be of any data type
+            st.success(f"Result: {result}")
