@@ -2,7 +2,10 @@ import streamlit as st
 from form_handler import FormHandler
 from models.loan_eligibility.model import loan_eligibility
 
-# Define the mappings between form fields and model fields
+# Page title
+st.title("Loan Eligibility Calculator")
+
+# Defines the mappings between form fields and model fields
 field_mappings = {
     "Income": "income",
     "Loan Amount": "loan_amount",
@@ -11,10 +14,7 @@ field_mappings = {
     "Other Loans": "other_loans",
 }
 
-# Set the title for the page
-st.title("Loan Eligibility Calculator")
-
-# Create the form with FormHandler, using the field mappings
+# Creates the form with FormHandler, using the field mappings
 loan_form = FormHandler(
     name="Loan Eligibility Form",
     button_label="Check Eligibility",
@@ -23,5 +23,5 @@ loan_form = FormHandler(
     field_mappings=field_mappings,
 )
 
-# Render the form
+# Renders the form
 loan_form.render()
