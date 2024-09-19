@@ -1,6 +1,6 @@
 import streamlit as st
 from form_handler import FormHandler
-from models.house_price.model import house_price_prediction_model
+from models.house_price.predict import house_price_prediction_model
 
 # Page Title
 st.title("House Price Prediction Calculator")
