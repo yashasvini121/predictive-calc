@@ -109,4 +109,6 @@ class FormHandler:
             }
 
             result = self.model(**mapped_data)
-            st.success(f"Result: {result}")
+            
+            # Rounds the result to 2 decimal places
+            st.success(f"Result: {result:.2f}")
