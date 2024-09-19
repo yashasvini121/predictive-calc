@@ -1,6 +1,6 @@
 import streamlit as st
 import json
-from typing import Dict, Any, Optional, Tuple, List
+from typing import Dict, Any, Optional
 
 class FormHandler:
     """
@@ -97,6 +97,18 @@ class FormHandler:
             elif field_type == "text":
                 form_data[label] = st.text_input(
                     label, value=attributes.get("default_value")
+                )
+            elif field_type == "checkbox":
+                form_data[label] = st.checkbox(
+                    label, value=attributes.get("default_value", False)
+                )
+            elif field_type == "radio":
+                form_data[label] = st.radio(
+                    label,
+                    options=attributes.get("options"),
+                    index=attributes.get("options").index(
+                        attributes.get("default_value")
+                    ),
                 )
 
         # Submit button
