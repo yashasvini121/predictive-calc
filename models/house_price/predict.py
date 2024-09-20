@@ -1,6 +1,5 @@
 import pickle
 import pandas as pd
-from sklearn.preprocessing import StandardScaler
 
 def load_model(filepath):
 	with open(filepath, "rb") as file:
@@ -90,29 +89,32 @@ def house_price_prediction_model(
 
 	# Scale the input data
 	input_scaled = scaler.transform(input_df)
+	scaled_df = pd.DataFrame(
+		input_scaled, columns=scaler.get_feature_names_out()
+	)  # Did this to get correct feature names (was getting the warning UserWarning: X does not have valid feature names, but LinearRegression was fitted with feature names ...)
 
 	# Predict the house price
-	predicted_price = model.predict(input_scaled)
+	predicted_price = model.predict(scaled_df)
 
 	return round(predicted_price[0], 2)
 
 ### Test ###
 def test_house_price_prediction():
-	# Sample inputs
-	area = 3000
-	mainroad = "Yes"
-	guestroom = "No"
-	basement = "Yes"
-	hotwaterheating = "No"
-	airconditioning = "Yes"
-	prefarea = "Yes"
-	bedrooms = 2
-	bathrooms = 3
-	stories = 2
-	parking = 2
-	furnishingstatus = "semi_furnished"
+    # Sample inputs
+    area = 3000
+    mainroad = "Yes"
+    guestroom = "No"
+    basement = "Yes"
+    hotwaterheating = "No"
+    airconditioning = "Yes"
+    prefarea = "Yes"
+    bedrooms = 2
+    bathrooms = 3
+    stories = 2
+    parking = 2
+    furnishingstatus = "semi_furnished"
 
-	predicted_price = house_price_prediction_model(
+    predicted_price = house_price_prediction_model(
 		area=area,
 		mainroad=mainroad,
 		guestroom=guestroom,
@@ -127,7 +129,7 @@ def test_house_price_prediction():
 		furnishingstatus=furnishingstatus,
 	)
 
-	print("Predicted House Price: Rs.", predicted_price)
+    print("Predicted House Price: Rs.", predicted_price)
 
 
 test_house_price_prediction()
