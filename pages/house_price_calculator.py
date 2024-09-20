@@ -23,11 +23,11 @@ field_mappings = {
 
 # Creates the form with FormHandler, using the field mappings
 house_form = FormHandler(
-	name="House Price Estimator",
-	button_label="Predict Price",
-	model=house_price_prediction_model,
-	config_path="calculator_config/house_price.json",
-	field_mappings=field_mappings,
+    name="House Price Estimator",
+    button_label="Predict Price",
+    model=house_price_prediction_model,
+    config_path="form_configs/house_price.json",
+    field_mappings=field_mappings,
 )
 
 # Create tabs for the calculator and model details

@@ -19,7 +19,7 @@ loan_form = FormHandler(
     name="Loan Eligibility Form",
     button_label="Check Eligibility",
     model=loan_eligibility,
-    config_path="calculator_config/loan_eligibility.json",
+    config_path="form_configs/loan_eligibility.json",
     field_mappings=field_mappings,
 )
 
