@@ -9,40 +9,24 @@ The project is under active development with several machine learning models alr
 The project has been successfully tested in local environments, and current efforts are focused on enhancing integration, optimizing deployment, and improving scalability for production-ready applications.
 
 ## How to Contribute:
-1. Select an area of interest from the sections below.
-2. Fork the repository and create a new branch for your contribution.
-3. Implement your changes and submit a pull request with a clear description.
-4. You can also create issues to discuss new ideas, suggest features, or report bugs.
-5. Alternatively, review existing issues and contribute towards resolving them.
-
-### Frontend Development (UI/UX Enhancements)
-- Help improve the design, responsiveness, and user experience of the web interface.
-- Key areas for enhancement include form layouts, interaction feedback, accessibility features, and mobile responsiveness.
-
-### Machine Learning Contributions
-- Expand the scope of the project by adding new machine learning models for different prediction use cases.
-    - **Notebook Contributions**: Share your model via a Jupyter notebook under the `models/<problem-statement>/notebooks/` directory.
-    - **Full Model Integration**: Submit fully integrated models with optimized parameters, preprocessing steps, and final outputs.
-- You can also contribute by optimizing existing models, tuning hyperparameters, or improving dataset handling for better performance.
-
-### Backend Development & System Integration
-- Help integrate new or existing machine learning models into the application’s backend using Python APIs.
-- Enhance the system's performance, develop API endpoints, and improve data handling capabilities for larger datasets.
-
-### Documentation & Tutorials
-- Improve the project's documentation to help new contributors understand the structure and flow of the application.
-- Create and share tutorials or example use cases on building and integrating custom models into the system.
-
-## Project Structure
-Detailed documentation on the project structure and how each component works can be found in the `docs/` folder. Contributions to the documentation are encouraged.
+1. Review existing issues and contribute towards resolving them.
+2. Or create new issues to discuss new ideas, suggest features, or report bugs.
+3. Fork the repository and create a new branch for your contribution.
+4. Implement your changes and submit a pull request with a clear description.
+5. Futher details can be found in the [contributing.md](contributing.md) file.
 
 ## Setup Instructions
 1. Fork or clone the repository.
+2. Create a virtual environment and install the necessary dependencies:
+   ```powershell
+   python -m venv .venv
+   .venv\Scripts\Activate
+   ```
 2. Install the necessary dependencies:
-   ```bash
+   ```powershell
    pip install -r requirements.txt
    ```
 3. Run the Streamlit application using:
-   ```bash
+   ```powershell
    streamlit run app.py
    ```
