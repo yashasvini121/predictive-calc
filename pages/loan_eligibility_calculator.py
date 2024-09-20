@@ -3,6 +3,7 @@ from form_handler import FormHandler
 from models.loan_eligibility.model import loan_eligibility
 
 # Page title
+st.set_page_config(page_title="Loan Eligibility", page_icon="💰")
 st.title("Loan Eligibility Calculator")
 
 # Creates the form with FormHandler, using the field mappings

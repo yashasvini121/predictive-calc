@@ -3,6 +3,7 @@ from form_handler import FormHandler
 from models.house_price.predict import house_price_prediction_model, model_details
 
 # Page Title
+st.set_page_config(page_title="House Price Prediction", page_icon="🏠")
 st.title("House Price Prediction Calculator")
 
 # Creates the form with FormHandler, using the field mappings
