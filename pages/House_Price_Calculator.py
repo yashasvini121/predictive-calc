@@ -26,7 +26,7 @@ metrics, prediction_plot, error_plot = model_details().evaluate()
 
 # Renders model details in the second tab
 with tabs[1]:
-	st.header("Model Details")
+	st.header("Using Multiple Linear Regression")
 	st.subheader(
 		f"Model Accuracy: {metrics['Test_R2']:.2%}"
 	)
