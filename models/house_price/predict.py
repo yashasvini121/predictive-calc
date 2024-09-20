@@ -1,5 +1,6 @@
 import pickle
 import pandas as pd
+from .model import get_evaluator
 
 def load_model(filepath):
 	with open(filepath, "rb") as file:
@@ -132,4 +133,5 @@ def test_house_price_prediction():
     print("Predicted House Price: Rs.", predicted_price)
 
 
-test_house_price_prediction()
+def model_details():
+	return get_evaluator()

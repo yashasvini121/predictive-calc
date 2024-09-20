@@ -5,7 +5,7 @@ from sklearn.feature_selection import RFE
 from sklearn.linear_model import LinearRegression
 import warnings
 import pickle
-from ModelEvaluation import ModelEvaluation
+from .ModelEvaluation import ModelEvaluation
 
 warnings.filterwarnings("ignore")
 
@@ -193,12 +193,11 @@ def save_scaler():
 		pickle.dump(std, file)
 
 
-def model_evaluation():
-	me = ModelEvaluation(MLR, Train_X_std, Train_Y, Test_X_std, Test_Y)
-	me.evaluate()
-
+def get_evaluator():
+	evaluator = ModelEvaluation(MLR, Train_X_std, Train_Y, Test_X_std, Test_Y)	
+	return evaluator
 
 # if __name__ == "__main__":
-	# save_model()
-	# save_scaler()
-	# model_evaluation()
+# save_model()
+# save_scaler()
+# model_evaluation()
