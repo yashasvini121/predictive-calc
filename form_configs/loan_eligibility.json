@@ -1,6 +1,7 @@
 {
   "Loan Eligibility Form": {
     "Income": {
+	  "field_name": "income",
       "type": "number",
       "min_value": 10000,
       "max_value": 1000000,
@@ -8,6 +9,7 @@
       "step": 5000
     },
     "Loan Amount": {
+	  "field_name": "loan_amount",
       "type": "number",
       "min_value": 5000,
       "max_value": 500000,
@@ -15,6 +17,7 @@
       "step": 1000
     },
     "Credit Score": {
+	  "field_name": "credit_score",
       "type": "range",
       "min_value": 300,
       "max_value": 850,
