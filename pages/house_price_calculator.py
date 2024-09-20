@@ -5,29 +5,12 @@ from models.house_price.predict import house_price_prediction_model, model_detai
 # Page Title
 st.title("House Price Prediction Calculator")
 
-# Defines the field mappings for the form
-field_mappings = {
-	"Area (in square feet)": "area",
-	"Near Main Road": "mainroad",
-	"Guest Room": "guestroom",
-	"Basement": "basement",
-	"Hot Water Heating": "hotwaterheating",
-	"Air Conditioning": "airconditioning",
-	"Preferred Area": "prefarea",
-	"Number of Bedrooms": "bedrooms",
-	"Number of Bathrooms": "bathrooms",
-	"Number of Stories": "stories",
-	"Parking Spaces": "parking",
-	"Furnishing Status": "furnishingstatus",
-}
-
 # Creates the form with FormHandler, using the field mappings
 house_form = FormHandler(
-    name="House Price Estimator",
-    button_label="Predict Price",
-    model=house_price_prediction_model,
-    config_path="form_configs/house_price.json",
-    field_mappings=field_mappings,
+	name="House Price Estimator",
+	button_label="Predict Price",
+	model=house_price_prediction_model,
+	config_path="form_configs/house_price.json",
 )
 
 # Create tabs for the calculator and model details
