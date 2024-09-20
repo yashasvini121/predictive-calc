@@ -1,7 +1,7 @@
 import streamlit as st
 
 st.set_page_config(page_title="Predictive Calc", page_icon="🧮")
-
+	
 st.subheader("Project Description")
 st.write(
 	"This application provides a set of calculators to help you with financial decisions, including house price predictions and loan eligibility assessments."
