@@ -38,6 +38,23 @@ class ModelEvaluation:
 		self.update_evaluation_matrix(pred_train, pred_test)
 		self.plot_error_terms(pred_train)
 
+	def get_metrics(self):
+		"""Return a dictionary of evaluation metrics for easy integration."""
+		pred_train = self.model.predict(self.train_X)
+		pred_test = self.model.predict(self.test_X)
+
+		metrics = {
+			"Train_R2": r2_score(self.train_Y, pred_train),
+			"Test_R2": r2_score(self.test_Y, pred_test),
+			"Train_RSS": np.sum(np.square(self.train_Y - pred_train)),
+			"Test_RSS": np.sum(np.square(self.test_Y - pred_test)),
+			"Train_MSE": mean_squared_error(self.train_Y, pred_train),
+			"Test_MSE": mean_squared_error(self.test_Y, pred_test),
+			"Train_RMSE": np.sqrt(mean_squared_error(self.train_Y, pred_train)),
+			"Test_RMSE": np.sqrt(mean_squared_error(self.test_Y, pred_test)),
+		}
+		return metrics
+
 	def plot_predictions(self, pred_train):
 		plt.figure(figsize=[15, 6])
 		plt.subplot(2, 3, 1)
