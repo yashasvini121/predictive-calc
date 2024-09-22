@@ -109,8 +109,8 @@ def prepare_input_data(
 	parking,
 	furnishingstatus,
 ):
-	# Creates a dictionary for the input features
-	input_data = {
+    # Creates a dictionary for the input features
+    input_data = {
 		"area": [area],
 		"mainroad": True if mainroad == "Yes" else False,
 		"guestroom": True if guestroom == "Yes" else False,
@@ -136,28 +136,29 @@ def prepare_input_data(
 		"furnishingstatus_unfurnished": furnishingstatus == "unfurnished",
 	}
 
-	return pd.DataFrame(input_data)
+    return pd.DataFrame(input_data)
 
 # Note: Not removing this fxn because of the warning in predict.py file
 
+
 ### Final Endpoint ###
 # Predicts the price of a house based on the input features
-def house_price_prediction_model(
-	area=0,
-	mainroad=False,
-	guestroom=False,
-	basement=False,
-	hotwaterheating=False,
-	airconditioning=False,
-	prefarea=False,
-	bedrooms=0,
-	bathrooms=2,
-	stories=1,
-	parking=1,
-	furnishingstatus="semi_furnished",
+def get_prediction(
+    area=0,
+    mainroad=False,
+    guestroom=False,
+    basement=False,
+    hotwaterheating=False,
+    airconditioning=False,
+    prefarea=False,
+    bedrooms=0,
+    bathrooms=2,
+    stories=1,
+    parking=1,
+    furnishingstatus="semi_furnished",
 ):
-	# Modifying the input data to match the model's input format
-	input_df = prepare_input_data(
+    # Modifying the input data to match the model's input format
+    input_df = prepare_input_data(
 		area,
 		mainroad,
 		guestroom,
@@ -172,13 +173,13 @@ def house_price_prediction_model(
 		furnishingstatus,
 	)
 
-	# Standardizes the input data
-	input_std = pd.DataFrame(std.transform(input_df), columns=input_df.columns)
+    # Standardizes the input data
+    input_std = pd.DataFrame(std.transform(input_df), columns=input_df.columns)
 
-	# Predicts the price
-	predicted_price = MLR.predict(input_std)
+    # Predicts the price
+    predicted_price = MLR.predict(input_std)
 
-	return round(predicted_price[0], 2)
+    return round(predicted_price[0], 2)
 
 
 def save_model():
