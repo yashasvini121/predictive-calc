@@ -1,5 +1,5 @@
 {
-  "House Price Estimator": {
+  "House Price Form": {
     "Area (in square feet)": {
       "type": "number",
       "min_value": 500,
