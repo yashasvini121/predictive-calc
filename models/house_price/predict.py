@@ -1,8 +1,20 @@
 import pickle
 import pandas as pd
-from .model import get_evaluator
+from models.house_price.model import get_evaluator
+
+"""
+Predict.py file:
+Contains the following functions:
+- load_model: Loads a model from a pickle file.
+- prepare_input_data: Prepares the input data for the model.
+- [IMPORTANT] get_prediction: Predicts the price of a house based on the input features.
+- test_house_price_prediction: Tests the house price prediction model.
+- [IMPORTANT] model_details: Returns the details of the model.
+"""
+
 
 def load_model(filepath):
+	"""Loads a model from the given pickle file path."""
 	with open(filepath, "rb") as file:
 		model = pickle.load(file)
 	return model
@@ -22,15 +34,18 @@ def prepare_input_data(
 	parking,
 	furnishingstatus,
 ):
-	# Creates a dictionary for the input features
+	"""
+	Prepares the input data for the model by converting user inputs into a
+	structured DataFrame format.
+	"""
 	input_data = {
 		"area": [area],
-		"mainroad": True if mainroad == "Yes" else False,
-		"guestroom": True if guestroom == "Yes" else False,
-		"basement": True if basement == "Yes" else False,
-		"hotwaterheating": True if hotwaterheating == "Yes" else False,
-		"airconditioning": True if airconditioning == "Yes" else False,
-		"prefarea": True if prefarea == "Yes" else False,
+		"mainroad": mainroad == "Yes",
+		"guestroom": guestroom == "Yes",
+		"basement": basement == "Yes",
+		"hotwaterheating": hotwaterheating == "Yes",
+		"airconditioning": airconditioning == "Yes",
+		"prefarea": prefarea == "Yes",
 		"bedrooms_2": additional_bedrooms == 2,
 		"bedrooms_3": additional_bedrooms == 3,
 		"bedrooms_4": additional_bedrooms == 4,
@@ -52,9 +67,7 @@ def prepare_input_data(
 	return pd.DataFrame(input_data)
 
 
-### Final Endpoint ###
-# Predicts the price of a house based on the input features
-def house_price_prediction_model(
+def get_prediction(
 	area=0,
 	mainroad=False,
 	guestroom=False,
@@ -68,7 +81,11 @@ def house_price_prediction_model(
 	parking=1,
 	furnishingstatus="semi_furnished",
 ):
-	# Modifying the input data to match the model's input format
+	"""
+	Predicts the house price based on the input features.
+	Returns the predicted house price rounded to two decimal places.
+	"""
+	# Prepare input data
 	input_df = prepare_input_data(
 		area,
 		mainroad,
@@ -90,48 +107,37 @@ def house_price_prediction_model(
 
 	# Scale the input data
 	input_scaled = scaler.transform(input_df)
-	scaled_df = pd.DataFrame(
-		input_scaled, columns=scaler.get_feature_names_out()
-	)  # Did this to get correct feature names (was getting the warning UserWarning: X does not have valid feature names, but LinearRegression was fitted with feature names ...)
+	scaled_df = pd.DataFrame(input_scaled, columns=scaler.get_feature_names_out())
 
 	# Predict the house price
 	predicted_price = model.predict(scaled_df)
 
 	return round(predicted_price[0], 2)
 
-### Test ###
+
 def test_house_price_prediction():
-    # Sample inputs
-    area = 3000
-    mainroad = "Yes"
-    guestroom = "No"
-    basement = "Yes"
-    hotwaterheating = "No"
-    airconditioning = "Yes"
-    prefarea = "Yes"
-    bedrooms = 2
-    bathrooms = 3
-    stories = 2
-    parking = 2
-    furnishingstatus = "semi_furnished"
+	"""Test function to predict a sample house price."""
+	# Sample inputs
+	sample_input = {
+		"area": 3000,
+		"mainroad": "Yes",
+		"guestroom": "No",
+		"basement": "Yes",
+		"hotwaterheating": "No",
+		"airconditioning": "Yes",
+		"prefarea": "Yes",
+		"bedrooms": 2,
+		"bathrooms": 3,
+		"stories": 2,
+		"parking": 2,
+		"furnishingstatus": "semi_furnished",
+	}
 
-    predicted_price = house_price_prediction_model(
-		area=area,
-		mainroad=mainroad,
-		guestroom=guestroom,
-		basement=basement,
-		hotwaterheating=hotwaterheating,
-		airconditioning=airconditioning,
-		prefarea=prefarea,
-		bedrooms=bedrooms,
-		bathrooms=bathrooms,
-		stories=stories,
-		parking=parking,
-		furnishingstatus=furnishingstatus,
-	)
+	predicted_price = get_prediction(**sample_input)
 
-    print("Predicted House Price: Rs.", predicted_price)
+	print("Predicted House Price: Rs.", predicted_price)
 
 
 def model_details():
+	"""Returns model evaluation details."""
 	return get_evaluator()
