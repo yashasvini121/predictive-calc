@@ -122,6 +122,25 @@ class FormHandler:
 						attributes.get("default_value")
 					),
 				)
+			elif field_type == "slider":
+				form_data[field_name] = st.slider(
+					label,
+					min_value=attributes.get("min_value"),
+					max_value=attributes.get("max_value"),
+					value=attributes.get("default_value"),
+				)
+			elif field_type == "date":
+				form_data[field_name] = st.date_input(label)
+			elif field_type == "time":
+				form_data[field_name] = st.time_input(label)
+			elif field_type == "file":
+				form_data[field_name] = st.file_uploader(label)
+			elif field_type == "password":
+				form_data[field_name] = st.text_input(label, type="password")
+			elif field_type == "image":
+				form_data[field_name] = st.image(label)
+			else:
+				st.warning(f"Unknown field type: {field_type}")
 
 		# Submit button
 		if st.button(self.button_label):
