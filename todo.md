@@ -7,3 +7,7 @@
 6. Improve the UI/UX
 7. Complete the Loan Eligibility Calculator
 8. Add more models
+
+
+# To Fix:
+1. Plots
