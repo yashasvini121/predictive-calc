@@ -1,0 +1,42 @@
+{
+  "House Price Estimator": {
+    "title": "House Price Estimator",
+	"page_title": "House Price Estimator",
+	"page_icon": "\ud83c\udfe0",
+	"model_predict_file_path": "models\\house_price\\predict.py",
+	"model_function": "get_prediction",
+	"model_detail_function": "model_details",
+	"form_config_path": "form_configs\\house_price.json",
+    "tabs": [
+      {
+        "name": "Estimator",
+        "type": "form",
+        "form_name": "House Price Form"
+      },
+      {
+        "name": "Model Details",
+        "type": "model_details"
+      }
+    ]
+  },
+  "Loan Eligibility Estimator": {
+	"title": "Loan Eligibility Estimator",
+	"page_title": "Loan Eligibility Estimator",
+	"page_icon": "\ud83d\udcb0",
+	"model_predict_file_path": "models\\loan_eligibility\\predict.py",
+	"model_function": "get_prediction",
+	"form_config_path": "form_configs\\loan_eligibility.json",
+	"model_detail_function": "model_details",
+	"tabs": [
+	  {
+		"name": "Estimator",
+		"type": "form",
+		"form_name": "Loan Eligibility Form"
+	  },
+	  {
+		"name": "Model Details",
+		"type": "model_details"
+	  }
+	]
+  }
+}
