@@ -34,4 +34,4 @@ In the `pages/pages.json` file, add an entry for your new model. This configurat
 - The page name on the sidebar will be same as the file name.
 
 ### 7. Update the Main App
-In `app.py`, import your new Streamlit page and add it to the list of available calculators. This will ensure that your model is accessible from the main web interface.
+In `app.py`, update the list of available pages
