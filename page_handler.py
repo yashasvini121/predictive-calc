@@ -50,8 +50,8 @@ class PageHandler:
 			with tab_objects[i]:
 				if tab["type"] == "form":
 					self.render_form(tab["form_name"], model_function, form_config_path)
-				elif tab["type"] == "model_details":
-					self.render_model_details(model_module)
+				# elif tab["type"] == "model_details":
+				# 	self.render_model_details(model_module)
 
 	def render_form(self, form_name: str, model_function, form_config_path: str):
 		form_handler = FormHandler(
@@ -68,12 +68,12 @@ class PageHandler:
 		# Dynamically load and call the model details function
 		model_details_function = getattr(model_module, "model_details", None)
 
-		if model_details_function:
-			metrics, prediction_plot, error_plot = model_details_function().evaluate()
+		#if model_details_function:
+			#metrics, prediction_plot, error_plot = model_details_function().evaluate()
 
-			st.header("Model Details")
-			st.subheader(f"Model Accuracy: {metrics['Test_R2']:.2%}")
-			st.subheader(f"Scores: {metrics['Train_R2']:.2f}, {metrics['Test_R2']:.2f}")
+			#st.header("Model Details")
+			#st.subheader(f"Model Accuracy: {metrics['Test_R2']:.2%}")
+			#st.subheader(f"Scores: {metrics['Train_R2']:.2f}, {metrics['Test_R2']:.2f}")
 
 			# Display the scatter plot for predicted vs actual values
-			st.pyplot(prediction_plot)
+			#st.pyplot(prediction_plot)
