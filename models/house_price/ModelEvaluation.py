@@ -38,7 +38,10 @@ class ModelEvaluation:
 		prediction_plot = self.plot_predictions(pred_train)
 		error_plot = self.plot_error_terms(pred_train)
 
-		return metrics, prediction_plot, error_plot
+		#adding performance graph of the model
+		performance_plot = self.plot_performance_graph()
+		
+		return metrics, prediction_plot, error_plot, performance_plot
 
 	def get_metrics(self):
 		"""Return a dictionary of evaluation metrics for easy integration."""
@@ -58,21 +61,24 @@ class ModelEvaluation:
 		return metrics
 
 	def plot_predictions(self, pred_train):
-		plt.figure(figsize=(15, 6))
-		plt.scatter(
-			self.train_X[self.random_column], self.train_Y, label="Actual", alpha=0.6
+		fig, axes = plt.subplots(figsize=(15, 6))
+
+		# Plotting actual vs predicted
+		axes.scatter(self.train_Y, pred_train, alpha=0.6)
+		axes.plot(
+			[self.train_Y.min(), self.train_Y.max()],
+			[self.train_Y.min(), self.train_Y.max()],
+			"r--",
 		)
-		plt.scatter(
-			self.train_X[self.random_column], pred_train, label="Prediction", alpha=0.6
-		)
-		plt.title("Actual vs Prediction")
-		plt.xlabel(self.random_column)
-		plt.ylabel("Price")
+		axes.set_title("Actual vs Predicted Prices")
+		axes.set_xlabel("Actual Price")
+		axes.set_ylabel("Predicted Price")
+
 		plt.legend()
 		plt.grid()
 		plt.tight_layout()
-		plt.show()  # Show the plot when generating
-		return plt
+
+		return fig #returning figure the is created here 
 
 	def update_evaluation_matrix(self, pred_train, pred_test):
 		self.evaluation_matrix.loc[0] = [
@@ -86,28 +92,17 @@ class ModelEvaluation:
 			np.sqrt(mean_squared_error(self.test_Y, pred_test)),
 		]
 
+	#making a separate function for plotting error terms 
 	def plot_error_terms(self, pred_train):
-		fig, axes = plt.subplots(1, 2, figsize=(15, 6))
+		fig, axes = plt.subplots( figsize=(15, 6))
 
 		# Plotting error distribution
-		sns.histplot(self.train_Y - pred_train, bins=30, kde=True, ax=axes[0])
-		axes[0].set_title("Error Terms Distribution")
-		axes[0].set_xlabel("Errors")
-
-		# Plotting actual vs predicted
-		axes[1].scatter(self.train_Y, pred_train, alpha=0.6)
-		axes[1].plot(
-			[self.train_Y.min(), self.train_Y.max()],
-			[self.train_Y.min(), self.train_Y.max()],
-			"r--",
-		)
-		axes[1].set_title("Actual vs Predicted Prices")
-		axes[1].set_xlabel("Actual Price")
-		axes[1].set_ylabel("Predicted Price")
+		sns.histplot(self.train_Y - pred_train, bins=30, kde=True, ax=axes)
+		axes.set_title("Error Terms Distribution")
+		axes.set_xlabel("Errors")
 
 		plt.tight_layout()
-		plt.show()  # Show the plots when generating
-		return plt
+		return fig #returning figure the is created here 
 
 	def plot_performance_graph(self):
 		metrics = self.get_metrics()
@@ -117,10 +112,10 @@ class ModelEvaluation:
 		}
 		performance_df = pd.DataFrame(performance_data)
 
-		plt.figure(figsize=(6, 4))
+		fig, axes = plt.subplots( figsize=(15, 6))
 		sns.barplot(x="Metric", y="Value", data=performance_df)
-		plt.title("Model Performance Comparison")
-		plt.ylabel("RMSE")
+		axes.set_title("Model Performance Comparison")
+		axes.set_ylabel("RMSE")
+
 		plt.tight_layout()
-		plt.show()  # Show the plot when generating
-		return plt
+		return fig #returning figure the is created here 
