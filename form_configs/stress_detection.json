@@ -10,7 +10,7 @@
       },
       "Frequency of Using Social Media Without Purpose": {
         "field_name": "freq_no_purpose",
-        "type": "number",
+        "type": "slider",
         "min_value": 1,
         "max_value": 5,
         "default_value": 3,
@@ -18,7 +18,7 @@
       },
       "Frequency of Feeling Distracted": {
         "field_name": "freq_distracted",
-        "type": "number",
+        "type": "slider",
         "min_value": 1,
         "max_value": 5,
         "default_value": 3,
@@ -26,7 +26,7 @@
       },
       "Restlessness Level": {
         "field_name": "restless",
-        "type": "number",
+        "type": "slider",
         "min_value": 1,
         "max_value": 5,
         "default_value": 3,
@@ -34,7 +34,7 @@
       },
       "Worry Level": {
         "field_name": "worry_level",
-        "type": "number",
+        "type": "slider",
         "min_value": 1,
         "max_value": 5,
         "default_value": 3,
@@ -42,7 +42,7 @@
       },
       "Difficulty Concentrating": {
         "field_name": "difficulty_concentrating",
-        "type": "number",
+        "type": "slider",
         "min_value": 1,
         "max_value": 5,
         "default_value": 3,
@@ -50,7 +50,7 @@
       },
       "Comparison to Successful People": {
         "field_name": "compare_to_successful_people",
-        "type": "number",
+        "type": "slider",
         "min_value": 1,
         "max_value": 5,
         "default_value": 3,
@@ -58,7 +58,7 @@
       },
       "Feelings About Comparisons": {
         "field_name": "feelings_about_comparisons",
-        "type": "number",
+        "type": "slider",
         "min_value": 1,
         "max_value": 5,
         "default_value": 3,
@@ -66,7 +66,7 @@
       },
       "Frequency of Seeking Validation": {
         "field_name": "freq_seeking_validation",
-        "type": "number",
+        "type": "slider",
         "min_value": 1,
         "max_value": 5,
         "default_value": 3,
@@ -74,7 +74,7 @@
       },
       "Frequency of Feeling Depressed": {
         "field_name": "freq_feeling_depressed",
-        "type": "number",
+        "type": "slider",
         "min_value": 1,
         "max_value": 5,
         "default_value": 3,
@@ -82,7 +82,7 @@
       },
       "Interest Fluctuation": {
         "field_name": "interest_fluctuation",
-        "type": "number",
+        "type": "slider",
         "min_value": 1,
         "max_value": 5,
         "default_value": 3,
@@ -90,7 +90,7 @@
       },
       "Sleep Issues": {
         "field_name": "sleep_issues",
-        "type": "number",
+        "type": "slider",
         "min_value": 1,
         "max_value": 5,
         "default_value": 3,
