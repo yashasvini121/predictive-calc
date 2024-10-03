@@ -69,11 +69,21 @@ class PageHandler:
 		model_details_function = getattr(model_module, "model_details", None)
 
 		if model_details_function:
-			metrics, prediction_plot, error_plot = model_details_function().evaluate()
+			metrics, prediction_plot, error_plot, performance_plot = model_details_function().evaluate()
 
 			st.header("Model Details")
 			st.subheader(f"Model Accuracy: {metrics['Test_R2']:.2%}")
-			st.subheader(f"Scores: {metrics['Train_R2']:.2f}, {metrics['Test_R2']:.2f}")
+
+			#mentioning the title of the scores 
+			st.subheader(f"Scores: Training: {metrics['Train_R2']:.2f}, Testing: {metrics['Test_R2']:.2f}")
 
 			# Display the scatter plot for predicted vs actual values
-			st.pyplot(prediction_plot)
+			#used clear_figure to clear the plot once displayed to avoid conflict 
+			st.subheader("Model Prediction Plot")
+			st.pyplot(prediction_plot, clear_figure=True)
+
+			st.subheader("Error Plot")
+			st.pyplot(error_plot, clear_figure=True)
+			
+			st.subheader("Model Performance Plot")
+			st.pyplot(performance_plot, clear_figure=True)
