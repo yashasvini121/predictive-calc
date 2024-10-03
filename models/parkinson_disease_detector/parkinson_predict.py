@@ -8,8 +8,10 @@ def get_prediction(MDVP_Fo_Hz, MDVP_Fhi_Hz, MDVP_Flo_Hz, MDVP_Jitter_percent, MD
 
     # Provide message based on the prediction value
     if prediction==1:
-        messsage= "The prediction indicates you may have Parkinson's Disease. Please consult a doctor."
-    else:
+        message= "The prediction indicates you may have Parkinson's Disease. Please consult a doctor."
+    elif prediction==0:
         message = "The prediction indicates you are healthy."
+    else:
+        message="Invalid details."
 
     return message
