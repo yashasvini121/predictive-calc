@@ -1,7 +1,7 @@
 {
   "Parkinson Detection Form": {
       "MDVP_Fo_Hz": {
-          "field_name": "MDVP:Fo(Hz)",
+          "field_name": "MDVP_Fo_Hz",
           "type": "number",
           "min_value": 88.00000,
           "max_value": 260.00000,
@@ -9,7 +9,7 @@
           "step": 0.01
       },
       "MDVP_Fhi_Hz": {
-          "field_name": "MDVP:Fhi(Hz)",
+          "field_name": "MDVP_Fhi_Hz",
           "type": "number",
           "min_value": 102.00000,
           "max_value": 592.00000,
@@ -17,7 +17,7 @@
           "step": 0.01
       },
       "MDVP_Flo_Hz": {
-          "field_name": "MDVP:Flo(Hz)",
+          "field_name": "MDVP_Flo_Hz",
           "type": "number",
           "min_value": 65.00000,
           "max_value": 240.00000,
@@ -25,7 +25,7 @@
           "step": 0.01
       },
       "MDVP_Jitter_percent": {
-          "field_name": "MDVP:Jitter(%)",
+          "field_name": "MDVP_Jitter_percent",
           "type": "number",
           "min_value": 0.00100,
           "max_value": 0.03300,
@@ -33,7 +33,7 @@
           "step": 0.00001
       },
       "MDVP_Jitter_Abs": {
-          "field_name": "MDVP:Jitter(Abs)",
+          "field_name": "MDVP_Jitter_Abs",
           "type": "number",
           "min_value": 0.000020,
           "max_value": 0.000200,
@@ -41,7 +41,7 @@
           "step": 0.000001
       },
       "MDVP_RAP": {
-          "field_name": "MDVP:RAP",
+          "field_name": "MDVP_RAP",
           "type": "number",
           "min_value": 0.000600,
           "max_value": 0.020000,
@@ -49,7 +49,7 @@
           "step": 0.000001
       },
       "MDVP_PPQ": {
-          "field_name": "MDVP:PPQ",
+          "field_name": "MDVP_PPQ",
           "type": "number",
           "min_value": 0.000900,
           "max_value": 0.020000,
@@ -57,7 +57,7 @@
           "step": 0.000001
       },
       "Jitter_DDP": {
-          "field_name": "Jitter:DDP",
+          "field_name": "Jitter_DDP",
           "type": "number",
           "min_value": 0.00200,
           "max_value": 0.06500,
@@ -65,7 +65,7 @@
           "step": 0.00001
       },
       "MDVP_Shimmer": {
-          "field_name": "MDVP:Shimmer",
+          "field_name": "MDVP_Shimmer",
           "type": "number",
           "min_value": 0.00900,
           "max_value": 0.12000,
@@ -73,7 +73,7 @@
           "step": 0.00001
       },
       "MDVP_Shimmer_dB": {
-          "field_name": "MDVP:Shimmer(dB)",
+          "field_name": "MDVP_Shimmer_dB",
           "type": "number",
           "min_value": 0.08500,
           "max_value": 1.30200,
@@ -81,7 +81,7 @@
           "step": 0.00001
       },
       "Shimmer_APQ3": {
-          "field_name": "Shimmer:APQ3",
+          "field_name": "Shimmer_APQ3",
           "type": "number",
           "min_value": 0.00400,
           "max_value": 0.05600,
@@ -89,7 +89,7 @@
           "step": 0.00001
       },
       "Shimmer_APQ5": {
-          "field_name": "Shimmer:APQ5",
+          "field_name": "Shimmer_APQ5",
           "type": "number",
           "min_value": 0.00500,
           "max_value": 0.08000,
@@ -97,7 +97,7 @@
           "step": 0.00001
       },
       "MDVP_APQ": {
-          "field_name": "MDVP:APQ",
+          "field_name": "MDVP_APQ",
           "type": "number",
           "min_value": 0.00700,
           "max_value": 0.14000,
@@ -105,7 +105,7 @@
           "step": 0.00001
       },
       "Shimmer_DDA": {
-          "field_name": "Shimmer:DDA",
+          "field_name": "Shimmer_DDA",
           "type": "number",
           "min_value": 0.01300,
           "max_value": 0.17000,
