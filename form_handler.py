@@ -85,6 +85,7 @@ class FormHandler:
 					max_value=attributes.get("max_value"),
 					step=attributes.get("step", 1),
 				)
+				
 			elif field_type == "float":  # New case for float values
 				form_data[field_name] = st.number_input(
 					label,
