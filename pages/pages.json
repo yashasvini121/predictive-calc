@@ -58,6 +58,21 @@
       "type": "model_details"
     }
   ]
-}
+  },
+  "Parkinson Disease Detector": {
+    "title": "Parkinson Disease Detector",
+    "page_title": "Parkinson Disease Detector",
+    "model_predict_file_path": "models/parkinson_disease_detector/parkinson_predict.py",
+    "model_function": "get_prediction",
+    "model_detail_function": "model_details",
+    "form_config_path": "form_configs/parkinson_detection.json",
+    "tabs": [
+      {
+        "name": "Parkinson's Disease Detector",
+        "type": "form",
+        "form_name": "Parkinson Detection Form"
+      }
+    ]
+    }
 
 }
