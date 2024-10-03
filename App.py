@@ -14,3 +14,6 @@ st.write(
 st.write(
 	"- **Loan Eligibility**: Check your eligibility for different types of loans."
 )
+st.write(
+	"- **Stress Level Detector**: Analyze your mental stress levels based on social media interactions"
+)
