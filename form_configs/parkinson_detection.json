@@ -1,0 +1,101 @@
+{
+    "Parkinson Detection Form": {
+      "Age": {
+        "field_name": "age",
+        "type": "number",
+        "min_value": 0,
+        "max_value": 100,
+        "default_value": 25,
+        "step": 1
+      },
+      "Frequency of Using Social Media Without Purpose": {
+        "field_name": "freq_no_purpose",
+        "type": "slider",
+        "min_value": 1,
+        "max_value": 5,
+        "default_value": 3,
+        "step": 1
+      },
+      "Frequency of Feeling Distracted": {
+        "field_name": "freq_distracted",
+        "type": "slider",
+        "min_value": 1,
+        "max_value": 5,
+        "default_value": 3,
+        "step": 1
+      },
+      "Restlessness Level": {
+        "field_name": "restless",
+        "type": "slider",
+        "min_value": 1,
+        "max_value": 5,
+        "default_value": 3,
+        "step": 1
+      },
+      "Worry Level": {
+        "field_name": "worry_level",
+        "type": "slider",
+        "min_value": 1,
+        "max_value": 5,
+        "default_value": 3,
+        "step": 1
+      },
+      "Difficulty Concentrating": {
+        "field_name": "difficulty_concentrating",
+        "type": "slider",
+        "min_value": 1,
+        "max_value": 5,
+        "default_value": 3,
+        "step": 1
+      },
+      "Comparison to Successful People": {
+        "field_name": "compare_to_successful_people",
+        "type": "slider",
+        "min_value": 1,
+        "max_value": 5,
+        "default_value": 3,
+        "step": 1
+      },
+      "Feelings About Comparisons": {
+        "field_name": "feelings_about_comparisons",
+        "type": "slider",
+        "min_value": 1,
+        "max_value": 5,
+        "default_value": 3,
+        "step": 1
+      },
+      "Frequency of Seeking Validation": {
+        "field_name": "freq_seeking_validation",
+        "type": "slider",
+        "min_value": 1,
+        "max_value": 5,
+        "default_value": 3,
+        "step": 1
+      },
+      "Frequency of Feeling Depressed": {
+        "field_name": "freq_feeling_depressed",
+        "type": "slider",
+        "min_value": 1,
+        "max_value": 5,
+        "default_value": 3,
+        "step": 1
+      },
+      "Interest Fluctuation": {
+        "field_name": "interest_fluctuation",
+        "type": "slider",
+        "min_value": 1,
+        "max_value": 5,
+        "default_value": 3,
+        "step": 1
+      },
+      "Sleep Issues": {
+        "field_name": "sleep_issues",
+        "type": "slider",
+        "min_value": 1,
+        "max_value": 5,
+        "default_value": 3,
+        "step": 1
+      }
+    }
+  }
+  
