@@ -1,100 +1,136 @@
 {
     "Parkinson Detection Form": {
-      "Age": {
-        "field_name": "age",
-        "type": "number",
-        "min_value": 0,
-        "max_value": 100,
-        "default_value": 25,
-        "step": 1
+      "MDVP:Fo(Hz)": {
+        "field_name": "MDVP:Fo(Hz)",
+        "type": "float",
+        "min_value": 88,
+        "max_value": 260
       },
-      "Frequency of Using Social Media Without Purpose": {
-        "field_name": "freq_no_purpose",
-        "type": "slider",
-        "min_value": 1,
-        "max_value": 5,
-        "default_value": 3,
-        "step": 1
+      "MDVP:Fhi(Hz)": {
+        "field_name": "MDVP:Fhi(Hz)",
+        "type": "float",
+        "min_value": 102,
+        "max_value": 592
       },
-      "Frequency of Feeling Distracted": {
-        "field_name": "freq_distracted",
-        "type": "slider",
-        "min_value": 1,
-        "max_value": 5,
-        "default_value": 3,
-        "step": 1
+      "MDVP:Flo(Hz)": {
+        "field_name": "MDVP:Flo(Hz)",
+        "type": "float",
+        "min_value": 65,
+        "max_value": 240
       },
-      "Restlessness Level": {
-        "field_name": "restless",
-        "type": "slider",
-        "min_value": 1,
-        "max_value": 5,
-        "default_value": 3,
-        "step": 1
+      "MDVP:Jitter(%)": {
+        "field_name": "MDVP:Jitter(%)",
+        "type": "float",
+        "min_value": 0.001,
+        "max_value": 0.033
       },
-      "Worry Level": {
-        "field_name": "worry_level",
-        "type": "slider",
-        "min_value": 1,
-        "max_value": 5,
-        "default_value": 3,
-        "step": 1
+      "MDVP:Jitter(Abs)": {
+        "field_name": "MDVP:Jitter(Abs)",
+        "type": "float",
+        "min_value": 0.00002,
+        "max_value": 0.0002
       },
-      "Difficulty Concentrating": {
-        "field_name": "difficulty_concentrating",
-        "type": "slider",
-        "min_value": 1,
-        "max_value": 5,
-        "default_value": 3,
-        "step": 1
+      "MDVP:RAP": {
+        "field_name": "MDVP:RAP",
+        "type": "float",
+        "min_value": 0.0006,
+        "max_value": 0.02
       },
-      "Comparison to Successful People": {
-        "field_name": "compare_to_successful_people",
-        "type": "slider",
-        "min_value": 1,
-        "max_value": 5,
-        "default_value": 3,
-        "step": 1
+      "MDVP:PPQ": {
+        "field_name": "MDVP:PPQ",
+        "type": "float",
+        "min_value": 0.0009,
+        "max_value": 0.02
       },
-      "Feelings About Comparisons": {
-        "field_name": "feelings_about_comparisons",
-        "type": "slider",
-        "min_value": 1,
-        "max_value": 5,
-        "default_value": 3,
-        "step": 1
+      "Jitter:DDP": {
+        "field_name": "Jitter:DDP",
+        "type": "float",
+        "min_value": 0.002,
+        "max_value": 0.065
       },
-      "Frequency of Seeking Validation": {
-        "field_name": "freq_seeking_validation",
-        "type": "slider",
-        "min_value": 1,
-        "max_value": 5,
-        "default_value": 3,
-        "step": 1
+      "MDVP:Shimmer": {
+        "field_name": "MDVP:Shimmer",
+        "type": "float",
+        "min_value": 0.009,
+        "max_value": 0.12
       },
-      "Frequency of Feeling Depressed": {
-        "field_name": "freq_feeling_depressed",
-        "type": "slider",
-        "min_value": 1,
-        "max_value": 5,
-        "default_value": 3,
-        "step": 1
+      "MDVP:Shimmer(dB)": {
+        "field_name": "MDVP:Shimmer(dB)",
+        "type": "float",
+        "min_value": 0.085,
+        "max_value": 1.302
       },
-      "Interest Fluctuation": {
-        "field_name": "interest_fluctuation",
-        "type": "slider",
-        "min_value": 1,
-        "max_value": 5,
-        "default_value": 3,
-        "step": 1
+      "Shimmer:APQ3": {
+        "field_name": "Shimmer:APQ3",
+        "type": "float",
+        "min_value": 0.004,
+        "max_value": 0.056
       },
-      "Sleep Issues": {
-        "field_name": "sleep_issues",
-        "type": "slider",
-        "min_value": 1,
-        "max_value": 5,
-        "default_value": 3,
-        "step": 1
+      "Shimmer:APQ5": {
+        "field_name": "Shimmer:APQ5",
+        "type": "float",
+        "min_value": 0.005,
+        "max_value": 0.08
+      },
+      "MDVP:APQ": {
+        "field_name": "MDVP:APQ",
+        "type": "float",
+        "min_value": 0.007,
+        "max_value": 0.14
+      },
+      "Shimmer:DDA": {
+        "field_name": "Shimmer:DDA",
+        "type": "float",
+        "min_value": 0.013,
+        "max_value": 0.17
+      },
+      "NHR": {
+        "field_name": "NHR",
+        "type": "float",
+        "min_value": 0.0006,
+        "max_value": 0.31
+      },
+      "HNR": {
+        "field_name": "HNR",
+        "type": "float",
+        "min_value": 8,
+        "max_value": 33
+      },
+      "RPDE": {
+        "field_name": "RPDE",
+        "type": "float",
+        "min_value": 0.25,
+        "max_value": 0.68
+      },
+      "DFA": {
+        "field_name": "DFA",
+        "type": "float",
+        "min_value": 0.57,
+        "max_value": 0.82
+      },
+      "Spread1": {
+        "field_name": "Spread1",
+        "type": "float",
+        "min_value": -7,
+        "max_value": -2
+      },
+      "Spread2": {
+        "field_name": "Spread2",
+        "type": "float",
+        "min_value": 0.006,
+        "max_value": 0.45
+      },
+      "D2": {
+        "field_name": "D2",
+        "type": "float",
+        "min_value": 1.42,
+        "max_value": 3.67
+      },
+      "PPE": {
+        "field_name": "PPE",
+        "type": "float",
+        "min_value": 0.04,
+        "max_value": 0.5
       }
     }
   }
