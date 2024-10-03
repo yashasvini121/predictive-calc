@@ -1,13 +1,18 @@
 import streamlit as st
 import pickle
 import numpy as np
-import json
+import warnings
+warnings.filterwarnings("ignore")
 
-#Load the model and the scaler
-filename = 'models/parkinson_disease_detector/saved_models/Model_Prediction.sav'
-loaded_model = pickle.load(open(filename, 'rb'))
-scaler = pickle.load(open('models/parkinson_disease_detector/saved_models/MinMaxScaler.sav', 'rb'))
+# Load the model and the scaler
+model_path = 'models/parkinson_disease_detector/saved_models/Model_Prediction.sav'
+scaler_path = 'models/parkinson_disease_detector/saved_models/MinMaxScaler.sav'
 
+# Load the pre-trained model and scaler using pickle
+loaded_model = pickle.load(open(model_path, 'rb'))
+scaler = pickle.load(open(scaler_path, 'rb'))
+
+# Define the prediction function
 def disease_get_prediction(MDVP_Fo_Hz, MDVP_Fhi_Hz, MDVP_Flo_Hz,
                            MDVP_Jitter_percent, MDVP_Jitter_Abs,
                            MDVP_RAP, MDVP_PPQ, Jitter_DDP,
@@ -16,7 +21,7 @@ def disease_get_prediction(MDVP_Fo_Hz, MDVP_Fhi_Hz, MDVP_Flo_Hz,
                            MDVP_APQ, Shimmer_DDA, NHR,
                            HNR, RPDE, DFA, spread1,
                            spread2, D2, PPE):
-    features = [
+    features = np.array([[
         float(MDVP_Fo_Hz), float(MDVP_Fhi_Hz), float(MDVP_Flo_Hz),
         float(MDVP_Jitter_percent), float(MDVP_Jitter_Abs),
         float(MDVP_RAP), float(MDVP_PPQ), float(Jitter_DDP),
@@ -27,15 +32,12 @@ def disease_get_prediction(MDVP_Fo_Hz, MDVP_Fhi_Hz, MDVP_Flo_Hz,
         float(RPDE), float(DFA),
         float(spread1), float(spread2),
         float(D2), float(PPE)
-    ]
+    ]])
 
-    # Convert the features to a numpy array and reshape it for scaling
-    input_data = np.array([features]).reshape(1, -1)
+    # Apply the scaler
+    scaled_data = scaler.transform(features)
 
-    # Apply the scaler to the input data
-    scaled_data = scaler.transform(input_data)
-
-    # Make prediction using the model
+    # Make prediction
     prediction = loaded_model.predict(scaled_data)
 
     return prediction

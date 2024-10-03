@@ -83,7 +83,7 @@ class FormHandler:
 					value=attributes.get("default_value"),
 					min_value=attributes.get("min_value"),
 					max_value=attributes.get("max_value"),
-					step=attributes.get("step", 1),
+					step=attributes.get("step", 1)
 				)
 			elif field_type == "dropdown":
 				form_data[field_name] = st.selectbox(
