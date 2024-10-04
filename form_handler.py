@@ -76,7 +76,7 @@ class FormHandler:
 				"field_name", label
 			)  # Use field_name from the config
 
-			# Handle different types of input fields
+			#Handle different types of input fields
 			if field_type == "number":
 				form_data[field_name] = st.number_input(
 					label,
@@ -85,6 +85,17 @@ class FormHandler:
 					max_value=attributes.get("max_value"),
 					step=attributes.get("step", 1),
 				)
+				
+			elif field_type == "float":  # New case for float values
+				form_data[field_name] = st.number_input(
+					label,
+					value=attributes.get("default_value"),  
+					min_value=attributes.get("min_value"),
+					max_value=attributes.get("max_value"),
+					step=attributes.get("step"),
+					format="%.6f"  # format to 6 decimal places
+				)
+
 			elif field_type == "dropdown":
 				form_data[field_name] = st.selectbox(
 					label,
