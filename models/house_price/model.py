@@ -6,8 +6,21 @@ from sklearn.linear_model import LinearRegression
 import warnings
 import pickle
 from .ModelEvaluation import ModelEvaluation
-
+import os
+import logging
 warnings.filterwarnings("ignore")
+
+# Define the directory for logs
+log_directory = 'models/house_price/logs'
+os.makedirs(log_directory, exist_ok=True) # Create the directory if it doesn't exist
+
+# Set up logging
+log_file = os.path.join(log_directory, 'model_training.log')
+logging.basicConfig(
+	filename=log_file,
+	level=logging.INFO,
+	format='%(asctime)s - %(levelname)s - %(message)s'
+)
 
 df = pd.read_csv("models/house_price/data/housing.csv")
 original_df = df.copy(deep=True)
