@@ -1,0 +1,50 @@
+/* General Styles */
+body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+/* Hide Streamlit header and role banner */
+header, [role="banner"] {
+    display: none;
+}
+
+/* Make subheaders and text visible in both modes */
+h1, h2, h3, h4, h5, h6, p {
+    color: inherit;
+}
+
+/* Adjust colors for various elements to ensure visibility */
+.stMarkdown {
+    color: inherit;
+}
+
+.stButton, .stSelectbox, .stTextInput {
+    background-color: var(--input-background-color);
+    color: var(--input-text-color);
+    border: 1px solid var(--input-border-color);
+}
+
+.stButton:hover, .stSelectbox:hover, .stTextInput:hover {
+    background-color: var(--input-hover-background-color);
+}
+
+/* Additional styling for links and emphasized text */
+a {
+    color: var(--link-color);
+}
+
+strong {
+    color: var(--strong-text-color);
+}
+
+/* Ensure sections are readable */
+.stExpander, .stSidebar {
+    background-color: var(--sidebar-background-color);
+}
+
+h1 {
+    font-size: 36px;
+    color: #1F618D;
+    text-align: center;
+}

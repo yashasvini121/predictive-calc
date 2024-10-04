@@ -1,19 +1,25 @@
 import streamlit as st
+from styling import load_css, render_layout  # Import both load_css and render_layout functions
 
+# Set page configuration (this must be the first Streamlit command)
 st.set_page_config(page_title="Predictive Calc", page_icon="🧮")
-	
-st.subheader("Project Description")
-st.write(
-	"This application provides a set of calculators to help you with financial decisions, including house price predictions and loan eligibility assessments."
-)
 
-st.subheader("Available Calculators:")
-st.write(
-	"- **House Price Prediction**: Estimate the price of a house based on various features."
-)
-st.write(
-	"- **Loan Eligibility**: Check your eligibility for different types of loans."
-)
-st.write(
-	"- **Stress Level Detector**: Analyze your mental stress levels based on social media interactions"
-)
+# Reducing whitespace on the top of the page
+st.markdown("""
+<style>
+
+.block-container
+{
+    padding-top: 1rem;
+    padding-bottom: 0rem;
+    margin-top: 1rem;
+}
+
+</style>
+""", unsafe_allow_html=True)
+
+# Load custom CSS
+load_css("changes/style.css")  # Make sure this path is correct
+
+# Render the two-column layout with project description and calculators
+render_layout()
