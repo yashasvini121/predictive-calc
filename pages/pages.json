@@ -77,7 +77,7 @@
   "Customer Income Estimator": {
   "title": "Customer Income Estimator",
 	"page_title": "Customer Income Estimator",
-	"page_icon": "\ud83c\udfe0",
+	"page_icon": "\ud83d\udcb0",
 	"model_predict_file_path": "models/customer_income/predict.py",
 	"model_function": "get_prediction",
 	"model_detail_function": "model_details",
