@@ -6,43 +6,50 @@
       "max_value": 10000,
       "default_value": 1000,
       "step": 100,
-      "field_name": "area"
+      "field_name": "area",
+      "layout": "horizontal"
     },
     "Near Main Road": {
       "type": "dropdown",
       "options": ["Yes", "No"],
       "default_value": "No",
-      "field_name": "mainroad"
+      "field_name": "mainroad",
+      "layout": "horizontal"
     },
     "Guest Room": {
       "type": "dropdown",
       "options": ["Yes", "No"],
       "default_value": "No",
-      "field_name": "guestroom"
+      "field_name": "guestroom",
+      "layout": "horizontal"
     },
     "Basement": {
       "type": "dropdown",
       "options": ["Yes", "No"],
       "default_value": "No",
-      "field_name": "basement"
+      "field_name": "basement",
+      "layout": "horizontal"
     },
     "Hot Water Heating": {
       "type": "dropdown",
       "options": ["Yes", "No"],
       "default_value": "No",
-      "field_name": "hotwaterheating"
+      "field_name": "hotwaterheating",
+      "layout": "horizontal"
     },
     "Air Conditioning": {
       "type": "dropdown",
       "options": ["Yes", "No"],
       "default_value": "No",
-      "field_name": "airconditioning"
+      "field_name": "airconditioning",
+      "layout": "horizontal"
     },
     "Preferred Area": {
       "type": "dropdown",
       "options": ["Yes", "No"],
       "default_value": "No",
-      "field_name": "prefarea"
+      "field_name": "prefarea",
+      "layout": "horizontal"
     },
     "Number of Bedrooms": {
       "type": "number",
@@ -50,7 +57,8 @@
       "max_value": 6,
       "default_value": 3,
       "step": 1,
-      "field_name": "bedrooms"
+      "field_name": "bedrooms",
+      "layout": "horizontal"
     },
     "Number of Bathrooms": {
       "type": "number",
@@ -58,7 +66,8 @@
       "max_value": 4,
       "default_value": 2,
       "step": 1,
-      "field_name": "bathrooms"
+      "field_name": "bathrooms",
+      "layout": "horizontal"
     },
     "Number of Stories": {
       "type": "number",
@@ -66,7 +75,8 @@
       "max_value": 4,
       "default_value": 2,
       "step": 1,
-      "field_name": "stories"
+      "field_name": "stories",
+      "layout": "horizontal"
     },
     "Parking Spaces": {
       "type": "number",
@@ -74,13 +84,15 @@
       "max_value": 3,
       "default_value": 1,
       "step": 1,
-      "field_name": "parking"
+      "field_name": "parking",
+      "layout": "horizontal"
     },
     "Furnishing Status": {
       "type": "dropdown",
       "field_name": "furnishingstatus",
       "options": ["semi-furnished", "unfurnished", "furnished"],
-      "default_value": "semi-furnished"
+      "default_value": "semi-furnished",
+      "layout": "horizontal"
     }
   }
 }
