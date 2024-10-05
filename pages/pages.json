@@ -15,7 +15,9 @@
       },
       {
         "name": "Model Details",
-        "type": "model_details"
+        "type": "model_details",
+        "problem_statement": "The model predicts house prices based on input features such as location, size, and number of rooms.",
+        "description": "This model uses a linear regression algorithm to estimate house prices from the provided features, utilizing historical data to draw predictions."
       }
     ]
   },
@@ -35,7 +37,9 @@
 	  },
 	  {
 		"name": "Model Details",
-		"type": "model_details"
+		"type": "model_details",
+    "problem_statement": "This model determines whether a user is eligible for a loan based on several financial and personal input factors.",
+    "description": "It leverages a decision tree classification algorithm to predict loan eligibility, making use of past customer data and lending patterns."
 	  }
 	]
   },
@@ -55,7 +59,9 @@
     },
     {
       "name": "Model Details",
-      "type": "model_details"
+      "type": "model_details",
+      "problem_statement": "The model assesses the stress level of an individual based on biometric and behavioral data.",
+      "description": "This model uses a support vector machine (SVM) to classify stress levels into different categories (low, medium, high) based on physiological indicators."
     }
   ]
   },
@@ -71,6 +77,12 @@
         "name": "Parkinson's Disease Detector",
         "type": "form",
         "form_name": "Parkinson Detection Form"
+      },
+      {
+        "name": "Model Details",
+        "type": "model_details",
+        "problem_statement": "The model aims to detect early signs of Parkinson's disease from voice and movement data.",
+        "description": "Using a Random Forest classifier, the model predicts whether an individual is likely to have Parkinson's based on voice recordings and motor function metrics."
       }
     ]
     }

@@ -30,7 +30,6 @@ class PageHandler:
 		model_predict_file_path = page.get("model_predict_file_path")
 		form_config_path = page.get("form_config_path")
 		tabs = page.get("tabs", [])
-
 		# Set Streamlit's page config with the title and icon
 		st.set_page_config(page_title=page_title, page_icon=page_icon)
 
@@ -51,7 +50,7 @@ class PageHandler:
 				if tab["type"] == "form":
 					self.render_form(tab["form_name"], model_function, form_config_path)
 				elif tab["type"] == "model_details":
-					self.render_model_details(model_module)
+					self.render_model_details(model_module,tabs[1])
 
 	def render_form(self, form_name: str, model_function, form_config_path: str):
 		form_handler = FormHandler(
@@ -64,14 +63,26 @@ class PageHandler:
 		# Render the form on the Streamlit page
 		form_handler.render()
 
-	def render_model_details(self, model_module):
+	def render_model_details(self, model_module,tab):
 		# Dynamically load and call the model details function
 		model_details_function = getattr(model_module, "model_details", None)
+
+		# Render the model details
+		st.header("Model Details")
+			
+		#mentioning the title of the problem statement
+		st.subheader("Problem Statement")
+		st.write(tab["problem_statement"])
+
+		#mentioning the title of the description
+		st.subheader("Model Description")
+		st.write(tab["description"])
 
 		if model_details_function:
 			metrics, prediction_plot, error_plot, performance_plot = model_details_function().evaluate()
 
-			st.header("Model Details")
+			
+
 			st.subheader(f"Model Accuracy: {metrics['Test_R2']:.2%}")
 
 			#mentioning the title of the scores 
