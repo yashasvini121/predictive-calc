@@ -38,6 +38,6 @@ def get_prediction(age, workclass, fnlwgt, education, marital_status, relationsh
     result = predict(input_df)
 
     if result == 1:
-        return "The person earns more than 50,000$ per year."
+        return "The person earns more than $50,000 per year."
     else:
-        return "The person earns less than or equal to 50,000$ per year."
+        return "The person earns less than or equal to $50,000 per year."
