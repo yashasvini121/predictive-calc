@@ -1,0 +1,107 @@
+{
+    "Customer Income Estimation Form": {
+      "Age": {
+        "field_name": "age",
+        "type": "number",
+        "min_value": 18,
+        "max_value": 100,
+        "default_value": 30,
+        "step": 1
+      },
+      "Workclass": {
+        "field_name": "workclass",
+        "type": "dropdown",
+        "options": ["Private", "State-gov", "Self-emp-not-inc", "Federal-gov",
+        "Local-gov", "Self-emp-inc", "Without-pay"],
+        "default_value": "Private"
+      },
+      "Financial Weight (fnlwgt)": {
+        "field_name": "fnlwgt",
+        "type": "number",
+        "min_value": 0,
+        "max_value": 1000000,
+        "default_value": 100000,
+        "step": 1000
+      },
+      "Education Level": {
+        "field_name": "education",
+        "type": "dropdown",
+        "options": ["Doctorate", "12th", "Bachelors", "7th-8th", "Some-college",
+        "HS-grad", "9th", "10th", "11th", "Masters", "Preschool",
+        "5th-6th", "Prof-school", "Assoc-voc", "Assoc-acdm", "1st-4th"],
+        "default_value": "Bachelors"
+      },
+      "Marital Status": {
+        "field_name": "marital_status",
+        "type": "dropdown",
+        "options": ["Divorced", "Never-married", "Married-civ-spouse", "Widowed",
+        "Separated", "Married-spouse-absent", "Married-AF-spouse"],
+        "default_value": "Never-married"
+      },
+      "Occupation": {
+        "field_name": "occupation",
+        "type": "dropdown",
+        "options": ["Exec-managerial", "Other-service", "Transport-moving",
+        "Adm-clerical", "Machine-op-inspct", "Sales", "Handlers-cleaners",
+        "Farming-fishing", "Protective-serv", "Prof-specialty",
+        "Craft-repair", "Tech-support", "Priv-house-serv", "Armed-Forces"],
+        "default_value": "Exec-managerial"
+      },
+      "Relationship": {
+        "field_name": "relationship",
+        "type": "dropdown",
+        "options": ["Not-in-family", "Own-child", "Husband", "Wife", "Unmarried",
+        "Other-relative"],
+        "default_value": "Unmarried"
+      },
+      "Race": {
+        "field_name": "race",
+        "type": "dropdown",
+        "options": ["White", "Black", "Asian-Pac-Islander", "Amer-Indian-Eskimo", "Other"],
+        "default_value": "White"
+      },
+      "Sex": {
+        "field_name": "sex",
+        "type": "dropdown",
+        "options": ["Male", "Female"],
+        "default_value": "Male"
+      },
+      "Capital Gain": {
+        "field_name": "capital_gain",
+        "type": "number",
+        "min_value": 0,
+        "max_value": 100000,
+        "default_value": 0,
+        "step": 1000
+      },
+      "Capital Loss": {
+        "field_name": "capital_loss",
+        "type": "number",
+        "min_value": 0,
+        "max_value": 100000,
+        "default_value": 0,
+        "step": 1000
+      },
+      "Earn per Hour": {
+        "field_name": "hours_per_week",
+        "type": "number",
+        "min_value": 0,
+        "max_value": 100,
+        "default_value": 25,
+        "step": 1
+      },
+      "Native Country": {
+        "field_name": "native_country",
+        "type": "dropdown",
+        "options": ["United-States", "Japan", "South", "Portugal", "Italy", "Mexico",
+        "Ecuador", "England", "Philippines", "China", "Germany",
+        "Dominican-Republic", "Jamaica", "Vietnam", "Thailand",
+        "Puerto-Rico", "Cuba", "India", "Cambodia", "Yugoslavia", "Iran",
+        "El-Salvador", "Poland", "Greece", "Ireland", "Canada",
+        "Guatemala", "Scotland", "Columbia", "Outlying-US(Guam-USVI-etc)",
+        "Haiti", "Peru", "Nicaragua", "Trinadad&Tobago", "Laos", "Taiwan",
+        "France", "Hungary", "Honduras", "Hong", "Holand-Netherlands"],
+        "default_value": "United-States"
+      }
+    }
+  }
