@@ -130,3 +130,11 @@ webencodings==0.5.1
 websocket-client==1.8.0
 widgetsnbextension==4.0.13
 xgboost
+
+#for emotion detector
+tensorflow
+opencv-python
+streamlit
+streamlit-webrtc
+numpy==1.26.4
+json

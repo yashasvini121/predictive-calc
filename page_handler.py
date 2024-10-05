@@ -50,6 +50,8 @@ class PageHandler:
 			with tab_objects[i]:
 				if tab["type"] == "form":
 					self.render_form(tab["form_name"], model_function, form_config_path)
+				elif tab["type"] == "detector":
+					self.render_detector(tab["form_name"], model_function, form_config_path)
 				elif tab["type"] == "model_details":
 					self.render_model_details(model_module)
 
@@ -63,6 +65,16 @@ class PageHandler:
 
 		# Render the form on the Streamlit page
 		form_handler.render()
+	
+	#making a function to handle detectors which are not using forms: - this function only uses the model_function to run the detector directly
+	def render_detector(self, form_name: str, model_function, form_config_path: str):
+		st.write("This model uses facial detection and emotion recognition based on custom CNN model. Please ensure that the camera is functioning properly for optimal results.")
+
+		if model_function is not None:
+			model_function()
+		else:
+			st.error("Model function is missing.")
+	
 
 	def render_model_details(self, model_module):
 		# Dynamically load and call the model details function

@@ -15,7 +15,6 @@ st.write("- **House Price Prediction**: Estimate the price of a house based on v
 st.write("- **Loan Eligibility**: Check your eligibility for different types of loans.")
 st.write("- **Stress Level Detector**: Analyze your mental stress levels based on social media interactions.")
 st.write("- **Parkinson's Disease Detector**: Assess your risk of Parkinson's Disease with advanced machine learning algorithms.")
-
 # Parkinson's Disease Detector Section
 with st.expander("Parkinson's Disease Detector - More Information"):
     st.subheader("Introduction")
@@ -43,4 +42,4 @@ with st.expander("Parkinson's Disease Detector - More Information"):
     - **DFA**:  Signal fractal scaling exponent.
     - **spread1**, **spread2**, **PPE**:  Nonlinear measures of fundamental frequency variation.
     """)
-
+st.write("- **EmotionIQ**: A real-time face emotion detection application that uses OpenCV and a custom-trained CNN model to analyze live camera footage and identify emotional expressions.")

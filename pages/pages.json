@@ -73,6 +73,20 @@
         "form_name": "Parkinson Detection Form"
       }
     ]
+    },
+
+    "EmotionIQ Detector": {
+    "title": "EmotionIQ",
+    "page_title": "EmotionIQ",
+    "model_predict_file_path": "models/emotion_detector/driver.py",
+    "model_function": "get_prediction",
+    "tabs": [
+      {
+        "name": "EmotionIQ",
+        "type": "detector",
+        "form_name": "EmotionIQ Detector"
+      }
+    ]
     }
 
 }
