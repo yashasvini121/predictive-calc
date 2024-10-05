@@ -1,10 +1,9 @@
 import pandas as pd
 import pickle
-import gzip
 from models.customer_income.model import predict
 
 def load_model():
-    with gzip.open('models/customer_income/saved_models/feature_names.pkl', 'rb') as feature_file:
+    with open('models/customer_income/saved_models/feature_names.pkl', 'rb') as feature_file:
         feature_names = pickle.load(feature_file)
     return feature_names
 

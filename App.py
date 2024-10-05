@@ -11,6 +11,7 @@ st.write(
 
 # List of available calculators
 st.subheader("Available Calculators:")
+st.write("- **Customer Income Estimation**: Estimate the annual income of a person based on socio-economic and demographic information.")
 st.write("- **House Price Prediction**: Estimate the price of a house based on various features.")
 st.write("- **Loan Eligibility**: Check your eligibility for different types of loans.")
 st.write("- **Stress Level Detector**: Analyze your mental stress levels based on social media interactions.")
