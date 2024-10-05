@@ -30,3 +30,5 @@ The project has been successfully tested in local environments, and current effo
    ```powershell
    streamlit run app.py
    ```
+## Our Valuable contributors
+[![Contributors](https://contrib.rocks/image?repo=yashasvini121/predictive-calc)](https://github.com/yashasvini121/predictive-calc/graphs/contributors)
