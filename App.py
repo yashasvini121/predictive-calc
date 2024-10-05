@@ -1,7 +1,8 @@
 import streamlit as st
-from styling import load_css, render_layout  # Import both load_css and render_layout functions
+from assests import styling
+from assests.styling import load_css, render_layout
 
-<<<<<<< HEAD
+
 # Set page configuration (this must be the first Streamlit command)
 st.set_page_config(page_title="Predictive Calc", page_icon="🧮")
 
@@ -20,39 +21,7 @@ st.markdown("""
 """, unsafe_allow_html=True)
 
 # Load custom CSS
-load_css("changes/style.css")  # Make sure this path is correct
-
-# Render the two-column layout with project description and calculators
-render_layout()
-=======
-# Configure page
-st.set_page_config(page_title="Predictive Calc", page_icon="🧮", layout="centered", initial_sidebar_state="expanded")
-
-st.markdown(
-    """
-    <style>
-    .main {
-        background-color: #f0f2f6;
-    }
-    .stButton>button {
-        background-color: #4CAF50;
-        color: white;
-        border-radius: 10px;
-        padding: 10px 20px;
-    }
-    .stButton>button:hover {
-        background-color: #45a049;
-    }
-    .stSubheader {
-        color: #2C3E50;
-        font-weight: bold;
-        margin-top: 20px;
-        font-size: 24px;
-    }
-    </style>
-    """,
-    unsafe_allow_html=True
-)
+load_css("assests/style.css")  # Make sure this path is correct
 
 # Header
 st.title("Predictive Calc 🧮")
@@ -84,4 +53,3 @@ with col2:
 
 	st.write("🧠 **Stress Level Detector**")
 	st.write("Analyze your mental stress levels based on your social media interactions.")
->>>>>>> 56b5e0270550d5c728bc69e577c2b555f17b0210
