@@ -1,12 +1,12 @@
 import streamlit as st
-from translation import capture_and_translate
-from utils import LANGUAGES
+from models.translator_app.translation import capture_and_translate
+from models.translator_app.utils import LANGUAGES
 import time
 import os
 
 # Load custom CSS
 def load_css():
-    with open("assets/styles.css") as f:
+    with open("models/translator_app/assets/styles.css") as f:
         st.markdown(f"<style>{f.read()}</style>", unsafe_allow_html=True)
 
 # UI Structure
