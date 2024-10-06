@@ -1,4 +1,4 @@
-from models.Customer_Churn_Prediction.Model import customer_churn_prediction
+from Model import customer_churn_prediction
 def get_prediction(cs,geo,gen,age,tenure,bal,nop,hcc,iam,es):
     prediction,probability=customer_churn_prediction(cs,geo,gen,age,tenure,bal,nop,hcc,iam,es)
     output=""
