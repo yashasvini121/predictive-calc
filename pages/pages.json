@@ -1,12 +1,12 @@
 {
   "House Price Estimator": {
     "title": "House Price Estimator",
-	"page_title": "House Price Estimator",
-	"page_icon": "\ud83c\udfe0",
-	"model_predict_file_path": "models/house_price/predict.py",
-	"model_function": "get_prediction",
-	"model_detail_function": "model_details",
-	"form_config_path": "form_configs/house_price.json",
+    "page_title": "House Price Estimator",
+    "page_icon": "\ud83c\udfe0",
+    "model_predict_file_path": "models/house_price/predict.py",
+    "model_function": "get_prediction",
+    "model_detail_function": "model_details",
+    "form_config_path": "form_configs/house_price.json",
     "tabs": [
       {
         "name": "Estimator",
@@ -20,44 +20,44 @@
     ]
   },
   "Loan Eligibility Estimator": {
-	"title": "Loan Eligibility Estimator",
-	"page_title": "Loan Eligibility Estimator",
-	"page_icon": "\ud83d\udcb0",
-	"model_predict_file_path": "models/loan_eligibility/predict.py",
-	"model_function": "get_prediction",
-	"form_config_path": "form_configs/loan_eligibility.json",
-	"model_detail_function": "model_details",
-	"tabs": [
-	  {
-		"name": "Estimator",
-		"type": "form",
-		"form_name": "Loan Eligibility Form"
-	  },
-	  {
-		"name": "Model Details",
-		"type": "model_details"
-	  }
-	]
+    "title": "Loan Eligibility Estimator",
+    "page_title": "Loan Eligibility Estimator",
+    "page_icon": "\ud83d\udcb0",
+    "model_predict_file_path": "models/loan_eligibility/predict.py",
+    "model_function": "get_prediction",
+    "form_config_path": "form_configs/loan_eligibility.json",
+    "model_detail_function": "model_details",
+    "tabs": [
+      {
+        "name": "Estimator",
+        "type": "form",
+        "form_name": "Loan Eligibility Form"
+      },
+      {
+        "name": "Model Details",
+        "type": "model_details"
+      }
+    ]
   },
   "Stress Level Detector": {
-  "title": "Stress Level Detector",
-  "page_title": "Stress Level Detector",
-  "page_icon": "\u2691",
-  "model_predict_file_path": "models/stress_level_detect/predict.py",
-  "model_function": "get_prediction",
-  "model_detail_function": "model_details",
-  "form_config_path": "form_configs/stress_detection.json",
-  "tabs": [
-    {
-      "name": "Stress Level Estimator",
-      "type": "form",
-      "form_name": "Stress Detection Form"
-    },
-    {
-      "name": "Model Details",
-      "type": "model_details"
-    }
-  ]
+    "title": "Stress Level Detector",
+    "page_title": "Stress Level Detector",
+    "page_icon": "\u2691",
+    "model_predict_file_path": "models/stress_level_detect/predict.py",
+    "model_function": "get_prediction",
+    "model_detail_function": "model_details",
+    "form_config_path": "form_configs/stress_detection.json",
+    "tabs": [
+      {
+        "name": "Stress Level Estimator",
+        "type": "form",
+        "form_name": "Stress Detection Form"
+      },
+      {
+        "name": "Model Details",
+        "type": "model_details"
+      }
+    ]
   },
   "Parkinson Disease Detector": {
     "title": "Parkinson Disease Detector",
@@ -73,33 +73,15 @@
         "form_name": "Parkinson Detection Form"
       }
     ]
-<<<<<<< HEAD
-    },
-    "Customer Churn Prediction": {
-      "title": "Customer Churn Prediction",
-      "page_title": "Customer Churn Prediction",
-      "model_predict_file_path": "models/Customer_Churn_Prediction/Predict.py",
-      "model_function": "get_prediction",
-      "model_detail_function": "model_details",
-      "form_config_path": "form_configs/churn_detection.json",
-      "tabs": [
-        {
-          "name": "Customer Churn Prediction",
-          "type": "form",
-          "form_name": "Customer Churn Prediction Form"
-        }
-      ]
-      }
-=======
   },
   "Customer Income Estimator": {
-  "title": "Customer Income Estimator",
-	"page_title": "Customer Income Estimator",
-	"page_icon": "\ud83d\udcb0",
-	"model_predict_file_path": "models/customer_income/predict.py",
-	"model_function": "get_prediction",
-	"model_detail_function": "model_details",
-	"form_config_path": "form_configs/customer_income.json",
+    "title": "Customer Income Estimator",
+    "page_title": "Customer Income Estimator",
+    "page_icon": "\ud83d\udcb0",
+    "model_predict_file_path": "models/customer_income/predict.py",
+    "model_function": "get_prediction",
+    "model_detail_function": "model_details",
+    "form_config_path": "form_configs/customer_income.json",
     "tabs": [
       {
         "name": "Estimator",
@@ -111,7 +93,20 @@
         "type": "model_details"
       }
     ]
+  },
+  "Customer Churn Prediction": {
+    "title": "Customer Churn Prediction",
+    "page_title": "Customer Churn Prediction",
+    "model_predict_file_path": "models/Customer_Churn_Prediction/Predict.py",
+    "model_function": "get_prediction",
+    "model_detail_function": "model_details",
+    "form_config_path": "form_configs/churn_detection.json",
+    "tabs": [
+      {
+        "name": "Customer Churn Prediction",
+        "type": "form",
+        "form_name": "Customer Churn Prediction Form"
+      }
+    ]
   }
->>>>>>> origin
-
 }
