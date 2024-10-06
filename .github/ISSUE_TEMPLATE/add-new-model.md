@@ -25,3 +25,5 @@ assignees: ''
 **To be Mentioned while taking the issue**:
 - Full name:
 - What is your participant role? <!-- (Mention the Open Source Program name. Eg. GSSOC, SSOC, Hacktoberfest, etc.) -->
+
+> **Note:** Please review the project documentation and ensure your code aligns with the project structure. If applicable, consider adding a `model_details` function for additional insights.

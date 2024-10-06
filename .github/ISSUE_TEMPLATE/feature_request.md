@@ -22,3 +22,5 @@ assignees: ''
 **To be Mentioned while taking the issue**:
 - Full name:
 - What is your participant role? <!-- (Mention the Open Source Program name. Eg. GSSOC, SSOC, Hacktoberfest, etc.) -->
+
+> **Note:** Ensure your code aligns with the existing project structure before submitting.
