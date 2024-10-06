@@ -105,7 +105,7 @@
       {
         "name": "Customer Churn Prediction",
         "type": "form",
-        "form_name": "Customer Churn Prediction Form"
+        "form_name": "Churn Detection Form"
       }
     ]
     }

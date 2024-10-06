@@ -6,19 +6,19 @@
         "max_value": 1000,
         "default_value": 0,
         "step": 10,
-        "field_name": "credit_score"
+        "field_name": "cs"
       },
       "Geography": {
         "type": "dropdown",
         "options": ["France", "Germany","Spain"],
-        "default_value": "No",
-        "field_name": "geography"
+        "default_value": "France",
+        "field_name": "geo"
       },
       "Gender": {
         "type": "dropdown",
         "options": ["Female", "Male"],
-        "default_value": "No",
-        "field_name": "gender"
+        "default_value": "Female",
+        "field_name": "gen"
       },
       "Age": {
         "type": "number",
@@ -40,37 +40,37 @@
         "type": "float",
         "min_value": 0.0,
         "max_value": 1000000.0,
-        "default_value": 0,
-        "step": 10.5,
-        "field_name": "balance"
+        "default_value": 0.0,
+        "step": 100.5,
+        "field_name": "bal"
       },
       "Number Of Products": {
         "type": "number",
         "min_value": 0,
         "max_value": 10,
-        "default_value": 0.0,
+        "default_value": 0,
         "step": 1,
-        "field_name": "number_of_products"
+        "field_name": "nop"
       },
       "Has Credit Card": {
         "type": "dropdown",
-        "field_name": "has_credit_card",
-        "options": ["Yes","No"],
-        "default_value": "No"
+        "field_name": "hcc",
+        "options": [0,1],
+        "default_value": 0
       },
       "Is Active Member": {
         "type": "dropdown",
-        "field_name": "is_active_member",
-        "options": ["Yes","No"],
-        "default_value": "No"
+        "field_name": "iam",
+        "options": [0,1],
+        "default_value": 0
       },
       "Estimated Salary": {
         "type": "float",
         "min_value": 0.0,
         "max_value": 1000000.0,
         "default_value": 0.0,
-        "step": 10.5,
-        "field_name": "estimated_salary"
+        "step": 100.5,
+        "field_name": "es"
       }
     }
 }
