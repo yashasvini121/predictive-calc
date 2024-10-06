@@ -1,4 +1,4 @@
-from Model import customer_churn_prediction
+from models.Customer_Churn_Prediction.Model import customer_churn_prediction
 def get_prediction(cs,geo,gen,age,tenure,bal,nop,hcc,iam,es):
     prediction,probability=customer_churn_prediction(cs,geo,gen,age,tenure,bal,nop,hcc,iam,es)
     output=""
@@ -7,7 +7,3 @@ def get_prediction(cs,geo,gen,age,tenure,bal,nop,hcc,iam,es):
     else:
         output=f"The customer is likely to stay with a probability of {1-probability:.2f}"
     return output
-
-
-
-
