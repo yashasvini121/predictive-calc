@@ -10,15 +10,6 @@ st.markdown("""
 **Predictive Calc** offers a powerful suite of machine learning models designed to assist you in making informed decisions. Whether it's predicting house prices, determining loan eligibility, or evaluating health risks, we have you covered.
 """)
 
-<<<<<<< HEAD
-    st.markdown("""
-    ## Why Choose Predictive Calc?
-    - **Accurate Predictions**: Leverage state-of-the-art algorithms for highly accurate predictions.
-    - **User-friendly Interface**: Seamlessly interact with models tailored for real-world applications.
-    - **Comprehensive Calculators**: A collection of models designed for diverse decision-making needs.
-    - **Health & Financial Models**: Predict house prices,Customer churn probability, assess loan eligibility, and evaluate health risks such as Parkinson's and stress levels.
-    """)
-=======
 st.markdown("""
 ## Why Choose Predictive Calc?
 - **Accurate Predictions**: Leverage state-of-the-art algorithms for highly accurate predictions.
@@ -26,7 +17,6 @@ st.markdown("""
 - **Comprehensive Calculators**: A collection of models designed for diverse decision-making needs.
 - **Health & Financial Models**: Predict house prices, assess loan eligibility, and evaluate health risks such as Parkinson's and stress levels.
 """)
->>>>>>> origin
 
 st.markdown("""
 ---
