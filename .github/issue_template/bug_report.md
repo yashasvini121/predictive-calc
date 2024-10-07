@@ -34,7 +34,8 @@ assignees: ''
 <!-- Add any other context about the problem here. -->
 
 **To be Mentioned while taking the issue**:
-- Full name:
 - What is your participant role? <!-- (Mention the Open Source Program name. Eg. GSSOC, SSOC, Hacktoberfest, etc.) -->
 
-> **Note:** Ensure your code aligns with the existing project structure before submitting.
+**Note:**
+- Please review the project documentation and ensure your code aligns with the project structure. If applicable, consider adding a `model_details` function for additional insights.
+- Prefer using a new branch to resolve the issue, as it helps keep the main branch stable and makes it easier to manage and review your changes.
