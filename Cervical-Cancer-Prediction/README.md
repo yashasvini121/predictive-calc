@@ -59,5 +59,3 @@ pip install pandas numpy scikit-learn matplotlib seaborn
 ## Instructions
 - Replace `<repository-url>` with the actual URL of your repository if applicable.
 - Make sure to update any sections if additional details or modifications are needed as you progress with your project.
-
-Feel free to customize this template further based on your specific project needs!
