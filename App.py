@@ -28,6 +28,9 @@ st.markdown("---")
 # List of available calculators
 st.subheader("Available Calculators:")
 st.write(
+	"- **Bitcoin Price Predictor**: The Bitcoin Price Predictor form allows users to input the current price, moving average, and market sentiment to forecast potential price movements."
+)
+st.write(
 	"- **Customer Income Estimation**: Estimate the annual income of a person based on socio-economic and demographic information."
 )
 st.write(
