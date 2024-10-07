@@ -1,0 +1,27 @@
+{
+    "Bitcoin Price Predictor Form": {
+      "Current Price": {
+        "field_name": "current_price",
+        "type": "number",
+        "min_value": 1000,
+        "max_value": 100000,
+        "default_value": 30000,
+        "step": 500
+      },
+      "Moving Average": {
+        "field_name": "moving_average",
+        "type": "number",
+        "min_value": 1000,
+        "max_value": 100000,
+        "default_value": 25000,
+        "step": 500
+      },
+      "Market Sentiment": {
+        "field_name": "market_sentiment",
+        "type": "select",
+        "options": ["positive", "neutral", "negative"],
+        "default_value": "neutral"
+      }
+    }
+  }
+  
