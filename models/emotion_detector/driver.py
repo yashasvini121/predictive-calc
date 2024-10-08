@@ -2,7 +2,6 @@ import os
 import cv2
 import numpy as np
 import matplotlib.pyplot as plt
-import json 
 
 from tensorflow.keras.preprocessing import image
 from tensorflow.keras.preprocessing.image import img_to_array, load_img
