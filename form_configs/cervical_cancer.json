@@ -1,0 +1,11 @@
+{
+  "title": "Cervical Cancer Risk Predictor",
+  "inputs": [
+    {"label": "Age", "type": "number", "key": "age"},
+    {"label": "Number of sexual partners", "type": "number", "key": "num_sexual_partners"},
+    {"label": "First sexual intercourse", "type": "number", "key": "first_sexual_intercourse"},
+    {"label": "Num of pregnancies", "type": "number", "key": "num_pregnancies"},
+    {"label": "Dx:HPV", "type": "select", "options": [0, 1], "key": "dx_hpv"},
+    {"label": "Biopsy", "type": "select", "options": [0, 1], "key": "biopsy"}
+  ]
+}
