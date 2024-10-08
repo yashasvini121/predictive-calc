@@ -93,6 +93,26 @@
         "type": "model_details"
       }
     ]
-  }
+  },
+  "Breast Cancer Detector": {
+  "title": "Breast Cancer Detector",
+  "page_title": "Breast Cancer Detector",
+  "page_icon": "\ud83d\udc91", 
+  "model_predict_file_path": "models/Breast_Cancer_Detector/predict.py",
+  "model_function": "breast_cancer_prediction",
+  "model_detail_function": "model_details",
+  "form_config_path": "form_configs/Breast_cancer_detection.json",
+  "tabs": [
+    {
+      "name": "Classifier",
+      "type": "form",
+      "form_name": "Breast Cancer Detector"
+    },
+    {
+      "name": "Model Details",
+      "type": "model_details"
+    }
+  ]
+}
 
 }
