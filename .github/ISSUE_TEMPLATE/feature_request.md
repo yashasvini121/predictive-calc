@@ -22,6 +22,7 @@ assignees: ''
 **To be Mentioned while taking the issue**:
 - What is your participant role? <!-- (Mention the Open Source Program name. Eg. GSSOC, SSOC, Hacktoberfest, etc.) -->
 
+<!-- Don't remove this while submitting the issue -->
 **Note:**
 - Please review the project documentation and ensure your code aligns with the project structure.
 - Please ensure that either the `predict.py` file includes a properly implemented `model_details()` function or the notebook contains this function to print a detailed model report. The model will not be accepted without this function in place, as it is essential for generating the necessary model details.
