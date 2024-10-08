@@ -10,7 +10,16 @@ translator = Translator()
 
 # Function to capture and translate speech
 def capture_and_translate(source_lang, target_lang):
-    with sr.Microphone() as source:
+    # Check for available audio input devices
+    mic_list = sr.Microphone.list_microphone_names()
+    
+    if not mic_list:
+        st.error("⚠️ No microphone found. Please connect a microphone and restart the app.")
+        return None
+
+    selected_mic_index = st.selectbox("Select a microphone", range(len(mic_list)), format_func=lambda x: mic_list[x])
+    
+    with sr.Microphone(device_index=selected_mic_index) as source:
         st.info("🎙️ Listening... Speak now.")
         
         recognizer.adjust_for_ambient_noise(source, duration=1)
@@ -55,4 +64,4 @@ def capture_and_translate(source_lang, target_lang):
             st.error("⚠️ Could not recognize speech.")
         except Exception as e:
             st.error(f"⚠️ Error: {str(e)}")
-        return None
+    return None
