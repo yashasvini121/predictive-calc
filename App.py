@@ -40,7 +40,9 @@ st.write(
 st.write(
 	"- **Parkinson's Disease Detector**: Assess your risk of Parkinson's Disease with advanced machine learning algorithms."
 )
-
+st.write(
+	"- **Breast Cancer Tumor Detector**: Predict the likelihood of breast cancer tumor recurrence based on clinical and histological features."
+)
 # Parkinson's Disease Detector Section
 with st.expander("Parkinson's Disease Detector - More Information"):
 	st.subheader("Introduction")
@@ -72,5 +74,30 @@ with st.expander("Parkinson's Disease Detector - More Information"):
 	- **RPDE**, **D2**:  Nonlinear dynamical complexity measures.
 	- **DFA**:  Signal fractal scaling exponent.
 	- **spread1**, **spread2**, **PPE**:  Nonlinear measures of fundamental frequency variation.
+	"""
+	)
+# Breast Cancer Tumor Detector Section
+with st.expander("Breast Cancer Tumor Detector - More Information"):
+	st.subheader("Introduction")
+	st.write(
+		"""
+	Breast cancer is one of the leading causes of cancer-related deaths in women. Early detection and diagnosis are crucial for effective treatment and survival.
+	"""
+	)
+
+	# Dataset section
+	st.subheader("Wisconsin Breast Cancer Dataset (UCI ML Repository)")
+	st.write(
+		"""
+	The dataset contains clinical and histological features from 569 breast cancer tumors, including 357 benign and 212 malignant cases.
+	"""
+	)
+
+	# Input features section
+	st.subheader("Additional Variable Information")
+	st.write(
+		"""
+	- **Clump Thickness**: Uniformity of cell size and cell shape.
+	- **Uniformity of Cell Size**: Uniformity of cell
 	"""
 	)
