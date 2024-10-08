@@ -156,8 +156,10 @@ xgboost
 
 #for emotion detector
 tensorflow==2.17.0
-opencv-python==4.10.0
-streamlit-webrtc==0.47.9
+opencv_python==4.10.0
+streamlit_webrtc<0.45.0
 numpy==1.26.4
+av==10.0.0
+keras==2.10.0
 
 xgboost==2.1.1
