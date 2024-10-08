@@ -74,7 +74,6 @@
       }
     ]
     },
-
     "EmotionIQ Detector": {
     "title": "EmotionIQ",
     "page_title": "EmotionIQ",
@@ -87,8 +86,6 @@
         "form_name": "EmotionIQ Detector"
       }
     ]
-    }
-
   },
   "Customer Income Estimator": {
   "title": "Customer Income Estimator",
@@ -110,5 +107,4 @@
       }
     ]
   }
-
 }
