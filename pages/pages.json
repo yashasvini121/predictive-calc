@@ -107,10 +107,6 @@
         "name": "Gold Price Form",
         "type": "form",
         "form_name": "Gold Price Form"
-      },
-      {
-        "name": "Model Details",
-        "type": "model_details"
       }
     ]
   }

@@ -1,31 +1,31 @@
 {
   "Gold Price Form": {
     "SPX": {
-      "type": "number",
+      "type": "slider",
       "min_value": 0.0,
-      "default_value": 1447.160034,
-      "step": 0.000001,
+      "default_value": 1447.16,
+      "step": 1,
       "field_name": "spx"
     },
     "USO": {
       "type": "number",
       "min_value": 0.0,
-      "default_value": 78.470001,
-      "step": 0.000001,
+      "default_value": 78.47,
+      "step": 0.01,
       "field_name": "uso"
     },
     "SLV": {
       "type": "number",
       "min_value": 0.0,
       "default_value": 15.18,
-      "step": 0.000001,
+      "step": 0.01,
       "field_name": "slv"
     },
     "EUR/USD": {
       "type": "number",
       "min_value": 0.0,
-      "default_value": 1.471692,
-      "step": 0.000001,
+      "default_value": 1.47,
+      "step": 0.01,
       "field_name": "eur_usd"
     }
   }
