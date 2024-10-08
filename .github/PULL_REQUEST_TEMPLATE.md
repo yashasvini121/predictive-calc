@@ -22,6 +22,7 @@
 <!-- You can add more relevant points -->
 - [ ] My code follows the current [project structure](https://github.com/yashasvini121/predictive-calc/blob/master/docs/project-structure.md)
 - [ ] I have thoroughly reviewed and updated the `requirements.txt` file to include any new packages
+- [ ] The `predict.py` file includes a properly implemented `model_details()` function, or the notebook contains this function to print a detailed model report. **The model will not be accepted without this function**, as it is essential for generating the necessary model details.
 - [ ] I have added relevant tests (if necessary).
 - [ ] I have added comments in the code where needed.
 - [ ] This PR is submitted under **Hacktoberfest**.
