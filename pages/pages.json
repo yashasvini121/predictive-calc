@@ -73,6 +73,42 @@
         "form_name": "Parkinson Detection Form"
       }
     ]
-    }
+  },
+  "Customer Income Estimator": {
+  "title": "Customer Income Estimator",
+	"page_title": "Customer Income Estimator",
+	"page_icon": "\ud83d\udcb0",
+	"model_predict_file_path": "models/customer_income/predict.py",
+	"model_function": "get_prediction",
+	"model_detail_function": "model_details",
+	"form_config_path": "form_configs/customer_income.json",
+    "tabs": [
+      {
+        "name": "Estimator",
+        "type": "form",
+        "form_name": "Customer Income Estimation Form"
+      },
+      {
+        "name": "Model Details",
+        "type": "model_details"
+      }
+    ]
+  },
+  "Gold Price Predictor": {
+  "title": "Gold Price Predictor",
+	"page_title": "Gold Price Predictor",
+	"page_icon": "\ud83d\udcb0",
+	"model_predict_file_path": "models/gold_price_prediction/predict.py",
+	"model_function": "get_prediction",
+	"model_detail_function": "model_details",
+	"form_config_path": "form_configs/gold_price_prediction.json",
+    "tabs": [
+      {
+        "name": "Gold Price Form",
+        "type": "form",
+        "form_name": "Gold Price Form"
+      }
+    ]
+  }
 
 }
