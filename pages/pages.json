@@ -109,6 +109,12 @@
         "form_name": "Gold Price Form"
       }
     ]
-  }
+  },
+  
+  "Malware_Detection" : {
+    "title": "PDF Malware Detection",
+    "icon": "🛡️",
+    "path": "PDF_Malware_Detection.py"
+}
 
 }
