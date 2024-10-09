@@ -12,5 +12,5 @@ st.write(
 	"- **House Price Prediction**: Estimate the price of a house based on various features."
 )
 st.write(
-	"- **Loan Eligibility**: Check your eligibility for different types of loans."
+	"- **Loan Eligibility**: The Loan Prediction Calculator is designed to assess an individual's eligibility for a loan by considering a range of key financial inputs. By collecting essential information such as the number of dependents, education level, employment status, annual income, loan amount, loan term, CIBIL score, and various asset values, this calculator aims to provide a comprehensive evaluation of the applicant's financial situation. By analyzing these inputs, the calculator can offer more accurate predictions regarding loan approval, helping users make informed decisions about their borrowing potential."
 )
