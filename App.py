@@ -108,3 +108,38 @@ with st.expander("Gold Price Predictor - More Information"):
 		"""
 	)
 
+st.write(
+	"- **Flight Delay Predictor**: Predict whether a flight will be delayed based on various factors."
+)
+
+# Flight Delay Predictor Section
+with st.expander("Flight Delay Predictor - More Information"):
+	st.subheader("Introduction")
+	st.write(
+		"""
+	The Flight Delay Predictor uses historical flight data to predict whether a flight will be delayed. Various factors, such as airline, origin, destination, departure time, and day of the week, are used to make predictions.
+		"""
+	)
+
+	# Dataset section
+	st.subheader("Flight Delay Dataset")
+	st.write(
+		"""
+	The dataset contains flight records, including details about the airline, flight origin, destination, departure time, distance, and whether the flight was delayed. The target variable is a binary indicator of delay (0 for on time, 1 for delayed).
+		"""
+	)
+
+	# Input features section
+	st.subheader("Additional Variable Information")
+	st.write(
+		"""
+	- **Airline**:  The airline operating the flight (e.g., Delta, United, etc.).
+	- **Origin**:  The origin airport (e.g., ATL, LAX, etc.).
+	- **Destination**:  The destination airport (e.g., JFK, ORD, etc.).
+	- **Departure Time**:  The scheduled departure time (in 24-hour format).
+	- **Day of Week**:  The day of the week the flight is scheduled (Monday to Sunday).
+	- **Distance**:  The distance of the flight in miles.
+	- **Delay Status**:  0 for on time, 1 for delayed (target variable).
+		"""
+	)
+
