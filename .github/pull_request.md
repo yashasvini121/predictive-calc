@@ -18,6 +18,7 @@
 <!-- Include any additional information that might be useful. -->
 
 
+<!-- Don't remove this while submitting the issue -->
 ### Checklist
 <!-- You can add more relevant points -->
 - [ ] My code follows the current [project structure](https://github.com/yashasvini121/predictive-calc/blob/master/docs/project-structure.md)
