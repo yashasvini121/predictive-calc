@@ -1,0 +1,38 @@
+{
+    "form_name": "Retail Sales Forecasting",
+    "fields": [
+        {
+            "label": "Store Number",
+            "name": "store_number",
+            "type": "number",
+            "placeholder": "Enter store number",
+            "min": 1,
+            "max": 50,  
+            "default": 1,
+            "step": 1
+        },
+        {
+            "label": "Department Number",
+            "name": "department_number",
+            "type": "number",
+            "placeholder": "Enter department number",
+            "min": 1,
+            "max": 100,  
+            "default": 1,
+            "step": 1
+        },
+        {
+            "label": "Date",
+            "name": "date",
+            "type": "date",
+            "placeholder": "Select a date"
+        },
+        {
+            "label": "Is Holiday",
+            "name": "is_holiday",
+            "type": "checkbox",
+            "placeholder": "Check if it’s a holiday",
+            "default": false
+        }
+    ]
+}
