@@ -108,3 +108,35 @@ with st.expander("Gold Price Predictor - More Information"):
 		"""
 	)
 
+st.write(
+	"- **Retail Price Forecaster**: Forecast the future sales of a retail store based on time series analyis."
+)
+# Retail Sales Forecaster Section
+with st.expander("Retail Sales Forecaster - More Information"):
+    st.subheader("Introduction")
+    st.write(
+        """
+        The Retail Sales Forecaster uses historical sales data and machine learning algorithms to predict future sales for a specific store and department. This tool aims to help businesses optimize inventory management and enhance decision-making based on predicted demand.
+        """
+    )
+
+    # Dataset section
+    st.subheader("Retail Sales Dataset")
+    st.write(
+        """
+        The dataset utilized for this model contains historical sales data, including various features such as date, store ID, department ID, and sales amount. The objective is to forecast future sales based on historical trends and seasonal patterns.
+        """
+    )
+
+    # Input features section
+    st.subheader("Additional Variable Information")
+    st.write(
+        """
+        - **date**: The date of the sales transaction.
+        - **store_id**: The unique identifier for the store.
+        - **department_id**: The unique identifier for the department within the store.
+        - **sales**: The amount of sales made on that day for the specific store and department.
+        - **is_holiday**: A binary indicator that specifies whether the week includes a holiday (1 for holiday, 0 for non-holiday).
+        """
+    )
+
