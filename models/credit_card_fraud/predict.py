@@ -64,7 +64,7 @@ def get_prediction(
     input_df.fillna(0, inplace=True)
 
     # Load the model
-    rf_model = load_model("models/credit_card_fraud/transaction_rf_model.pkl")
+    rf_model = load_model("models/credit_card_fraud/saved models/transaction_rf_model.pkl")
 
     # Predict using Random Forest
     predicted_value = rf_model.predict(input_df)
