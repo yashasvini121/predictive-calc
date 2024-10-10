@@ -1,84 +1,84 @@
 {
-    "Breast Tumor Classifier Form": {
-      "Mean Radius": {
-        "field_name": "mean_radius",
-        "type": "number",
-        "min_value": 0,
-        "max_value": 100,
-        "default_value": 10,
-        "step": 0.1
-      },
-      "Mean Texture": {
-        "field_name": "mean_texture",
-        "type": "number",
-        "min_value": 0,
-        "max_value": 100,
-        "default_value": 10,
-        "step": 0.1
-      },
-      "Mean Perimeter": {
-        "field_name": "mean_perimeter",
-        "type": "number",
-        "min_value": 0,
-        "max_value": 100,
-        "default_value": 10,
-        "step": 0.1
-      },
-      "Mean Area": {
-        "field_name": "mean_area",
-        "type": "number",
-        "min_value": 0,
-        "max_value": 100,
-        "default_value": 10,
-        "step": 0.1
-      },
-      "Mean Smoothness": {
-        "field_name": "mean_smoothness",
-        "type": "number",
-        "min_value": 0,
-        "max_value": 100,
-        "default_value": 10,
-        "step": 0.1
-      },
-      "Mean Compactness": {
-        "field_name": "mean_compactness",
-        "type": "number",
-        "min_value": 0,
-        "max_value": 100,
-        "default_value": 10,
-        "step": 0.1
-      },
-      "Mean Concavity": {
-        "field_name": "mean_concavity",
-        "type": "number",
-        "min_value": 0,
-        "max_value": 100,
-        "default_value": 10,
-        "step": 0.1
-      },
-      "Mean Concave Points": {
-        "field_name": "mean_concave_points",
-        "type": "number",
-        "min_value": 0,
-        "max_value": 100,
-        "default_value": 10,
-        "step": 0.1
-      },
-      "Mean Symmetry": {
-        "field_name": "mean_symmetry",
-        "type": "number",
-        "min_value": 0,
-        "max_value": 100,
-        "default_value": 10,
-        "step": 0.1
-      },
-      "Mean Fractal Dimension": {
-        "field_name": "mean_fractal_dimension",
-        "type": "number",
-        "min_value": 0,
-        "max_value": 100,
-        "default_value": 10,
-        "step": 0.1
-      }
+  "Breast Cancer Classifier Form": {
+    "Mean Radius": {
+      "field_name": "mean_radius",
+      "type": "number",
+      "min_value": 0.0,
+      "max_value": 100.0,
+      "default_value": 10.0,
+      "step": 0.1
+    },
+    "Mean Texture": {
+      "field_name": "mean_texture",
+      "type": "number",
+      "min_value": 0.0,
+      "max_value": 100.0,
+      "default_value": 10.0,
+      "step": 0.1
+    },
+    "Mean Perimeter": {
+      "field_name": "mean_perimeter",
+      "type": "number",
+      "min_value": 0.0,
+      "max_value": 100.0,
+      "default_value": 10.0,
+      "step": 0.1
+    },
+    "Mean Area": {
+      "field_name": "mean_area",
+      "type": "number",
+      "min_value": 0.0,
+      "max_value": 100.0,
+      "default_value": 10.0,
+      "step": 0.1
+    },
+    "Mean Smoothness": {
+      "field_name": "mean_smoothness",
+      "type": "number",
+      "min_value": 0.0,
+      "max_value": 100.0,
+      "default_value": 10.0,
+      "step": 0.1
+    },
+    "Mean Compactness": {
+      "field_name": "mean_compactness",
+      "type": "number",
+      "min_value": 0.0,
+      "max_value": 100.0,
+      "default_value": 10.0,
+      "step": 0.1
+    },
+    "Mean Concavity": {
+      "field_name": "mean_concavity",
+      "type": "number",
+      "min_value": 0.0,
+      "max_value": 100.0,
+      "default_value": 10.0,
+      "step": 0.1
+    },
+    "Mean Concave Points": {
+      "field_name": "mean_concave_points",
+      "type": "number",
+      "min_value": 0.0,
+      "max_value": 100.0,
+      "default_value": 10.0,
+      "step": 0.1
+    },
+    "Mean Symmetry": {
+      "field_name": "mean_symmetry",
+      "type": "number",
+      "min_value": 0.0,
+      "max_value": 100.0,
+      "default_value": 10.0,
+      "step": 0.1
+    },
+    "Mean Fractal Dimension": {
+      "field_name": "mean_fractal_dimension",
+      "type": "number",
+      "min_value": 0.0,
+      "max_value": 100.0,
+      "default_value": 10.0,
+      "step": 0.1
     }
+  }
 }
