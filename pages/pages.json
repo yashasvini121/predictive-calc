@@ -21,6 +21,28 @@
       }
     ]
   },
+  "Credit Card Fraud Estimator": {
+    "title": "Credit Card Fraud Estimator",
+    "page_title": "Credit Card Fraud Estimator",
+    "page_icon": "\ud83d\udcb0",
+    "model_predict_file_path": "models/credit_card_fraud/predict.py",
+    "model_function": "get_prediction",
+    "form_config_path": "form_configs/credit_card_fraud.json",
+    "model_detail_function": "model_details",
+    "tabs": [
+      {
+        "name": "Estimator",
+        "type": "form",
+        "form_name": "Credit Card Fraud Estimator"
+      },
+      {
+        "name": "Model Details",
+        "type": "model_details",
+        "problem_statement": "The model predicts whether a credit card transaction is fraudulent based on input features such as transaction amount, card type, and customer profile.",
+        "description": "This model uses a Random Forest Classifier to classify credit card transactions as fraudulent or non-fraudulent. It learns from historical transaction data with both normal and fraudulent transactions to make accurate predictions."
+      }
+    ]
+  },
   "Loan Eligibility Estimator": {
     "title": "Loan Eligibility Estimator",
     "page_title": "Loan Eligibility Estimator",
