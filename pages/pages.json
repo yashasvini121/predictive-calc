@@ -38,8 +38,8 @@
       {
         "name": "Model Details",
         "type": "model_details",
-        "problem_statement": "The model predicts whether a credit card transaction is fraudulent based on input features such as transaction amount, card type, and customer profile.",
-        "description": "This model uses a Random Forest Classifier to classify credit card transactions as fraudulent or non-fraudulent. It learns from historical transaction data with both normal and fraudulent transactions to make accurate predictions."
+        "problem_statement": "The model predicts whether a credit card transaction is fraudulent based on input features such as transaction amount, transaction type, and customer profile.",
+        "description": "This model uses a Support Vector Machine (SVM) to classify credit card transactions as fraudulent or non-fraudulent. It leverages the SVM's ability to create an optimal decision boundary, learning from historical transaction data with both normal and fraudulent transactions to make accurate predictions. The model is particularly useful in identifying complex patterns and borderline cases in high-dimensional data."
       }
     ]
   },

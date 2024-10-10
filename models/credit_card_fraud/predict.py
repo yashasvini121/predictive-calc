@@ -1,11 +1,13 @@
 import pandas as pd
-from sklearn.preprocessing import StandardScaler
 import pickle
+from models.credit_card_fraud.model import  get_evaluator
+
 
 def load_model(model_path):
     """ Load the trained Random Forest model from the specified path. """
     with open(model_path, 'rb') as file:
         return pickle.load(file)
+
 
 def prepare_input_data(
         avg_amount_per_day,
@@ -33,6 +35,7 @@ def prepare_input_data(
 
     return pd.DataFrame(input_data)
 
+
 def get_prediction(
         avg_amount_per_day,
         transaction_amount,
@@ -44,6 +47,12 @@ def get_prediction(
         six_month_avg_chbk_amt,
         six_month_chbk_freq,
 ):
+
+    # Convert "no" to 0 and "yes" to 1 for the relevant fields
+    Is_declined = 0 if Is_declined.lower() == "no" else 1
+    Is_Foreign_transaction = 0 if Is_Foreign_transaction.lower() == "no" else 1
+    Is_High_Risk_country = 0 if Is_High_Risk_country.lower() == "no" else 1
+
     # Prepare the input data
     input_df = prepare_input_data(
         avg_amount_per_day,
@@ -56,18 +65,19 @@ def get_prediction(
         six_month_avg_chbk_amt,
         six_month_chbk_freq,
     )
-
-    # Convert input data to numeric (if necessary)
-    input_df = input_df.apply(pd.to_numeric, errors='coerce')
-
-    # Fill NaN values (optional: handle as needed)
-    input_df.fillna(0, inplace=True)
-
+    # print(input_df.values)
     # Load the model
-    rf_model = load_model("models/credit_card_fraud/transaction_rf_model.pkl")
+    svm_model = load_model(
+        "models/credit_card_fraud/saved models/creditCardFraud_svc_model.pkl")
+    
+    # print(evaluate_model(rf_model))
 
     # Predict using Random Forest
-    predicted_value = rf_model.predict(input_df)
+    predicted_value = svm_model.predict(input_df)
 
     # Return "Fraud" if fraud (1), else "Not a Fraud"
     return "Fraud" if predicted_value[0] == 1 else "Not a Fraud"
+
+def model_details():
+	"""Returns model evaluation details."""
+	return get_evaluator()
