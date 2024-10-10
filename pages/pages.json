@@ -109,6 +109,26 @@
         "form_name": "Gold Price Form"
       }
     ]
+  },
+  "Retail Sales Forecasting": {
+    "title": "Retail Sales Forecasting",
+    "page_title": "Retail Sales Forecasting",
+    "page_icon": "\ud83d\uded2",
+    "model_predict_file_path": "models/retail_sales_forecasting/predict.py",
+    "model_function": "get_prediction",
+    "model_detail_function": "model_details",
+    "form_config_path": "form_configs/retail_sales_forecasting.json",
+    "tabs": [
+      {
+        "name": "Sales Forecasting",
+        "type": "form",
+        "form_name": "Retail Sales Forecasting"
+      },
+      {
+        "name": "Model Details",
+        "type": "model_details"
+      }
+    ]
   }
 
 }
