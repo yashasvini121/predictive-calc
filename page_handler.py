@@ -66,9 +66,6 @@ class PageHandler:
 	def render_model_details(self, model_module,tab):
 		# Dynamically load and call the model details function
 		model_details_function = getattr(model_module, "model_details", None)
-
-		# Render the model details
-		st.header("Model Details")
 			
 		#mentioning the title of the problem statement
 		st.subheader("Problem Statement")
@@ -80,8 +77,6 @@ class PageHandler:
 
 		if model_details_function:
 			metrics, prediction_plot, error_plot, performance_plot = model_details_function().evaluate()
-
-			
 
 			st.subheader(f"Model Accuracy: {metrics['Test_R2']:.2%}")
 
