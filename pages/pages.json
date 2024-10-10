@@ -85,6 +85,19 @@
         "description": "Using a Random Forest classifier, the model predicts whether an individual is likely to have Parkinson's based on voice recordings and motor function metrics"
       }
     ]
+    },
+    "EmotionIQ Detector": {
+    "title": "EmotionIQ",
+    "page_title": "EmotionIQ",
+    "model_predict_file_path": "models/emotion_detector/driver.py",
+    "model_function": "get_prediction",
+    "tabs": [
+      {
+        "name": "EmotionIQ",
+        "type": "detector",
+        "form_name": "EmotionIQ Detector"
+      }
+    ]
   },
   "Customer Income Estimator": {
     "title": "Customer Income Estimator",
