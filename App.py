@@ -74,3 +74,37 @@ with st.expander("Parkinson's Disease Detector - More Information"):
 	- **spread1**, **spread2**, **PPE**:  Nonlinear measures of fundamental frequency variation.
 	"""
 	)
+
+st.write(
+	"- **Gold Price Predictor**: Predict future gold prices leverages financial metrics and machine learning algorithm."
+)
+
+# Gold Price Predictor Section
+with st.expander("Gold Price Predictor - More Information"):
+	st.subheader("Introduction")
+	st.write(
+		"""
+	The Gold Price Predictor leverages financial metrics and machine learning algorithms to forecast the price of gold (GLD). Gold prices are influenced by various economic factors, and this tool aims to provide accurate predictions based on historical data.
+		"""
+	)
+
+	# Dataset section
+	st.subheader("Gold Price Dataset")
+	st.write(
+		"""
+	The dataset used for this model contains daily financial data, including stock market indices, commodity prices, and currency exchange rates. The goal is to predict the gold price (GLD) using features such as the S&P 500 Index (SPX), crude oil price (USO), silver price (SLV), and the EUR/USD exchange rate.
+		"""
+	)
+
+	# Input features section
+	st.subheader("Additional Variable Information")
+	st.write(
+		"""
+	- **SPX**:  The S&P 500 index value, which tracks the performance of 500 large companies listed on stock exchanges in the United States.
+	- **USO**:  The price of United States Oil Fund (USO), which reflects crude oil prices.
+	- **SLV**:  The price of iShares Silver Trust (SLV), which reflects silver prices.
+	- **EUR/USD**:  The Euro-to-U.S. Dollar exchange rate, which indicates the strength of the euro relative to the U.S. dollar.
+	- **GLD**:  The price of SPDR Gold Shares (GLD), which is the target variable representing gold prices.
+		"""
+	)
+
