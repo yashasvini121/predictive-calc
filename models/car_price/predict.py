@@ -4,7 +4,7 @@ from modelEvaluation import evaluate_model, plot_predictions, plot_feature_impor
 
 def main():
     # Path to the CSV file
-    file_path = 'car_data.csv'  # Ensure this CSV file is in the same directory
+    file_path = 'data//car_data.csv'  # Ensure this CSV file is in the same directory
 
     # Load and preprocess data
     X_train, X_test, y_train, y_test = load_and_preprocess_data(file_path)
