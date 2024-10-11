@@ -1,0 +1,180 @@
+{
+  "Parkinson Detection Form": {
+      "MDVP_Fo_Hz": {
+          "field_name": "MDVP_Fo_Hz",
+          "type": "float",
+          "min_value": 88.00000,
+          "max_value": 260.00000,
+          "default_value": 88.00000,
+          "step": 0.000001
+      },
+      "MDVP_Fhi_Hz": {
+          "field_name": "MDVP_Fhi_Hz",
+          "type": "float",
+          "min_value": 102.00000,
+          "max_value": 592.00000,
+          "default_value": 102.00000,
+          "step": 0.000001
+      },
+      "MDVP_Flo_Hz": {
+          "field_name": "MDVP_Flo_Hz",
+          "type": "float",
+          "min_value": 65.00000,
+          "max_value": 240.00000,
+          "default_value": 65.00000,
+          "step": 0.000001
+      },
+      "MDVP_Jitter_percent": {
+          "field_name": "MDVP_Jitter_percent",
+          "type": "float",
+          "min_value": 0.00100,
+          "max_value": 0.03300,
+          "default_value": 0.00100,
+          "step": 0.000001
+      },
+      "MDVP_Jitter_Abs": {
+          "field_name": "MDVP_Jitter_Abs",
+          "type": "float",
+          "min_value": 0.000020,
+          "max_value": 0.000200,
+          "default_value": 0.000020,
+          "step": 0.000001
+      },
+      "MDVP_RAP": {
+          "field_name": "MDVP_RAP",
+          "type": "float",
+          "min_value": 0.000600,
+          "max_value": 0.020000,
+          "default_value": 0.000600,
+          "step": 0.000001
+      },
+      "MDVP_PPQ": {
+          "field_name": "MDVP_PPQ",
+          "type": "float",
+          "min_value": 0.000900,
+          "max_value": 0.020000,
+          "default_value": 0.000900,
+          "step": 0.000001
+      },
+      "Jitter_DDP": {
+          "field_name": "Jitter_DDP",
+          "type": "float",
+          "min_value": 0.00200,
+          "max_value": 0.06500,
+          "default_value": 0.00200,
+          "step": 0.000001
+      },
+      "MDVP_Shimmer": {
+          "field_name": "MDVP_Shimmer",
+          "type": "float",
+          "min_value": 0.00900,
+          "max_value": 0.12000,
+          "default_value": 0.00900,
+          "step": 0.000001
+      },
+      "MDVP_Shimmer_dB": {
+          "field_name": "MDVP_Shimmer_dB",
+          "type": "float",
+          "min_value": 0.08500,
+          "max_value": 1.30200,
+          "default_value": 0.08500,
+          "step": 0.000001
+      },
+      "Shimmer_APQ3": {
+          "field_name": "Shimmer_APQ3",
+          "type": "float",
+          "min_value": 0.00400,
+          "max_value": 0.05600,
+          "default_value": 0.00400,
+          "step": 0.000001
+      },
+      "Shimmer_APQ5": {
+          "field_name": "Shimmer_APQ5",
+          "type": "float",
+          "min_value": 0.00500,
+          "max_value": 0.08000,
+          "default_value": 0.00500,
+          "step": 0.000001
+      },
+      "MDVP_APQ": {
+          "field_name": "MDVP_APQ",
+          "type": "float",
+          "min_value": 0.00700,
+          "max_value": 0.14000,
+          "default_value": 0.00700,
+          "step": 0.000001
+      },
+      "Shimmer_DDA": {
+          "field_name": "Shimmer_DDA",
+          "type": "float",
+          "min_value": 0.01300,
+          "max_value": 0.17000,
+          "default_value": 0.01300,
+          "step": 0.000001
+      },
+      "NHR": {
+          "field_name": "NHR",
+          "type": "float",
+          "min_value": 0.000600,
+          "max_value": 0.310000,
+          "default_value": 0.000600,
+          "step": 0.000001
+      },
+      "HNR": {
+          "field_name": "HNR",
+          "type": "float",
+          "min_value": 8.00000,
+          "max_value": 33.00000,
+          "default_value": 8.00000,
+          "step": 0.000001
+      },
+      "RPDE": {
+          "field_name": "RPDE",
+          "type": "float",
+          "min_value": 0.25000,
+          "max_value": 0.68000,
+          "default_value": 0.25000,
+          "step": 0.000001
+      },
+      "DFA": {
+          "field_name": "DFA",
+          "type": "float",
+          "min_value": 0.57000,
+          "max_value": 0.82000,
+          "default_value": 0.57000,
+          "step": 0.000001
+      },
+      "Spread1": {
+          "field_name": "spread1",
+          "type": "float",
+          "min_value": -7.00000,
+          "max_value": -2.00000,
+          "default_value": -7.00000,
+          "step": 0.01
+      },
+      "Spread2": {
+          "field_name": "spread2",
+          "type": "float",
+          "min_value": 0.00600,
+          "max_value": 0.45000,
+          "default_value": 0.00600,
+          "step": 0.000001
+      },
+      "D2": {
+          "field_name": "D2",
+          "type": "float",
+          "min_value": 1.42000,
+          "max_value": 3.67000,
+          "default_value": 1.42000,
+          "step": 0.000001
+      },
+      "PPE": {
+          "field_name": "PPE",
+          "type": "float",
+          "min_value": 0.04000,
+          "max_value": 0.50000,
+          "default_value": 0.04000,
+          "step": 0.000001
+      }
+  }
+}

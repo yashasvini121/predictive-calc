@@ -55,9 +55,19 @@ class FormHandler:
 		Returns:
 			Dict[str, Dict[str, Any]]: A dictionary of form fields and their attributes.
 		"""
-		with open(self.config_path, "r") as f:
-			config = json.load(f)
-		return config.get(self.name, {})
+		
+		# Try-except block to handle the exception if file not found or if parsing has parsing issues in JSON
+		try:
+			with open(self.config_path, "r") as f:
+				config = json.load(f)
+			return config.get(self.name, {})
+		except FileNotFoundError:
+			st.error(f"Configuration file not found: {self.config_path}")
+			return {}
+		except json.JSONDecodeError:
+			st.error(f"Error parsing the configuration file: {self.config_path}")
+			return {}
+
 
 	def render(self) -> None:
 		"""
@@ -76,7 +86,7 @@ class FormHandler:
 				"field_name", label
 			)  # Use field_name from the config
 
-			# Handle different types of input fields
+			#Handle different types of input fields
 			if field_type == "number":
 				form_data[field_name] = st.number_input(
 					label,
@@ -85,6 +95,17 @@ class FormHandler:
 					max_value=attributes.get("max_value"),
 					step=attributes.get("step", 1),
 				)
+				
+			elif field_type == "float":  # New case for float values
+				form_data[field_name] = st.number_input(
+					label,
+					value=attributes.get("default_value"),  
+					min_value=attributes.get("min_value"),
+					max_value=attributes.get("max_value"),
+					step=attributes.get("step"),
+					format="%.6f"  # format to 6 decimal places
+				)
+
 			elif field_type == "dropdown":
 				form_data[field_name] = st.selectbox(
 					label,
