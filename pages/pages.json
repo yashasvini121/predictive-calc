@@ -129,5 +129,27 @@
         "description": "The dataset used for this model contains daily financial data, including stock market indices, commodity prices, and currency exchange rates. The goal is to predict the gold price (GLD) using features such as the S&P 500 Index (SPX), crude oil price (USO), silver price (SLV), and the EUR/USD exchange rate."
       }
     ]
+  },
+  "Crop Rotation Recommendation": {
+    "title": "Crop Rotation Recommendation",
+    "page_title": "Crop Rotation Recommendation",
+    "page_icon": "\ud83d\udcb0",
+    "model_predict_file_path": "models/crop_rotation_recommendation/predict.py",
+    "model_function": "get_prediction",
+    "model_detail_function": "model_details",
+    "form_config_path": "form_configs/crop_rotation_recommendation.json",
+    "tabs": [
+      {
+        "name": "Crop Rotation Recommendation Form",
+        "type": "form",
+        "form_name": "Crop Rotation Recommendation Form"
+      },
+      {
+        "name": "Model Details",
+        "type": "model_details", 
+        "problem_statement": "The Crop Rotation Recommendation system leverages agricultural and environmental data to suggest optimal crops for future cultivation based on previous crops, soil type, and nutrient levels. Crop rotation is crucial for maintaining soil health and maximizing yield, and this tool aims to provide scientifically-backed recommendations.",
+        "description": "The dataset used for this model contains agricultural data, including previous crops, soil types, moisture levels, and key soil nutrients such as nitrogen, phosphorus, and potassium. The goal is to predict the most suitable crop for rotation, using features such as the previous crop, soil type, moisture levels, and nutrient composition to improve sustainability and productivity."
+      }
+    ]
   }
 }

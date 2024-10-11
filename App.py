@@ -108,3 +108,37 @@ with st.expander("Gold Price Predictor - More Information"):
 		"""
 	)
 
+st.write(
+    "- **Crop Rotation Recommendation**: Suggests the most suitable crop for the next planting cycle using agricultural data and machine learning algorithms."
+)
+
+# Crop Rotation Recommendation Section
+with st.expander("Crop Rotation Recommendation - More Information"):
+    st.subheader("Introduction")
+    st.write(
+        """
+        The Crop Rotation Recommendation system uses agricultural data and machine learning to suggest the optimal crop for cultivation based on various environmental and nutrient factors. This tool helps in maintaining soil health, boosting yield, and improving sustainability by recommending the next crop based on the previous crop, soil type, and nutrient levels.
+        """
+    )
+
+    # Dataset section
+    st.subheader("Crop Rotation Dataset")
+    st.write(
+        """
+        The dataset used for this model contains key agricultural information, including previous crops, soil types, moisture levels, and nutrient concentrations (nitrogen, phosphorus, and potassium). The goal is to predict the most suitable crop to plant next, ensuring a balanced and productive crop rotation system.
+        """
+    )
+
+    # Input features section
+    st.subheader("Additional Variable Information")
+    st.write(
+        """
+        - **Previous Crop**: The type of crop that was cultivated previously (e.g., Groundnut, Wheat, Maize, etc.).
+        - **Soil Type**: The soil classification based on texture and composition (e.g., Loamy, Clayey, Sandy, Saline).
+        - **Moisture Level**: The moisture content in the soil, which is crucial for crop growth.
+        - **Nitrogen (N)**: The nitrogen content in the soil, essential for plant growth and productivity.
+        - **Phosphorus (P)**: The phosphorus concentration in the soil, important for root development.
+        - **Potassium (K)**: The potassium level in the soil, necessary for water regulation and disease resistance in crops.
+        - **Recommended Crop**: The predicted crop that is most suitable for the next planting cycle based on the above factors.
+        """
+    )

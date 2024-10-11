@@ -1,0 +1,63 @@
+{
+    "Crop Rotation Recommendation Form": {
+      "Previous Crop": {
+        "type": "dropdown",
+        "options": [
+          "Groundnut",
+          "Millets",
+          "Wheat",
+          "Maize",
+          "Cotton",
+          "Sorghum",
+          "Barley",
+          "Rice"
+        ],
+        "default_value": "Wheat",
+        "field_name": "previous_crop"
+      },
+      "Soil Type": {
+        "type": "dropdown",
+        "options": [
+          "Loamy",
+          "Clayey",
+          "Sandy",
+          "Saline"
+        ],
+        "default_value": "Loamy",
+        "field_name": "soil_type"
+      },
+      "Moisture Level": {
+        "type": "slider",
+        "min_value": 0,
+        "max_value": 100,
+        "default_value": 50,
+        "step": 1,
+        "field_name": "moisture_level"
+      },
+      "Nitrogen (N)": {
+        "type": "slider",
+        "min_value": 0,
+        "max_value": 400,
+        "default_value": 200,
+        "step": 2,
+        "field_name": "nitrogen"
+      },
+      "Phosphorus (P)": {
+        "type": "slider",
+        "min_value": 0,
+        "max_value": 150,
+        "default_value": 75,
+        "step": 1,
+        "field_name": "phosphorus"
+      },
+      "Potassium (K)": {
+        "type": "slider",
+        "min_value": 0,
+        "max_value": 900,
+        "default_value": 450,
+        "step": 5,
+        "field_name": "potassium"
+      }
+    }
+  }
+  
