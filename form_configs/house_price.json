@@ -1,0 +1,86 @@
+{
+  "House Price Form": {
+    "Area (in square feet)": {
+      "type": "number",
+      "min_value": 500,
+      "max_value": 10000,
+      "default_value": 1000,
+      "step": 100,
+      "field_name": "area"
+    },
+    "Near Main Road": {
+      "type": "dropdown",
+      "options": ["Yes", "No"],
+      "default_value": "No",
+      "field_name": "mainroad"
+    },
+    "Guest Room": {
+      "type": "dropdown",
+      "options": ["Yes", "No"],
+      "default_value": "No",
+      "field_name": "guestroom"
+    },
+    "Basement": {
+      "type": "dropdown",
+      "options": ["Yes", "No"],
+      "default_value": "No",
+      "field_name": "basement"
+    },
+    "Hot Water Heating": {
+      "type": "dropdown",
+      "options": ["Yes", "No"],
+      "default_value": "No",
+      "field_name": "hotwaterheating"
+    },
+    "Air Conditioning": {
+      "type": "dropdown",
+      "options": ["Yes", "No"],
+      "default_value": "No",
+      "field_name": "airconditioning"
+    },
+    "Preferred Area": {
+      "type": "dropdown",
+      "options": ["Yes", "No"],
+      "default_value": "No",
+      "field_name": "prefarea"
+    },
+    "Number of Bedrooms": {
+      "type": "number",
+      "min_value": 0,
+      "max_value": 6,
+      "default_value": 3,
+      "step": 1,
+      "field_name": "bedrooms"
+    },
+    "Number of Bathrooms": {
+      "type": "number",
+      "min_value": 0,
+      "max_value": 4,
+      "default_value": 2,
+      "step": 1,
+      "field_name": "bathrooms"
+    },
+    "Number of Stories": {
+      "type": "number",
+      "min_value": 1,
+      "max_value": 4,
+      "default_value": 2,
+      "step": 1,
+      "field_name": "stories"
+    },
+    "Parking Spaces": {
+      "type": "number",
+      "min_value": 0,
+      "max_value": 3,
+      "default_value": 1,
+      "step": 1,
+      "field_name": "parking"
+    },
+    "Furnishing Status": {
+      "type": "dropdown",
+      "field_name": "furnishingstatus",
+      "options": ["semi-furnished", "unfurnished", "furnished"],
+      "default_value": "semi-furnished"
+    }
+  }
+}
