@@ -33,7 +33,7 @@ The project has been successfully tested in local environments, and current effo
 ## Docker Setup Instructions
 
 1. Install [Docker](https://docs.docker.com/get-docker/) on your machine.
-2. If Windows user install [WSL] (https://learn.microsoft.com/en-us/windows/wsl/install/) (Ubuntu-22.04).
+2. Windows user - Install [WSL](https://learn.microsoft.com/en-us/windows/wsl/install/) (Ubuntu-22.04).
 3. Run the application using Docker Compose:
    ```powershell
    docker-compose up
