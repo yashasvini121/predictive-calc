@@ -1,12 +1,12 @@
 {
   "House Price Estimator": {
     "title": "House Price Estimator",
-	"page_title": "House Price Estimator",
-	"page_icon": "\ud83c\udfe0",
-	"model_predict_file_path": "models/house_price/predict.py",
-	"model_function": "get_prediction",
-	"model_detail_function": "model_details",
-	"form_config_path": "form_configs/house_price.json",
+    "page_title": "House Price Estimator",
+    "page_icon": "\ud83c\udfe0",
+    "model_predict_file_path": "models/house_price/predict.py",
+    "model_function": "get_prediction",
+    "model_detail_function": "model_details",
+    "form_config_path": "form_configs/house_price.json",
     "tabs": [
       {
         "name": "Estimator",
@@ -15,49 +15,55 @@
       },
       {
         "name": "Model Details",
-        "type": "model_details"
+        "type": "model_details",
+        "problem_statement": "The model predicts house prices based on input features such as location, size, and number of rooms.",
+        "description": "This model uses a linear regression algorithm to estimate house prices from the provided features, utilizing historical data to draw predictions."
       }
     ]
   },
   "Loan Eligibility Estimator": {
-	"title": "Loan Eligibility Estimator",
-	"page_title": "Loan Eligibility Estimator",
-	"page_icon": "\ud83d\udcb0",
-	"model_predict_file_path": "models/loan_eligibility/predict.py",
-	"model_function": "get_prediction",
-	"form_config_path": "form_configs/loan_eligibility.json",
-	"model_detail_function": "model_details",
-	"tabs": [
-	  {
-		"name": "Estimator",
-		"type": "form",
-		"form_name": "Loan Eligibility Form"
-	  },
-	  {
-		"name": "Model Details",
-		"type": "model_details"
-	  }
-	]
+    "title": "Loan Eligibility Estimator",
+    "page_title": "Loan Eligibility Estimator",
+    "page_icon": "\ud83d\udcb0",
+    "model_predict_file_path": "models/loan_eligibility/predict.py",
+    "model_function": "get_prediction",
+    "form_config_path": "form_configs/loan_eligibility.json",
+    "model_detail_function": "model_details",
+    "tabs": [
+      {
+        "name": "Estimator",
+        "type": "form",
+        "form_name": "Loan Eligibility Form"
+      },
+      {
+        "name": "Model Details",
+        "type": "model_details",
+        "problem_statement": "This model determines whether a user is eligible for a loan based on several financial and personal input factors.",
+        "description": "It leverages a decision tree classification algorithm to predict loan eligibility, making use of past customer data and lending patterns."
+      }
+    ]
   },
   "Stress Level Detector": {
-  "title": "Stress Level Detector",
-  "page_title": "Stress Level Detector",
-  "page_icon": "\u2691",
-  "model_predict_file_path": "models/stress_level_detect/predict.py",
-  "model_function": "get_prediction",
-  "model_detail_function": "model_details",
-  "form_config_path": "form_configs/stress_detection.json",
-  "tabs": [
-    {
-      "name": "Stress Level Estimator",
-      "type": "form",
-      "form_name": "Stress Detection Form"
-    },
-    {
-      "name": "Model Details",
-      "type": "model_details"
-    }
-  ]
+    "title": "Stress Level Detector",
+    "page_title": "Stress Level Detector",
+    "page_icon": "\u2691",
+    "model_predict_file_path": "models/stress_level_detect/predict.py",
+    "model_function": "get_prediction",
+    "model_detail_function": "model_details",
+    "form_config_path": "form_configs/stress_detection.json",
+    "tabs": [
+      {
+        "name": "Stress Level Estimator",
+        "type": "form",
+        "form_name": "Stress Detection Form"
+      },
+      {
+        "name": "Model Details",
+        "type": "model_details",
+        "problem_statement": "The model assesses the stress level of an individual based on biometric and behavioral data.",
+        "description": "This model uses a support vector machine (SVM) to classify stress levels into different categories (low, medium, high) based on physiological indicators."
+      }
+    ]
   },
   "Parkinson Disease Detector": {
     "title": "Parkinson Disease Detector",
@@ -71,17 +77,23 @@
         "name": "Parkinson's Disease Detector",
         "type": "form",
         "form_name": "Parkinson Detection Form"
+      },
+      {
+        "name": "Model Details",
+        "type": "model_details",
+        "problem_statement": "The model aims to detect early signs of Parkinson's disease from voice and movement data.",
+        "description": "Using a Random Forest classifier, the model predicts whether an individual is likely to have Parkinson's based on voice recordings and motor function metrics"
       }
     ]
   },
   "Customer Income Estimator": {
-  "title": "Customer Income Estimator",
-	"page_title": "Customer Income Estimator",
-	"page_icon": "\ud83d\udcb0",
-	"model_predict_file_path": "models/customer_income/predict.py",
-	"model_function": "get_prediction",
-	"model_detail_function": "model_details",
-	"form_config_path": "form_configs/customer_income.json",
+    "title": "Customer Income Estimator",
+    "page_title": "Customer Income Estimator",
+    "page_icon": "\ud83d\udcb0",
+    "model_predict_file_path": "models/customer_income/predict.py",
+    "model_function": "get_prediction",
+    "model_detail_function": "model_details",
+    "form_config_path": "form_configs/customer_income.json",
     "tabs": [
       {
         "name": "Estimator",
@@ -90,14 +102,59 @@
       },
       {
         "name": "Model Details",
-        "type": "model_details"
+        "type": "model_details",
+        "problem_statement": "The model predicts the income of a customer based on various demographic and financial features.",
+        "description": "This model uses Random Forest Regression to estimate the income of a customer based on input features such as age, education, employment status etc."
       }
     ]
   },
-    "Breast Cancer Detector": {
+  "Gold Price Predictor": {
+    "title": "Gold Price Predictor",
+    "page_title": "Gold Price Predictor",
+    "page_icon": "\ud83d\udcb0",
+    "model_predict_file_path": "models/gold_price_prediction/predict.py",
+    "model_function": "get_prediction",
+    "model_detail_function": "model_details",
+    "form_config_path": "form_configs/gold_price_prediction.json",
+    "tabs": [
+      {
+        "name": "Gold Price Form",
+        "type": "form",
+        "form_name": "Gold Price Form"
+      },
+      {
+        "name": "Model Details",
+        "type": "model_details",
+        "problem_statement": "The Gold Price Predictor leverages financial metrics and machine learning algorithms to forecast the price of gold (GLD). Gold prices are influenced by various economic factors, and this tool aims to provide accurate predictions based on historical data.",
+        "description": "The dataset used for this model contains daily financial data, including stock market indices, commodity prices, and currency exchange rates. The goal is to predict the gold price (GLD) using features such as the S&P 500 Index (SPX), crude oil price (USO), silver price (SLV), and the EUR/USD exchange rate."
+      }
+    ]
+  },
+  
+  "Malware_Detection": {
+  "title": "PDF Malware Detection",
+  "page_title": "PDF Malware Detection",
+  "page_icon": "\ud83d\udd12",
+  "model_predict_file_path": "models/pdf_malware_detection/predict.py",
+  "model_function": "get_prediction",
+  "model_detail_function": "model_details",
+  "form_config_path": "form_configs/pdf_malware_detection.json",
+  "tabs": [
+    {
+      "name": "Malware Detection Form",
+      "type": "form",
+      "form_name": "Malware Detection Form"
+    },
+    {
+      "name": "Model Details",
+      "type": "model_details"
+    }
+  ]
+},
+"Breast Cancer Detector": {
       "title": "Breast Cancer Detector",
       "page_title": "Breast Cancer Detector",
-      "page_icon": "\ud83d\udc91", 
+      "page_icon": "\ud83c\udf97", 
       "model_predict_file_path": "models/Breast_Cancer_Detector/predict.py",
       "model_function": "cancer_type_prediction",
       "model_detail_function": "model_details",
@@ -114,6 +171,4 @@
         }
       ]
     }
-
-
 }

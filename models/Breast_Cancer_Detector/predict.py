@@ -46,7 +46,7 @@ def main():
 
     input_data = [
         mean_radius, mean_texture, mean_perimeter, mean_area, mean_smoothness, 
-        mean_compactness, mean_concavity, mean_concave _points, mean_symmetry, 
+        mean_compactness, mean_concavity, mean_concave_points, mean_symmetry, 
         mean_fractal_dimension, radius_error, texture_error, perimeter_error, 
         area_error, smoothness_error, compactness_error, concavity_error, 
         concave_points_error, symmetry_error, fractal_dimension_error, 
