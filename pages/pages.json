@@ -150,6 +150,7 @@
       "type": "model_details"
     }
   ]
+
 },
   "Car Price Predictor": {
     "title": "Car Price Predictor",
@@ -172,5 +173,5 @@
         "description": "Using a regression algorithm, this model analyzes historical sales data to provide accurate price estimations for cars based on their characteristics."
       }
     ]
-  }
+ }
 }
