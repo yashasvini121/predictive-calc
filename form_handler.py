@@ -55,9 +55,19 @@ class FormHandler:
 		Returns:
 			Dict[str, Dict[str, Any]]: A dictionary of form fields and their attributes.
 		"""
-		with open(self.config_path, "r") as f:
-			config = json.load(f)
-		return config.get(self.name, {})
+		
+		# Try-except block to handle the exception if file not found or if parsing has parsing issues in JSON
+		try:
+			with open(self.config_path, "r") as f:
+				config = json.load(f)
+			return config.get(self.name, {})
+		except FileNotFoundError:
+			st.error(f"Configuration file not found: {self.config_path}")
+			return {}
+		except json.JSONDecodeError:
+			st.error(f"Error parsing the configuration file: {self.config_path}")
+			return {}
+
 
 	def render(self) -> None:
 		"""
