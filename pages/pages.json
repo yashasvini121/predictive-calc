@@ -82,7 +82,7 @@
         "name": "Model Details",
         "type": "model_details",
         "problem_statement": "The model aims to detect early signs of Parkinson's disease from voice and movement data.",
-        "description": "Using a Random Forest classifier, the model predicts whether an individual is likely to have Parkinson's based on voice recordings and motor function metrics."
+        "description": "Using a Random Forest classifier, the model predicts whether an individual is likely to have Parkinson's based on voice recordings and motor function metrics"
       }
     ]
   },
@@ -104,7 +104,7 @@
         "name": "Model Details",
         "type": "model_details",
         "problem_statement": "The model predicts the income of a customer based on various demographic and financial features.",
-        "description": "This model uses Random Forest Regression to estimate the income of a customer based on input features such as age, education, employment status, etc."
+        "description": "This model uses Random Forest Regression to estimate the income of a customer based on input features such as age, education, employment status etc."
       }
     ]
   },
@@ -130,26 +130,27 @@
       }
     ]
   },
+  
   "Malware_Detection": {
-    "title": "PDF Malware Detection",
-    "page_title": "PDF Malware Detection",
-    "page_icon": "\ud83d\udd12",
-    "model_predict_file_path": "models/pdf_malware_detection/predict.py",
-    "model_function": "get_prediction",
-    "model_detail_function": "model_details",
-    "form_config_path": "form_configs/pdf_malware_detection.json",
-    "tabs": [
-      {
-        "name": "Malware Detection Form",
-        "type": "form",
-        "form_name": "Malware Detection Form"
-      },
-      {
-        "name": "Model Details",
-        "type": "model_details"
-      }
-    ]
-  },
+  "title": "PDF Malware Detection",
+  "page_title": "PDF Malware Detection",
+  "page_icon": "\ud83d\udd12",
+  "model_predict_file_path": "models/pdf_malware_detection/predict.py",
+  "model_function": "get_prediction",
+  "model_detail_function": "model_details",
+  "form_config_path": "form_configs/pdf_malware_detection.json",
+  "tabs": [
+    {
+      "name": "Malware Detection Form",
+      "type": "form",
+      "form_name": "Malware Detection Form"
+    },
+    {
+      "name": "Model Details",
+      "type": "model_details"
+    }
+  ]
+},
   "Car Price Predictor": {
     "title": "Car Price Predictor",
     "page_title": "Car Price Predictor",
