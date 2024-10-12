@@ -1,47 +1,63 @@
 from model import Loaded_model, cancer_type_prediction
 import streamlit as st
 
-def main():
-    mean_radius = float(input("Enter mean radius: "))
-    mean_texture = float(input("Enter mean texture: "))
-    mean_perimeter = float(input("Enter mean perimeter: "))
-    mean_area = float(input("Enter mean area: "))
-    mean_smoothness = float(input("Enter mean smoothness: "))
-    mean_compactness = float(input("Enter mean compactness: "))
-    mean_concavity = float(input("Enter mean concavity: "))
-    mean_concave_points = float(input("Enter mean concave points: "))
-    mean_symmetry = float(input("Enter mean symmetry: "))
-    mean_fractal_dimension = float(input("Enter mean fractal dimension: "))
-    radius_error = float(input("Enter radius error: "))
-    texture_error = float(input("Enter texture error: "))
-    perimeter_error = float(input("Enter perimeter error: "))
-    area_error = float(input("Enter area error: "))
-    smoothness_error = float(input("Enter smoothness error: "))
-    compactness_error = float(input("Enter compactness error: "))
-    concavity_error = float(input("Enter concavity error: "))
-    concave_points_error = float(input("Enter concave points error: "))
-    symmetry_error = float(input("Enter symmetry error: "))
-    fractal_dimension_error = float(input("Enter fractal dimension error: "))
-    worst_radius = float(input("Enter worst radius: "))
-    worst_texture = float(input("Enter worst texture: "))
-    worst_perimeter = float(input("Enter worst perimeter: "))
-    worst_area = float(input("Enter worst area: "))
-    worst_smoothness = float(input("Enter worst smoothness: "))
-    worst_compactness = float(input("Enter worst compactness: "))
-    worst_concavity = float(input("Enter worst concavity: "))
-    worst_concave_points = float(input("Enter worst concave points: "))
-    worst_symmetry = float(input("Enter worst symmetry: "))
-    worst_fractal_dimension = float(input("Enter worst fractal dimension: "))
+def predict_cancer_type(input_data):
 
-    input_data = [mean_radius, mean_texture, mean_perimeter, mean_area, mean_smoothness, mean_compactness, mean_concavity, mean_concave_points, mean_symmetry, mean_fractal_dimension, radius_error, texture_error, perimeter_error, area_error, smoothness_error, compactness_error, concavity_error, concave_points_error, symmetry_error, fractal_dimension_error, worst_radius, worst_texture, worst_perimeter, worst_area, worst_smoothness, worst_compactness, worst_concavity, worst_concave_points, worst_symmetry, worst_fractal_dimension]
-
+    expected_length = 30 
+    if len(input_data) != expected_length:
+        raise ValueError(f"Expected {expected_length} input features, but got {len(input_data)}.")
+    
     prediction = cancer_type_prediction(input_data)
+    return prediction
 
-    print("Predicted cancer type:", prediction)
+def main():
+    st.title("Breast Cancer Type Prediction")
 
-if __name__ == "__main__":
-    main()
+    mean_radius = st.number_input("Enter mean radius:", format="%.2f")
+    mean_texture = st.number_input("Enter mean texture:", format="%.2f")
+    mean_perimeter = st.number_input("Enter mean perimeter:", format="%.2f")
+    mean_area = st.number_input("Enter mean area:", format="%.2f")
+    mean_smoothness = st.number_input("Enter mean smoothness:", format="%.2f")
+    mean_compactness = st.number_input("Enter mean compactness:", format="%.2f")
+    mean_concavity = st.number_input("Enter mean concavity:", format="%.2f")
+    mean_concave_points = st.number_input("Enter mean concave points:", format="%.2f")
+    mean_symmetry = st.number_input("Enter mean symmetry:", format="%.2f")
+    mean_fractal_dimension = st.number_input("Enter mean fractal dimension:", format="%.2f")
+    radius_error = st.number_input("Enter radius error:", format="%.2f")
+    texture_error = st.number_input("Enter texture error:", format="%.2f")
+    perimeter_error = st.number_input("Enter perimeter error:", format="%.2f")
+    area_error = st.number_input("Enter area error:", format="%.2f")
+    smoothness_error = st.number_input("Enter smoothness error:", format="%.2f")
+    compactness_error = st.number_input("Enter compactness error:", format="%.2f")
+    concavity_error = st.number_input("Enter concavity error:", format="%.2f")
+    concave_points_error = st.number_input("Enter concave points error:", format="%.2f")
+    symmetry_error = st.number_input("Enter symmetry error:", format="%.2f")
+    fractal_dimension_error = st.number_input("Enter fractal dimension error:", format="%.2f")
+    worst_radius = st.number_input("Enter worst radius:", format="%.2f")
+    worst_texture = st.number_input("Enter worst texture:", format="%.2f")
+    worst_perimeter = st.number_input("Enter worst perimeter:", format="%.2f")
+    worst_area = st.number_input("Enter worst area:", format="%.2f")
+    worst_smoothness = st.number_input("Enter worst smoothness:", format="%.2f")
+    worst_compactness = st.number_input("Enter worst compactness:", format="%.2f")
+    worst_concavity = st.number_input("Enter worst concavity:", format="%.2f")
+    worst_concave_points = st.number_input("Enter worst concave points:", format="%.2f")
+    worst_symmetry = st.number_input("Enter worst symmetry:", format="%.2f")
+    worst_fractal_dimension = st.number_input("Enter worst fractal dimension:", format="%.2f")
 
+    input_data = [
+        mean_radius, mean_texture, mean_perimeter, mean_area, mean_smoothness, 
+        mean_compactness, mean_concavity, mean_concave _points, mean_symmetry, 
+        mean_fractal_dimension, radius_error, texture_error, perimeter_error, 
+        area_error, smoothness_error, compactness_error, concavity_error, 
+        concave_points_error, symmetry_error, fractal_dimension_error, 
+        worst_radius, worst_texture, worst_perimeter, worst_area, worst_smoothness, 
+        worst_compactness, worst_concavity, worst_concave_points, worst_symmetry, 
+        worst_fractal_dimension
+    ]
+
+    prediction = predict_cancer_type(input_data)
+
+    st.write("Predicted cancer type:", prediction)
 
 def model_details():
     st.write("## Breast Cancer Detector Model Details")
@@ -81,3 +97,6 @@ def model_details():
     st.write("* Worst fractal dimension")
     st.write("### Model Performance")
     st.write("The model has been trained on a dataset of breast cancer samples and has achieved a high accuracy in predicting the type of cancer.")
+
+if __name__ == "__main__":
+    main()

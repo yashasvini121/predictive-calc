@@ -41,7 +41,7 @@ st.write(
 	"- **Parkinson's Disease Detector**: Assess your risk of Parkinson's Disease with advanced machine learning algorithms."
 )
 st.write(
-	"- **Breast Cancer Tumor Detector**: Predict the likelihood of breast cancer tumor recurrence based on clinical and histological features."
+	"- **Breast Cancer Detector**: Predict the likelihood of breast cancer tumor recurrence based on clinical and histological features."
 )
 # Parkinson's Disease Detector Section
 with st.expander("Parkinson's Disease Detector - More Information"):
@@ -76,8 +76,8 @@ with st.expander("Parkinson's Disease Detector - More Information"):
 	- **spread1**, **spread2**, **PPE**:  Nonlinear measures of fundamental frequency variation.
 	"""
 	)
-# Breast Cancer Tumor Detector Section
-with st.expander("Breast Cancer Tumor Detector - More Information"):
+# Breast Cancer Detector Section
+with st.expander("Breast Cancer Detector - More Information"):
 	st.subheader("Introduction")
 	st.write(
 		"""

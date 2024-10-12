@@ -9,4 +9,4 @@ def cancer_type_prediction(input_data):
 
     prediction = Loaded_model.predict(input_data_reshaped)[0]
     
-    return prediction
+    return prediction   
