@@ -30,5 +30,18 @@ The project has been successfully tested in local environments, and current effo
    ```powershell
    streamlit run app.py
    ```
+## Docker Setup Instructions
+
+1. Install [Docker](https://docs.docker.com/get-docker/) on your machine.
+2. If Windows user install WSL or WSL 2(Ubuntu-22.04).
+3. Run the application using Docker Compose:
+   ```powershell
+   docker-compose up
+   ```
+4. To stop the application:
+   ```powershell
+   docker-compose down
+   ```
+
 ## Our Valuable contributors
 [![Contributors](https://contrib.rocks/image?repo=yashasvini121/predictive-calc)](https://github.com/yashasvini121/predictive-calc/graphs/contributors)
