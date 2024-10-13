@@ -1,27 +1,81 @@
 {
   "Loan Eligibility Form": {
-    "Income": {
-	  "field_name": "income",
-      "type": "number",
-      "min_value": 10000,
-      "max_value": 1000000,
-      "default_value": 50000,
-      "step": 5000
-    },
-    "Loan Amount": {
-	  "field_name": "loan_amount",
-      "type": "number",
-      "min_value": 5000,
-      "max_value": 500000,
-      "default_value": 20000,
-      "step": 1000
-    },
-    "Credit Score": {
-	  "field_name": "credit_score",
-      "type": "range",
-      "min_value": 300,
-      "max_value": 850,
-      "default_value": [600, 700]
+        "Number of Dependencies": {
+          "type": "number",
+          "min_value": 1,
+          "max_value": 10000,
+          "default_value": 1,
+          "step": 1,
+          "field_name": "no_of_dependents"
+        },
+        "Education": {
+          "type": "dropdown",
+          "options": ["Graduate", "No"],
+          "default_value": "No",
+          "field_name": "education"
+        },
+        "Employment Status": {
+          "type": "radio",
+          "options": ["Yes", "No"],
+          "default_value": "No",
+          "field_name": "self_employed"
+        },
+        "Annual Income": {
+          "type": "number",
+          "min_value": 10000,
+          "default_value": 50000,
+          "step": 100,
+          "field_name": "income_annum"
+        },
+        "Loan Amount": {
+          "type": "number",
+          "min_value": 1000,
+          "default_value": 2000,
+          "step": 1000,
+          "field_name": "loan_amount"
+        },
+        "Loan Term": {
+          "type": "number",
+          "min_value": 1,
+          "default_value": 2,
+          "step": 1,
+          "field_name": "loan_term"
+        },
+        "CIBIL Score": {
+          "type": "slider",
+          "min_value": 300,
+          "max_value": 850,
+          "default_value": 700,
+          "field_name": "cibil_score"
+        },
+        "Residential Assets Value": {
+          "type": "number",
+          "min_value": 0,
+          "default_value": 100000,
+          "step": 10000,
+          "field_name": "residential_assets_value"
+        },
+        "Commercial Assets Value": {
+          "type": "number",
+          "min_value": 0,
+          "default_value": 500000,
+          "step": 10000,
+          "field_name": "commercial_assets_value"
+        },
+        "Luxury Assets Value": {
+          "type": "number",
+          "min_value": 0,
+          "default_value": 500000,
+          "step": 10000,
+          "field_name": "luxury_assets_value"
+        },
+        "Bank Asset Value": {
+          "type": "number",
+          "min_value": 0,
+          "default_value": 500000,
+          "step": 10000,
+          "field_name": "bank_asset_value"
+        }
+      }
     }
-  }
-}
+    
