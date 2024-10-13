@@ -1,11 +1,9 @@
 import streamlit as st
 
-st.set_page_config(
-	page_title="Predictive Calc - Machine Learning Models", page_icon="🤖")
+st.set_page_config(page_title="Predictive Calc - Machine Learning Models", page_icon="🤖")
 
 st.title("Welcome to Predictive Calc!")
-st.image('machine-learning.gif',
-         caption='Your Hub for Predictive Insights', use_column_width=True)
+st.image('machine-learning.gif', caption='Your Hub for Predictive Insights', use_column_width=True)
 
 st.markdown("""
 ## Explore Cutting-edge Machine Learning Models
@@ -35,8 +33,7 @@ st.write(
 st.write(
 	"- **House Price Prediction**: Estimate the price of a house based on various features."
 )
-st.write(
-	"- **Loan Eligibility**: Check your eligibility for different types of loans.")
+st.write("- **Loan Eligibility**: Check your eligibility for different types of loans.")
 st.write(
 	"- **Stress Level Detector**: Analyze your mental stress levels based on social media interactions."
 )
@@ -54,8 +51,7 @@ with st.expander("Parkinson's Disease Detector - More Information"):
 	)
 
 	# Dataset section
-	st.subheader(
-		"Oxford Parkinson's Disease Detection Dataset (UCI ML Repository)")
+	st.subheader("Oxford Parkinson's Disease Detection Dataset (UCI ML Repository)")
 	st.write(
 		"""
 	The dataset contains biomedical voice measurements from 31 people, 23 of whom have Parkinson's disease (PD). The main goal is to differentiate between healthy individuals and those with PD using the "status" column, where 0 indicates healthy and 1 indicates PD.
