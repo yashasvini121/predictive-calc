@@ -40,7 +40,44 @@ st.write(
 st.write(
 	"- **Parkinson's Disease Detector**: Assess your risk of Parkinson's Disease with advanced machine learning algorithms."
 )
+st.write(
 
+	"- **Car Price Predictor**: Predict the market price of a car based on features such as make, model, year, mileage, and condition."
+
+)
+
+
+
+# Car Price Predictor Section
+
+with st.expander("Car Price Predictor - More Information"):
+	st.subheader("Introduction")
+	st.write(
+		"""
+		The Car Price Predictor estimates the market value of a vehicle based on various input features, including make, model, year, mileage, and condition. This tool leverages machine learning algorithms to provide accurate pricing estimates tailored to the current automotive market.
+		"""
+	)
+	# Dataset section
+	st.subheader("Car Price Dataset")
+	st.write(
+		"""
+		The dataset used for this model contains historical sales data for vehicles, including various features that influence car prices. The goal is to predict the selling price based on characteristics that are commonly evaluated in the market.
+		"""
+	)
+	# Input features section
+	st.subheader("Additional Variable Information")
+	st.write(
+		"""
+		- **Make**: The brand of the car (e.g., Toyota, Ford).
+		- **Model**: The specific model of the car (e.g., Camry, Mustang).
+		- **Year**: The manufacturing year of the vehicle.
+		- **Mileage**: The total distance driven by the car, usually measured in miles.
+		- **Condition**: The state of the vehicle (e.g., new, used, certified pre-owned).
+		- **Engine Size**: The size of the car's engine, often measured in liters.
+		- **Fuel Type**: The type of fuel the car uses (e.g., gasoline, diesel, electric).
+		- **Transmission**: The type of transmission (e.g., automatic, manual).
+		"""
+	)
 # Parkinson's Disease Detector Section
 with st.expander("Parkinson's Disease Detector - More Information"):
 	st.subheader("Introduction")

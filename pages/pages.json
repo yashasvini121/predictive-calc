@@ -150,5 +150,28 @@
       "type": "model_details"
     }
   ]
-}
+
+},
+  "Car Price Predictor": {
+    "title": "Car Price Predictor",
+    "page_title": "Car Price Predictor",
+    "page_icon": "\ud83d\ude97",
+    "model_predict_file_path": "models/car_price/predict.py",
+    "model_function": "get_prediction",
+    "model_detail_function": "model_details",
+    "form_config_path": "form_configs/car_price.json",
+    "tabs": [
+      {
+        "name": "Car Price Estimator",
+        "type": "form",
+        "form_name": "Car Price Form"
+      },
+      {
+        "name": "Model Details",
+        "type": "model_details",
+        "problem_statement": "This model predicts car prices based on various features such as brand, model, year, mileage, and condition.",
+        "description": "Using a regression algorithm, this model analyzes historical sales data to provide accurate price estimations for cars based on their characteristics."
+      }
+    ]
+ }
 }

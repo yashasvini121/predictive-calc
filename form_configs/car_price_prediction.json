@@ -1,0 +1,66 @@
+{
+  "Car Price Detection Form": {
+    "Car Age (in years)": {
+      "field_name": "car_age",
+      "type": "number",
+      "min_value": 0,
+      "max_value": 20,
+      "default_value": 5,
+      "step": 1
+    },
+    "Mileage (in kilometers)": {
+      "field_name": "mileage",
+      "type": "number",
+      "min_value": 0,
+      "max_value": 300000,
+      "default_value": 50000,
+      "step": 1000
+    },
+    "Engine Size (in liters)": {
+      "field_name": "engine_size",
+      "type": "float",
+      "min_value": 0.5,
+      "max_value": 5.0,
+      "default_value": 1.5,
+      "step": 0.1
+    },
+    "Fuel Type": {
+      "field_name": "fuel_type",
+      "type": "dropdown",
+      "options": ["Petrol", "Diesel", "Electric", "Hybrid"],
+      "default_value": "Petrol"
+    },
+    "Transmission Type": {
+      "field_name": "transmission",
+      "type": "dropdown",
+      "options": ["Automatic", "Manual"],
+      "default_value": "Automatic"
+    },
+    "Number of Previous Owners": {
+      "field_name": "previous_owners",
+      "type": "number",
+      "min_value": 0,
+      "max_value": 5,
+      "default_value": 1,
+      "step": 1
+    },
+    "Car Brand": {
+      "field_name": "car_brand",
+      "type": "dropdown",
+      "options": ["Toyota", "Honda", "Ford", "BMW", "Mercedes"],
+      "default_value": "Toyota"
+    },
+    "Condition of the Car": {
+      "field_name": "condition",
+      "type": "dropdown",
+      "options": ["New", "Like New", "Used", "Certified Pre-Owned"],
+      "default_value": "Used"
+    },
+    "Color": {
+      "field_name": "color",
+      "type": "dropdown",
+      "options": ["Red", "Blue", "Black", "White", "Silver", "Gray"],
+      "default_value": "Black"
+    }
+  }
+}
