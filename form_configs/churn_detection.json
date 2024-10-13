@@ -1,0 +1,76 @@
+{
+    "Churn Detection Form": {
+      "Credit Score": {
+        "type": "number",
+        "min_value": 0,
+        "max_value": 1000,
+        "default_value": 0,
+        "step": 10,
+        "field_name": "cs"
+      },
+      "Geography": {
+        "type": "dropdown",
+        "options": ["France", "Germany","Spain"],
+        "default_value": "France",
+        "field_name": "geo"
+      },
+      "Gender": {
+        "type": "dropdown",
+        "options": ["Female", "Male"],
+        "default_value": "Female",
+        "field_name": "gen"
+      },
+      "Age": {
+        "type": "number",
+        "min_value": 0,
+        "max_value": 100,
+        "default_value": 0,
+        "step": 1,
+        "field_name": "age"
+      },
+      "Tenure": {
+        "type": "number",
+        "min_value": 0,
+        "max_value": 30,
+        "default_value": 0,
+        "step": 1,
+        "field_name": "tenure"
+      },
+      "Balance": {
+        "type": "float",
+        "min_value": 0.0,
+        "max_value": 1000000.0,
+        "default_value": 0.0,
+        "step": 100.5,
+        "field_name": "bal"
+      },
+      "Number Of Products": {
+        "type": "number",
+        "min_value": 0,
+        "max_value": 10,
+        "default_value": 0,
+        "step": 1,
+        "field_name": "nop"
+      },
+      "Has Credit Card": {
+        "type": "dropdown",
+        "field_name": "hcc",
+        "options": [0,1],
+        "default_value": 0
+      },
+      "Is Active Member": {
+        "type": "dropdown",
+        "field_name": "iam",
+        "options": [0,1],
+        "default_value": 0
+      },
+      "Estimated Salary": {
+        "type": "float",
+        "min_value": 0.0,
+        "max_value": 1000000.0,
+        "default_value": 0.0,
+        "step": 100.5,
+        "field_name": "es"
+      }
+    }
+}

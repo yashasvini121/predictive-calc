@@ -130,6 +130,23 @@
       }
     ]
   },
+
+  "Customer Churn Prediction": {
+    "title": "Customer Churn Prediction",
+    "page_title": "Customer Churn Prediction",
+    "model_predict_file_path": "models/Customer_Churn_Prediction/Predict.py",
+    "model_function": "get_prediction",
+    "model_detail_function": "model_details",
+    "form_config_path": "form_configs/churn_detection.json",
+    "tabs": [
+      {
+        "name": "Customer Churn Prediction",
+        "type": "form",
+        "form_name": "Churn Detection Form"
+      }
+    ]
+  }
+
   
   "Malware_Detection": {
   "title": "PDF Malware Detection",
@@ -151,4 +168,6 @@
     }
   ]
 }
-}
+
+
+
