@@ -107,7 +107,7 @@ with st.expander("Gold Price Predictor - More Information"):
 	- **GLD**:  The price of SPDR Gold Shares (GLD), which is the target variable representing gold prices.
 		"""
 	)
-
+  
 # Breast Cancer Detector Section
 with st.expander("Breast Cancer Detector - More Information"):
 	st.subheader("Introduction")
