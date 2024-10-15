@@ -167,7 +167,9 @@
         },
         {
           "name": "Model Details",
-          "type": "model_details"
+          "type": "model_details",
+          "problem_statement": "The model predicts whether a tumor is benign or malignant based on various features.",
+		  "description": "This model uses a Ridge Classifier to classify breast tumors as benign or malignant based on input features such as radius, texture, and concavity."
         }
       ]
     }
