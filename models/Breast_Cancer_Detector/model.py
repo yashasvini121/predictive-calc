@@ -8,9 +8,4 @@ def cancer_type_prediction(input_data):
     input_data_reshaped = input_data_as_numpy_array.reshape(1,-1)
 
     prediction = Loaded_model.predict(input_data_reshaped)[0]
-    
-<<<<<<< HEAD
     return prediction   
-=======
-    return prediction
->>>>>>> cd5580ffa0c1af92bba8bd3f59c40b47fc44466e
