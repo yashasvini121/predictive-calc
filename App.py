@@ -38,6 +38,9 @@ st.write(
 	"- **Stress Level Detector**: Analyze your mental stress levels based on social media interactions."
 )
 st.write(
+	"- **Credit Card Fraud Estimator**: Check Whether your transaction is faulty or not." 
+)
+st.write(
 	"- **Parkinson's Disease Detector**: Assess your risk of Parkinson's Disease with advanced machine learning algorithms."
 )
 
