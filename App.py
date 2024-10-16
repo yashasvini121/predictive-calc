@@ -107,3 +107,29 @@ with st.expander("Gold Price Predictor - More Information"):
 	- **GLD**:  The price of SPDR Gold Shares (GLD), which is the target variable representing gold prices.
 		"""
 	)
+  
+# Breast Cancer Detector Section
+with st.expander("Breast Cancer Detector - More Information"):
+	st.subheader("Introduction")
+	st.write(
+		"""
+	Breast cancer is one of the leading causes of cancer-related deaths in women. Early detection and diagnosis are crucial for effective treatment and survival.
+	"""
+	)
+
+	# Dataset section
+	st.subheader("Wisconsin Breast Cancer Dataset (UCI ML Repository)")
+	st.write(
+		"""
+	The dataset contains clinical and histological features from 569 breast cancer tumors, including 357 benign and 212 malignant cases.
+	"""
+	)
+
+	# Input features section
+	st.subheader("Additional Variable Information")
+	st.write(
+		"""
+	- **Clump Thickness**: Uniformity of cell size and cell shape.
+	- **Uniformity of Cell Size**: Uniformity of cell
+	"""
+	)

@@ -1,0 +1,124 @@
+{
+  "Breast Cancer Detector Form": {
+    "Mean Radius": {
+      "field_name": "mean_radius",
+      "type": "number"
+    },
+    "Mean Texture": {
+      "field_name": "mean_texture",
+      "type": "number"
+    },
+    "Mean Perimeter": {
+      "field_name": "mean_perimeter",
+      "type": "number"
+    },
+    "Mean Area": {
+      "field_name": "mean_area",
+      "type": "number"
+    },
+    "Mean Smoothness": {
+      "field_name": "mean_smoothness",
+      "type": "number"
+    },
+    "Mean Compactness": {
+      "field_name": "mean_compactness",
+      "type": "number"
+    },
+    "Mean Concavity": {
+      "field_name": "mean_concavity",
+      "type": "number"
+    },
+    "Mean Concave Points": {
+      "field_name": "mean_concave_points",
+      "type": "number"
+    },
+    "Mean Symmetry": {
+      "field_name": "mean_symmetry",
+      "type": "number"
+    },
+    "Mean Fractal Dimension": {
+      "field_name": "mean_fractal_dimension",
+      "type": "number"
+    },
+    "Radius Error": {
+      "field_name": "radius_error",
+      "type": "number"
+    },
+    "Texture Error": {
+      "field_name": "texture_error",
+      "type": "number"
+    },
+    "Perimeter Error": {
+      "field_name": "perimeter_error",
+      "type": "number"
+    },
+    "Area Error": {
+      "field_name": "area_error",
+      "type": "number"
+    },
+    "Smoothness Error": {
+      "field_name": "smoothness_error",
+      "type": "number"
+    },
+    "Compactness Error": {
+      "field_name": "compactness_error",
+      "type": "number"
+    },
+    "Concavity Error": {
+      "field_name": "concavity_error",
+      "type": "number"
+    },
+    "Concave Points Error": {
+      "field_name": "concave_points_error",
+      "type": "number"
+    },
+    "Symmetry Error": {
+      "field_name": "symmetry_error",
+      "type": "number"
+    },
+    "Fractal Dimension Error": {
+      "field_name": "fractal_dimension_error",
+      "type": "number"
+    },
+    "Worst Radius": {
+      "field_name": "worst_radius",
+      "type": "number"
+    },
+    "Worst Texture": {
+      "field_name": "worst_texture",
+      "type": "number"
+    },
+    "Worst Perimeter": {
+      "field_name": "worst_perimeter",
+      "type": "number"
+    },
+    "Worst Area": {
+      "field_name": "worst_area",
+      "type": "number"
+    },
+    "Worst Smoothness": {
+      "field_name": "worst_smoothness",
+      "type": "number"
+    },
+    "Worst Compactness": {
+      "field_name": "worst_compactness",
+      "type": "number"
+    },
+    "Worst Concavity": {
+      "field_name": "worst_concavity",
+      "type": "number"
+    },
+    "Worst Concave Points": {
+      "field_name": "worst_concave_points",
+      "type": "number"
+    },
+    "Worst Symmetry": {
+      "field_name": "worst_symmetry",
+      "type": "number"
+    },
+    "Worst Fractal Dimension": {
+      "field_name": "worst_fractal_dimension",
+      "type": "number"
+    }
+  }
+}

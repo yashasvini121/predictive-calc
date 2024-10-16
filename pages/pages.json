@@ -150,5 +150,27 @@
       "type": "model_details"
     }
   ]
-}
-}
+},
+"Breast Cancer Detector": {
+      "title": "Breast Cancer Detector",
+      "page_title": "Breast Cancer Detector",
+      "page_icon": "\ud83c\udf97", 
+      "model_predict_file_path": "models/Breast_Cancer_Detector/predict.py",
+      "model_function": "cancer_type_prediction",
+      "model_detail_function": "model_details",
+      "form_config_path": "form_configs/Breast_cancer_detection.json",
+      "tabs": [
+        {
+          "name": "Classifier",
+          "type": "form",
+          "form_name": "Breast Cancer Detector Form"
+        },
+        {
+          "name": "Model Details",
+          "type": "model_details",
+          "problem_statement": "The model predicts whether a tumor is benign or malignant based on various features.",
+		  "description": "This model uses a Ridge Classifier to classify breast tumors as benign or malignant based on input features such as radius, texture, and concavity."
+        }
+      ]
+    }
+  }
