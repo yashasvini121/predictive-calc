@@ -1,4 +1,4 @@
-from models.Breast_Cancer_Detector.model import Loaded_model, cancer_type_prediction
+from model import Loaded_model, cancer_type_prediction
 import streamlit as st
 
 def predict_cancer_type(input_data):
@@ -10,7 +10,7 @@ def predict_cancer_type(input_data):
     prediction = cancer_type_prediction(input_data)
     return prediction
 
-def test_prediction():
+def main():
     st.title("Breast Cancer Type Prediction")
 
     mean_radius = st.number_input("Enter mean radius:", format="%.2f")
@@ -58,3 +58,45 @@ def test_prediction():
     prediction = predict_cancer_type(input_data)
 
     st.write("Predicted cancer type:", prediction)
+
+def model_details():
+    st.write("## Breast Cancer Detector Model Details")
+    st.write("### Model Type")
+    st.write("The Breast Cancer Detector model is a machine learning model that uses a classification algorithm to predict whether a tumor is malignant or benign based on a set of input features.")
+    st.write("### Features")
+    st.write("The model uses the following features to make predictions:")
+    st.write("* Mean radius")
+    st.write("* Mean texture")
+    st.write("* Mean perimeter")
+    st.write("* Mean area")
+    st.write("* Mean smoothness")
+    st.write("* Mean compactness")
+    st.write("* Mean concavity")
+    st.write("* Mean concave points")
+    st.write("* Mean symmetry")
+    st.write("* Mean fractal dimension")
+    st.write("* Radius error")
+    st.write("* Texture error")
+    st.write("* Perimeter error")
+    st.write("* Area error")
+    st.write("* Smoothness error")
+    st.write("* Compactness error")
+    st.write("* Concavity error")
+    st.write("* Concave points error")
+    st.write("* Symmetry error")
+    st.write("* Fractal dimension error")
+    st.write("* Worst radius")
+    st.write("* Worst texture")
+    st.write("* Worst perimeter")
+    st.write("* Worst area")
+    st.write("* Worst smoothness")
+    st.write("* Worst compactness")
+    st.write("* Worst concavity")
+    st.write("* Worst concave points")
+    st.write("* Worst symmetry")
+    st.write("* Worst fractal dimension")
+    st.write("### Model Performance")
+    st.write("The model has been trained on a dataset of breast cancer samples and has achieved a high accuracy in predicting the type of cancer.")
+
+if __name__ == "__main__":
+    main()
