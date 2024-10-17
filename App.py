@@ -107,3 +107,37 @@ with st.expander("Gold Price Predictor - More Information"):
 	- **GLD**:  The price of SPDR Gold Shares (GLD), which is the target variable representing gold prices.
 		"""
 	)
+st.write(
+    "- **Diabetes Readmission Predictor**: Predicts the likelihood of hospital readmission for diabetes patients using clinical and demographic data."
+)
+	# Diabetes Readmission Predictor Section
+with st.expander("Diabetes Readmission Predictor - More Information"):
+    st.subheader("Introduction")
+    st.write(
+        """
+        The Diabetes Readmission Predictor uses clinical and demographic data to forecast the likelihood of hospital readmission for patients diagnosed with diabetes. This tool aims to identify high-risk patients, enabling healthcare providers to implement proactive measures to reduce readmission rates.
+        """
+    )
+
+    # Dataset section
+    st.subheader("Diabetes Readmission Dataset")
+    st.write(
+        """
+        The dataset utilized for this model consists of patient records containing various features such as demographic information, clinical measurements, and hospital stay details. The objective is to predict the likelihood of a patient being readmitted to the hospital within a certain timeframe based on these features.
+        """
+    )
+
+    # Input features section
+    st.subheader("Input Feature Information")
+    st.write(
+        """
+        - **Age**: The age of the patient, which may influence health outcomes.
+        - **Gender**: The gender of the patient (Male/Female), which can be relevant in health analyses.
+        - **BMI**: Body Mass Index, an important measure of body fat that can affect diabetes management.
+        - **Number of Lab Procedures**: The total number of lab tests conducted during the hospital stay, indicating the level of medical attention.
+        - **Number of Medications**: The number of medications prescribed, reflecting the patient's treatment complexity.
+        - **Number of Visits**: The total number of visits to healthcare facilities, which can be indicative of chronic conditions.
+        - **Time in Hospital**: The duration of the hospital stay, which can affect readmission likelihood.
+        """
+    )
+

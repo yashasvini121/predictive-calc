@@ -1,0 +1,45 @@
+{
+    "Diabetes Readmission Prediction Form": {
+      "Number of Lab Procedures": {
+        "field_name": "num_lab_procedures",
+        "type": "number",
+        "min_value": 0,
+        "max_value": 1000,
+        "default_value": 10,
+        "step": 1
+      },
+      "Number of Medications": {
+        "field_name": "num_medications",
+        "type": "number",
+        "min_value": 0,
+        "max_value": 50,
+        "default_value": 5,
+        "step": 1
+      },
+      "Time in Hospital (days)": {
+        "field_name": "time_in_hospital",
+        "type": "number",
+        "min_value": 0,
+        "max_value": 30,
+        "default_value": 5,
+        "step": 1
+      },
+      "Preceding Year Visits": {
+        "field_name": "preceding_year_visits",
+        "type": "number",
+        "min_value": 0,
+        "max_value": 100,
+        "default_value": 2,
+        "step": 1
+      },
+      "Age": {
+        "field_name": "age",
+        "type": "number",
+        "min_value": 0,
+        "max_value": 100,
+        "default_value": 50,
+        "step": 1
+      }
+    }
+  }
+  
