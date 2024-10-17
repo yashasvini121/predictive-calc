@@ -1,0 +1,10 @@
+{
+    "Landmark Detection Form": {
+        "image": {
+            "field_name": "image",
+            "type": "file",
+            "accept": "image/*",
+            "required": true
+        }
+    }
+}
