@@ -130,25 +130,47 @@
       }
     ]
   },
-  
+
   "Malware_Detection": {
-  "title": "PDF Malware Detection",
-  "page_title": "PDF Malware Detection",
-  "page_icon": "\ud83d\udd12",
-  "model_predict_file_path": "models/pdf_malware_detection/predict.py",
-  "model_function": "get_prediction",
-  "model_detail_function": "model_details",
-  "form_config_path": "form_configs/pdf_malware_detection.json",
-  "tabs": [
-    {
-      "name": "Malware Detection Form",
-      "type": "form",
-      "form_name": "Malware Detection Form"
-    },
-    {
-      "name": "Model Details",
-      "type": "model_details"
-    }
-  ]
-}
+    "title": "PDF Malware Detection",
+    "page_title": "PDF Malware Detection",
+    "page_icon": "\ud83d\udd12",
+    "model_predict_file_path": "models/pdf_malware_detection/predict.py",
+    "model_function": "get_prediction",
+    "model_detail_function": "model_details",
+    "form_config_path": "form_configs/pdf_malware_detection.json",
+    "tabs": [
+      {
+        "name": "Malware Detection Form",
+        "type": "form",
+        "form_name": "Malware Detection Form"
+      },
+      {
+        "name": "Model Details",
+        "type": "model_details"
+      }
+    ]
+  },
+  "Car Price Predictor": {
+    "title": "Car Price Predictor",
+    "page_title": "Car Price Predictor",
+    "page_icon": "🚗",
+    "model_predict_file_path": "models/car_price/predict.py",
+    "model_function": "predict_price",
+    "model_detail_function": "model_details",
+    "form_config_path": "form_configs/car_price.json",
+    "tabs": [
+      {
+        "name": "Price Estimator",
+        "type": "form",
+        "form_name": "Car Price Form"
+      },
+      {
+        "name": "Model Details",
+        "type": "model_details",
+        "problem_statement": "The model predicts the selling price of a car based on various features such as age, mileage, engine size, and type of fuel.",
+        "description": "This model uses Linear Regression and Lasso Regression algorithms to estimate car prices, taking into account input features from a dataset of used cars."
+      }
+    ]
+  }
 }

@@ -1,0 +1,82 @@
+{
+  "Car Price Prediction Form": {
+    "Year of Manufacture": {
+      "type": "number",
+      "min_value": 2000,
+      "max_value": 2024,
+      "default_value": 2020,
+      "step": 1,
+      "field_name": "year"
+    },
+    "Kilometers Driven": {
+      "type": "number",
+      "min_value": 0,
+      "max_value": 500000,
+      "default_value": 10000,
+      "step": 1000,
+      "field_name": "km_driven"
+    },
+    "Fuel Type": {
+      "type": "dropdown",
+      "options": ["Diesel", "LPG", "Petrol"],
+      "default_value": "Petrol",
+      "field_name": "fuel"
+    },
+    "Seller Type": {
+      "type": "dropdown",
+      "options": ["Individual", "Trustmark Dealer"],
+      "default_value": "Individual",
+      "field_name": "seller_type"
+    },
+    "Transmission": {
+      "type": "dropdown",
+      "options": ["Manual", "Automatic"],
+      "default_value": "Manual",
+      "field_name": "transmission"
+    },
+    "Owner Type": {
+      "type": "dropdown",
+      "options": [
+        "First Owner",
+        "Second Owner",
+        "Third Owner",
+        "Fourth & Above Owner",
+        "Test Drive Car"
+      ],
+      "default_value": "First Owner",
+      "field_name": "owner"
+    },
+    "Mileage (km/ltr)": {
+      "type": "number",
+      "min_value": 0,
+      "max_value": 100,
+      "default_value": 15,
+      "step": 0.1,
+      "field_name": "mileage"
+    },
+    "Engine Size (cc)": {
+      "type": "number",
+      "min_value": 800,
+      "max_value": 5000,
+      "default_value": 1500,
+      "step": 100,
+      "field_name": "engine"
+    },
+    "Max Power (bhp)": {
+      "type": "number",
+      "min_value": 0,
+      "max_value": 500,
+      "default_value": 100,
+      "step": 10,
+      "field_name": "max_power"
+    },
+    "Number of Seats": {
+      "type": "number",
+      "min_value": 2,
+      "max_value": 10,
+      "default_value": 5,
+      "step": 1,
+      "field_name": "seats"
+    }
+  }
+}
