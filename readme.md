@@ -25,7 +25,7 @@ The project has been successfully tested in local environments, and current effo
 2. Install the necessary dependencies:
    ```powershell
    pip install -r requirements.txt
-   ```
+   ``` 
 3. Run the Streamlit application using:
    ```powershell
    streamlit run app.py
