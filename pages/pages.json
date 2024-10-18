@@ -150,28 +150,6 @@
       "type": "model_details"
     }
   ]
-},
-  "Landmark Detection": {
-    "title": "Landmark Detection",
-    "page_title": "Landmark Detection",
-    "page_icon": "\ud83d\udd12",
-    "model_predict_file_path": "models/landmark_detection/predict.py",
-    "model_function": "classify_image",
-    "form_config_path": "form_configs/landmark_detection.json",
-    "tabs": [
-      {
-        "name": "Landmark Detection Form",
-        "type": "form",
-        "form_name": "Landmark Detection Form"
-      },
-      {
-        "name": "Model Details",
-        "type": "model_details",
-        "problem_statement": "The model predicts the landmark present in an image.",
-        "description": "This model uses a pre-trained deep learning model to classify images and identify landmarks."
-      }
-    ]
-  }
-
+}
 
 }
