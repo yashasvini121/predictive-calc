@@ -1,9 +1,9 @@
-name: CI - Validate PR
+name: Validate PR
 
 # Trigger the workflow on pull requests to the main branch
 on:
   pull_request:
-    branches: [ main ]
+    branches: [ master ]
 
 jobs:
   build:
