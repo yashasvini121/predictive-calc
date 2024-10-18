@@ -4,6 +4,7 @@ name: Validate PR
 on:
   pull_request:
     branches: [ master ]
+    types: [opened, synchronize, reopened, ready_for_review]
 
 jobs:
   build:
