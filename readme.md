@@ -1,5 +1,5 @@
 # Predictive Calc
-
+ 
 ## Overview
 **Predictive Calc** is an open-source project that provides a flexible collection of machine learning models designed to predict a wide variety of outcomes. Built with **Python** and **Streamlit**, the project offers an intuitive web interface, enabling users to easily interact with the models. The primary goal of the project is to streamline the integration of machine learning models with custom forms, allowing users to build their own prediction calculators tailored to specific use cases.
 
