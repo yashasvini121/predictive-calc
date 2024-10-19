@@ -108,6 +108,7 @@ with st.expander("Gold Price Predictor - More Information"):
 	- **GLD**:  The price of SPDR Gold Shares (GLD), which is the target variable representing gold prices.
 		"""
 	)
+
 st.write(
     "- **Car Price Predictor**: Estimate the price of a car based on various features."
 )
@@ -146,3 +147,4 @@ with st.expander("Car Price Predictor - More Information"):
     - **Seats**: The number of seats in the car.
         """
     )
+

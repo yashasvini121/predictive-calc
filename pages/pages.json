@@ -132,6 +132,7 @@
   },
 
   "Malware_Detection": {
+
     "title": "PDF Malware Detection",
     "page_title": "PDF Malware Detection",
     "page_icon": "\ud83d\udd12",
@@ -173,4 +174,5 @@
       }
     ]
   }
+
 }
