@@ -1,0 +1,79 @@
+{
+    "Credit Card Fraud Estimator": {
+        "Average Amount per Transaction per Day": {
+            "type": "number",
+            "min_value": 0,
+            "max_value": 100000,
+            "default_value": 100,
+            "step": 100,
+            "field_name": "avg_amount_per_day"
+        },
+        "Transaction Amount": {
+            "type": "number",
+            "min_value": 0,
+            "max_value": 100000,
+            "default_value": 3000,
+            "step": 100,
+            "field_name": "transaction_amount"
+        },
+        "Is Declined": {
+            "type": "dropdown",
+            "options": [
+                "Yes",
+                "No"
+            ],
+            "default_value": "No",
+            "field_name": "Is_declined"
+        },
+        "Total Number of Declines per Day": {
+            "type": "number",
+            "min_value": 0,
+            "max_value": 100,
+            "default_value": 0,
+            "step": 1,
+            "field_name": "no_of_declines_per_day"
+        },
+        "Is Foreign Transaction": {
+            "type": "dropdown",
+            "options": [
+                "Yes",
+                "No"
+            ],
+            "default_value": "No",
+            "field_name": "Is_Foreign_transaction"
+        },
+        "Is High-Risk Country": {
+            "type": "dropdown",
+            "options": [
+                "Yes",
+                "No"
+            ],
+            "default_value": "No",
+            "field_name": "Is_High_Risk_country"
+        },
+        "Daily Chargeback Average Amount": {
+            "type": "number",
+            "min_value": 0,
+            "max_value": 10000,
+            "default_value": 0,
+            "step": 100,
+            "field_name": "Daily_chargeback_avg_amt"
+        },
+        "6-Month Average Chargeback Amount": {
+            "type": "number",
+            "min_value": 0,
+            "max_value": 10000,
+            "default_value": 0,
+            "step": 100,
+            "field_name": "six_month_avg_chbk_amt"
+        },
+        "6-Month Chargeback Frequency": {
+            "type": "number",
+            "min_value": 0,
+            "max_value": 100,
+            "default_value": 0,
+            "step": 1,
+            "field_name": "six_month_chbk_freq"
+        }
+    }
+}
