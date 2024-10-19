@@ -1,6 +1,6 @@
 # Requirements.txt for the Streamlit app
 # Jupyter notebook-related packages and their dependencies are excluded because 
-# this app does not need to open or interact with Jupyter notebooks.
+# this app does not need to open or interact with Jupyter notebooks
 
 altair==5.4.1
 anyio==4.5.0
