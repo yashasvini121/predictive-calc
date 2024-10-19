@@ -156,7 +156,7 @@
     "page_title": "Heat Load Estimator🔥",
     "model_predict_file_path": "models/Heat_Cool_Load_Predictor/heat_model_predict.py",
     "model_function": "get_heat_prediction",
-    "model_detail_function": "model_details",
+    "model_detail_function": "model_details_heat",
     "form_config_path": "form_configs/Heat_Load_Predictor.json",
     "tabs": [
       {
@@ -177,7 +177,7 @@
     "page_title": "Cool Load Estimator❄️",
     "model_predict_file_path": "models/Heat_Cool_Load_Predictor/cool_model_predict.py",
     "model_function": "get_cool_prediction",
-    "model_detail_function": "model_details",
+    "model_detail_function": "model_details_cool",
     "form_config_path": "form_configs/Cool_Load_Predictor.json",
     "tabs": [
       {
