@@ -40,6 +40,9 @@ st.write(
 st.write(
 	"- **Parkinson's Disease Detector**: Assess your risk of Parkinson's Disease with advanced machine learning algorithms."
 )
+st.write(
+    "- **Insurance Cost Predictor**: Estimate your insurance costs based on personal factors like age, BMI, smoker status, and more using machine learning algorithms."
+)
 
 # Parkinson's Disease Detector Section
 with st.expander("Parkinson's Disease Detector - More Information"):
@@ -107,3 +110,35 @@ with st.expander("Gold Price Predictor - More Information"):
 	- **GLD**:  The price of SPDR Gold Shares (GLD), which is the target variable representing gold prices.
 		"""
 	)
+
+
+#Insurance Cost Predictor
+with st.expander("Insurance Cost Predictor - More Information"):
+    st.subheader("Introduction")
+    st.write(
+        """
+        The Insurance Cost Predictor leverages personal metrics and machine learning algorithms to predict insurance costs. This tool aims to provide accurate predictions based on user inputs like age, BMI, smoker status, and region.
+        """
+    )
+
+    # Dataset section
+    st.subheader("Insurance Dataset")
+    st.write(
+        """
+        The dataset used for this model contains data on individuals' personal factors, including age, sex, BMI, number of children, smoking status, and region. The goal is to predict the insurance cost (charges) based on these features.
+        """
+    )
+
+    # Input features section
+    st.subheader("Additional Variable Information")
+    st.write(
+        """
+        - **Age**: The age of the individual.
+        - **Sex**: The sex of the individual (Male or Female).
+        - **BMI**: Body Mass Index (BMI), a measure of body fat based on height and weight.
+        - **Children**: The number of children the individual has.
+        - **Smoker**: Whether the individual is a smoker (Yes or No).
+        - **Region**: The geographical region (Southeast, Southwest, Northeast, or Northwest).
+        - **Charges**: The insurance cost (the target variable to be predicted).
+        """
+    )
