@@ -150,6 +150,47 @@
       "type": "model_details"
     }
   ]
-}
-
+},
+"Heat Load Estimator": {
+    "title": "Heat Load Estimator",
+    "page_title": "Heat Load Estimator🔥",
+    "model_predict_file_path": "models/Heat_Cool_Load_Predictor/heat_model_predict.py",
+    "model_function": "get_heat_prediction",
+    "model_detail_function": "model_details",
+    "form_config_path": "form_configs/Heat_Load_Predictor.json",
+    "tabs": [
+      {
+        "name": "Heat Load Estimator",
+        "type": "form",
+        "form_name": "Heat Load Predictor Form"
+      },
+      {
+        "name": "Model Details",
+        "type": "model_details",
+        "problem_statement": "The model aims to find the heat Load of a building",
+        "description": "Using a Boosted Random Forest classifier, the model predicts Heat Load of a building"
+      }
+    ]
+  },
+  "Cool Load Estimator": {
+    "title": "Cool Load Estimator",
+    "page_title": "Cool Load Estimator❄️",
+    "model_predict_file_path": "models/Heat_Cool_Load_Predictor/cool_model_predict.py",
+    "model_function": "get_cool_prediction",
+    "model_detail_function": "model_details",
+    "form_config_path": "form_configs/Cool_Load_Predictor.json",
+    "tabs": [
+      {
+        "name": "Cool Load Estimator",
+        "type": "form",
+        "form_name": "Cool Load Predictor Form"
+      },
+      {
+        "name": "Model Details",
+        "type": "model_details",
+        "problem_statement": "The model aims to find the cool Load of a building",
+        "description": "Using a Boosted Random Forest classifier, the model predicts Cool Load of a building"
+      }
+    ]
+  }
 }

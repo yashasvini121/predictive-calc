@@ -1,0 +1,60 @@
+{
+  "Heat Load Prediction Form": {
+    "Relative Compactness": {
+      "type": "slider",
+      "min_value": 0.5,
+      "default_value": 0.7,
+      "step": 0.01,
+      "field_name": "Relative_Compactness"
+    },
+    "Surface Area": {
+      "type": "number",
+      "min_value": 300.0,
+      "default_value": 500.0,
+      "step": 0.1,
+      "field_name": "Surface_Area"
+    },
+    "Wall Area": {
+      "type": "number",
+      "min_value": 200.0,
+      "default_value": 300.0,
+      "step": 0.1,
+      "field_name": "Wall_Area"
+    },
+    "Roof Area": {
+      "type": "number",
+      "min_value": 100.0,
+      "default_value": 220.0,
+      "step": 0.1,
+      "field_name": "Roof_Area"
+    },
+    "Overall Height": {
+      "type": "number",
+      "min_value": 2.5,
+      "default_value": 3.5,
+      "step": 0.01,
+      "field_name": "Overall_Height"
+    },
+    "Orientation": {
+      "type": "number",
+      "min_value": 1,
+      "default_value": 2,
+      "step": 1,
+      "field_name": "Orientation"
+    },
+    "Glazing Area": {
+      "type": "slider",
+      "min_value": 0.0,
+      "default_value": 0.1,
+      "step": 0.01,
+      "field_name": "Glazing_Area"
+    },
+    "Glazing Area Distribution": {
+      "type": "number",
+      "min_value": 0.0,
+      "default_value": 0.25,
+      "step": 0.01,
+      "field_name": "Glazing_Area_Distribution"
+    }
+  }
+}

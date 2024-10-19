@@ -40,6 +40,12 @@ st.write(
 st.write(
 	"- **Parkinson's Disease Detector**: Assess your risk of Parkinson's Disease with advanced machine learning algorithms."
 )
+st.write(
+	"- **Heat Load Predictor**: Estimate the heat energy requirements of your building with advanced machine learning models tailored to predict energy efficiency based on structural attributes."
+)
+st.write(
+	"- **Cool Load Predictor**: Accurately forecast the cooling energy demands of your building using cutting-edge machine learning algorithms designed for optimizing energy efficiency."
+)
 
 # Parkinson's Disease Detector Section
 with st.expander("Parkinson's Disease Detector - More Information"):
@@ -105,5 +111,68 @@ with st.expander("Gold Price Predictor - More Information"):
 	- **SLV**:  The price of iShares Silver Trust (SLV), which reflects silver prices.
 	- **EUR/USD**:  The Euro-to-U.S. Dollar exchange rate, which indicates the strength of the euro relative to the U.S. dollar.
 	- **GLD**:  The price of SPDR Gold Shares (GLD), which is the target variable representing gold prices.
+		"""
+	)
+
+
+#Heat Load Predictor Section
+with st.expander("Heat Load Predictor - More Information"):
+	st.subheader("Introduction")
+	st.write(
+		"""
+		The Heat Load Predictor uses building characteristics and machine learning algorithms to estimate the amount of heat energy required for a building. This tool helps in optimizing energy consumption based on specific architectural and environmental features.
+		"""
+	)
+
+	# Dataset section
+	st.subheader("Heat Load Dataset")
+	st.write(
+		"""
+		The dataset used for this model contains various features related to building design and environmental factors that impact energy efficiency. The goal is to predict the heat load (Y1) using features such as Relative Compactness, Surface Area, Wall Area, Roof Area, and other architectural elements.
+		"""
+	)
+
+	# Input features section
+	st.subheader("Additional Variable Information")
+	st.write(
+		"""
+		- **Relative Compactness**: A measure of how compact the building's shape is, affecting its thermal properties.
+		- **Surface Area**: The total external surface area of the building, impacting heat transfer.
+		- **Wall Area**: The area covered by the external walls, which influences heat insulation.
+		- **Roof Area**: The total area of the roof, which affects heat gain or loss.
+		- **Overall Height**: The total height of the building, which influences the volume and energy needed for heating.
+		- **Glazing Area**: The area of windows or glass surfaces, which can impact heat gain through sunlight.
+		- **Y1 (Heat Load)**: The predicted amount of heat energy required to maintain the desired indoor temperature.
+		"""
+	)
+
+#Cool Load Predictor Section
+with st.expander("Cool Load Predictor - More Information"):
+	st.subheader("Introduction")
+	st.write(
+		"""
+		The Cool Load Predictor utilizes advanced machine learning models to estimate the cooling energy required for a building. By analyzing structural features and environmental factors, this tool predicts cooling loads and assists in optimizing energy efficiency.
+		"""
+	)
+
+	# Dataset section
+	st.subheader("Cool Load Dataset")
+	st.write(
+		"""
+		The dataset for this model contains features related to building design and environmental factors that affect cooling efficiency. The aim is to predict the cool load (Y2) using inputs such as Relative Compactness, Surface Area, Roof Area, and other architectural parameters.
+		"""
+	)
+
+	# Input features section
+	st.subheader("Additional Variable Information")
+	st.write(
+		"""
+		- **Relative Compactness**: The compactness of the building’s shape, affecting the efficiency of cooling.
+		- **Surface Area**: The total external surface area, impacting how much heat is absorbed or released.
+		- **Wall Area**: The external wall area, influencing heat insulation and cooling needs.
+		- **Roof Area**: The area of the roof, which affects heat transfer and the cooling load.
+		- **Overall Height**: The building's height, which impacts volume and energy required for cooling.
+		- **Glazing Area**: The area of windows or glass surfaces, which can increase or decrease cooling efficiency based on exposure to sunlight.
+		- **Y2 (Cool Load)**: The predicted amount of cooling energy required to maintain optimal indoor temperatures.
 		"""
 	)
