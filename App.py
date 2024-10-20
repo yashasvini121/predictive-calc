@@ -111,7 +111,6 @@ with st.expander("Gold Price Predictor - More Information"):
 		"""
 	)
 
-
 #Insurance Cost Predictor
 with st.expander("Insurance Cost Predictor - More Information"):
     st.subheader("Introduction")
@@ -142,3 +141,15 @@ with st.expander("Insurance Cost Predictor - More Information"):
         - **Charges**: The insurance cost (the target variable to be predicted).
         """
     )
+#Text Summarization Section
+
+st.write(
+	"- *Text Summarizer*: Save time with concise, professional summaries of lengthy texts—tailored to meet your needs and streamline your reading experience."
+)
+with st.expander("Text Summarizer - More Information"):
+	st.subheader("Introduction")
+	st.write(
+		"""
+	Many struggle with summarizing large texts or learning from lengthy materials. This model simplifies the process, offering concise summaries that enhance understanding and speed up learning—perfect for students and professionals alike.
+	"""
+	)
