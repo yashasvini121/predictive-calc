@@ -124,15 +124,11 @@ with st.expander("Text Summarizer - More Information"):
 #Reviews Sentiments section
 from pages.page_handler import handle_page
 
-# List of available pages
 PAGES = {
     "Reviews Sentiment": "pages/review_sentiment_calculator.py",
-    # Add more pages as needed
 }
 
-# Sidebar for navigation
 st.sidebar.title("Navigation")
 selection = st.sidebar.radio("Go to", list(PAGES.keys()))
 
-# Handle page rendering
 handle_page(PAGES[selection])
