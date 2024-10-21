@@ -4,7 +4,7 @@ import joblib
 import pandas as pd
 
 # Load the model and vectorizer
-model = joblib.load('model.pkl')
+model = joblib.load('model (2).pkl')
 vectorizer = joblib.load('vectorizer.pkl')
 
 def predict_sentiment(tweet):
