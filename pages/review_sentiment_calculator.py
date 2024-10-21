@@ -16,5 +16,5 @@ for field in form_config['fields']:
 
 # Submit button
 if st.button("Predict"):
-    result = predict_sentiment(input_data['review'])
+    result = predict_sentiment(input_data['text'])
     st.write(f"Prediction: {result}")
