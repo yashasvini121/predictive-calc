@@ -152,14 +152,14 @@
   ]
 },
 
-  {
-    "pages": [
-        {
-            "name": "Review Sentiment",
-            "icon": "speech-bubble",
-            "path": "review_sentiment_calculator.py"
-        }
-    ]
+{
+  "pages": [
+      {
+          "name": "Review Sentiment",
+          "icon": "speech-bubble",
+          "path": "review_sentiment_calculator.py"
+      }
+  ]
 }
 
 
