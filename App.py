@@ -120,3 +120,19 @@ with st.expander("Text Summarizer - More Information"):
 	Many struggle with summarizing large texts or learning from lengthy materials. This model simplifies the process, offering concise summaries that enhance understanding and speed up learning—perfect for students and professionals alike.
 	"""
 	)
+
+#Reviews Sentiments section
+from pages.page_handler import handle_page
+
+# List of available pages
+PAGES = {
+    "Reviews Sentiment": "pages/review_sentiment_calculator.py",
+    # Add more pages as needed
+}
+
+# Sidebar for navigation
+st.sidebar.title("Navigation")
+selection = st.sidebar.radio("Go to", list(PAGES.keys()))
+
+# Handle page rendering
+handle_page(PAGES[selection])
