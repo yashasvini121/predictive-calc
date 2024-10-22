@@ -1,13 +1,18 @@
 import pandas as pd
-from sklearn.model_selection import train_test_split
-from sklearn.preprocessing import StandardScaler
+from sklearn.model_selection import train_test_split, cross_val_score
+from sklearn.preprocessing import StandardScaler, OneHotEncoder
+from sklearn.compose import ColumnTransformer
+from sklearn.pipeline import Pipeline
 from sklearn.feature_selection import RFE
 from sklearn.linear_model import LinearRegression
+from sklearn.ensemble import RandomForestRegressor
 import warnings
 import pickle
 from .ModelEvaluation import ModelEvaluation
 import os
 import logging
+import streamlit as st
+import numpy as np
 warnings.filterwarnings("ignore")
 
 # Define the directory for logs
@@ -98,10 +103,13 @@ std = StandardScaler()
 Train_X_std = pd.DataFrame(std.fit_transform(Train_X), columns=X.columns)
 Test_X_std = pd.DataFrame(std.transform(Test_X), columns=X.columns)
 
-# Multiple Linear Regression with sklearn
-MLR = LinearRegression().fit(Train_X_std, Train_Y)
-pred_train = MLR.predict(Train_X_std)
-pred_test = MLR.predict(Test_X_std)
+#Random Forest Algorithm
+rf_model = RandomForestRegressor(random_state=42, n_estimators=200, max_depth=8, min_samples_split=12)
+rf_model.fit(Train_X_std, Train_Y)
+
+
+pred_train = rf_model.predict(Train_X_std)
+pred_test = rf_model.predict(Test_X_std)
 
 # Calculate RMSE for train and test sets
 # train_rmse = np.sqrt(mean_squared_error(Train_Y, pred_train))
@@ -155,63 +163,34 @@ def prepare_input_data(
 
 
 ### Final Endpoint ###
-# Predicts the price of a house based on the input features
-def get_prediction(
-    area=0,
-    mainroad=False,
-    guestroom=False,
-    basement=False,
-    hotwaterheating=False,
-    airconditioning=False,
-    prefarea=False,
-    bedrooms=0,
-    bathrooms=2,
-    stories=1,
-    parking=1,
-    furnishingstatus="semi_furnished",
-):
-    # Modifying the input data to match the model's input format
-    input_df = prepare_input_data(
-		area,
-		mainroad,
-		guestroom,
-		basement,
-		hotwaterheating,
-		airconditioning,
-		prefarea,
-		bedrooms,
-		bathrooms,
-		stories,
-		parking,
-		furnishingstatus,
-	)
+def get_predicted(area=0, mainroad=False, guestroom=False, basement=False, hotwaterheating=False,
+    airconditioning=False, prefarea=False,bedrooms=0, bathrooms=2,stories=1, parking=1,
+    furnishingstatus="semi_furnished",):
 
-    # Standardizes the input data
-    input_std = pd.DataFrame(std.transform(input_df), columns=input_df.columns)
-
-    # Predicts the price
-    predicted_price = MLR.predict(input_std)
-
-    return round(predicted_price[0], 2)
-
+	input_df = prepare_input_data(area, mainroad, guestroom,basement, hotwaterheating, airconditioning, prefarea,
+				bedrooms, bathrooms, stories, parking, furnishingstatus)
+	
+	input_std = pd.DataFrame(std.transform(input_df), columns=input_df.columns)
+	predicted_price = rf_model.predict(input_std)
+	return round(predicted_price[0],2)
 
 def save_model():
 	# todo: Ask the user for the model name, and warn that the model will be overwritten
 	
-	with open("models/house_price/saved_models/model_01.pkl", "wb") as file:
-		pickle.dump(MLR, file)
+	with open("./saved_models/model_02.pkl", "wb") as file:
+		pickle.dump(rf_model, file)
 
 
 def save_scaler():    
-	with open("models/house_price/saved_models/scaler_01.pkl", "wb") as file:
+	with open("./saved_models/scaler_02.pkl", "wb") as file:
 		pickle.dump(std, file)
 
 
 def get_evaluator():
-	evaluator = ModelEvaluation(MLR, Train_X_std, Train_Y, Test_X_std, Test_Y)	
+	evaluator = ModelEvaluation(rf_model, Train_X_std, Train_Y, Test_X_std, Test_Y)	
 	return evaluator
 
-# if __name__ == "__main__":
-# save_model()
-# save_scaler()
-# model_evaluation()
+if __name__ == "__main__":
+	save_model()
+	save_scaler()
+	# model_evaluation()
