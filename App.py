@@ -41,6 +41,7 @@ st.write(
 	"- **Parkinson's Disease Detector**: Assess your risk of Parkinson's Disease with advanced machine learning algorithms."
 )
 
+
 # Parkinson's Disease Detector Section
 with st.expander("Parkinson's Disease Detector - More Information"):
 	st.subheader("Introduction")
@@ -107,16 +108,43 @@ with st.expander("Gold Price Predictor - More Information"):
 	- **GLD**:  The price of SPDR Gold Shares (GLD), which is the target variable representing gold prices.
 		"""
 	)
-	
-#Text Summarization Section
 
 st.write(
-	"- *Text Summarizer*: Save time with concise, professional summaries of lengthy texts—tailored to meet your needs and streamline your reading experience."
+    "- **Car Price Predictor**: Estimate the price of a car based on various features."
 )
-with st.expander("Text Summarizer - More Information"):
-	st.subheader("Introduction")
-	st.write(
-		"""
-	Many struggle with summarizing large texts or learning from lengthy materials. This model simplifies the process, offering concise summaries that enhance understanding and speed up learning—perfect for students and professionals alike.
-	"""
-	)
+# Car Price Predictor Section
+with st.expander("Car Price Predictor - More Information"):
+    st.subheader("Introduction")
+    st.write(
+        """
+    The Car Price Predictor uses machine learning algorithms to estimate the price of a car based on various features. Factors such as the car's brand, year, mileage, and other specifications can significantly impact its resale value.
+        """
+    )
+
+    # Dataset section
+    st.subheader("Car Price Dataset")
+    st.write(
+        """
+    The dataset for this model contains information on various cars, including their features and selling prices. The goal is to predict the selling price based on features like brand, year, mileage, fuel type, seller type, transmission, and more.
+        """
+    )
+
+    # Input features section
+    st.subheader("Additional Variable Information")
+    st.write(
+        """
+    - **Name**: The name of the car.
+    - **Year**: The year the car was manufactured.
+    - **Selling Price**: The price at which the car is being sold.
+    - **Km Driven**: The total kilometers driven by the car.
+    - **Fuel**: The type of fuel used (e.g., petrol, diesel).
+    - **Seller Type**: The type of seller (e.g., individual, dealer).
+    - **Transmission**: The transmission type (e.g., manual, automatic).
+    - **Owner**: The number of previous owners.
+    - **Mileage**: The car's mileage in km/ltr/kg.
+    - **Engine**: The engine capacity.
+    - **Max Power**: The maximum power of the car.
+    - **Seats**: The number of seats in the car.
+        """
+    )
+
