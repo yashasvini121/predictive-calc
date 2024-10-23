@@ -1,0 +1,44 @@
+{
+    "Insurance Cost Form": {
+      "Age": {
+        "type": "slider",
+        "min_value": 0,
+        "default_value": 30,
+        "step": 1,
+        "field_name": "age"
+      },
+      "Sex": {
+        "type": "dropdown",
+        "options": ["Male", "Female"],
+        "default_value": "Male",
+        "field_name": "sex"
+      },
+      "BMI": {
+        "type": "number",
+        "min_value": 0.0,
+        "default_value": 25.0,
+        "step": 0.1,
+        "field_name": "bmi"
+      },
+      "Children": {
+        "type": "number",
+        "min_value": 0,
+        "default_value": 0,
+        "step": 1,
+        "field_name": "children"
+      },
+      "Smoker": {
+        "type": "dropdown",
+        "options": ["Yes", "No"],
+        "default_value": "No",
+        "field_name": "smoker"
+      },
+      "Region": {
+        "type": "dropdown",
+        "options": ["Southeast", "Southwest", "Northeast", "Northwest"],
+        "default_value": "Southeast",
+        "field_name": "region"
+      }
+    }
+  }
+  
