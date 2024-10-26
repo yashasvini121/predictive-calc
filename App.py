@@ -220,4 +220,6 @@ for i in range(0, len(calculators), 2):
 st.markdown("## Get Started Today!")
 st.markdown("Explore our calculators and take control of your predictive analytics journey!")
 
+
 st.write("Developed with ❤️ by Yashasvini Sharma | [Github](https://www.github.com/yashasvini121) | [LinkedIn](https://www.linkedin.com/in/yashasvini121/)")
+

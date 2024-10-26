@@ -150,6 +150,30 @@
       "type": "model_details"
     }
   ]
+},
+
+  "Insurance Cost Predictor": {
+    "title": "Insurance Cost Predictor",
+    "page_title": "Insurance Cost Predictor",
+    "page_icon": "\ud83d\udd12",
+    "model_predict_file_path": "models/insurance_cost_predictor/predict.py",
+    "model_function": "get_prediction",
+    "model_detail_function": "model_details",
+    "form_config_path": "form_configs/insurance_cost_predictor.json",
+    "tabs": [
+      {
+        "name": "Insurance Cost Form",
+        "type": "form",
+        "form_name": "Insurance Cost Form"
+      },
+      {
+        "name": "Model Details",
+        "type": "model_details",
+        "problem_statement": "The Insurance Cost Predictor estimates the insurance cost based on various personal factors such as age, BMI, number of children, smoker status, and region. By using machine learning, this tool provides accurate predictions to help users plan their insurance costs more effectively.",
+        "description": "This model uses a dataset containing demographic and health-related factors to predict the cost of insurance. The features include age, sex, BMI, children, smoker status, and region, with predictions made using the Random Forest algorithm for accurate results. Ensemble techniques like XGBoost will also be used to further enhance the prediction accuracy."
+      }
+    ]
+  }
 }
 
-}
+
