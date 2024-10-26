@@ -4,14 +4,23 @@ The directory layout of **Predictive Calc** is organized in a way that separates
 
 ```
 predictive-calc/
-├── app.py                          # Main entry point for the Streamlit web app
-├── docs/                           # Documentation files
-├── form_configs/                   # Configuration files for the forms
+├── app.py                           # Main entry point for the Streamlit web app
+├── docs/                            # Documentation files
+│   ├── project-structure.md         # Directory layout of the repository
+│   ├── tutorial.md                  # Steps to integrate a new machine learning model into the repository 
+├── form_configs/                    # Configuration files for the forms
+│   ├── customer_income.json         # JSON configuration for customer income model form input fields
+│   ├── gold_price_prediction.json   # JSON configuration for gold price prediction model form input fields
 │   ├── house_price.json             # JSON configuration for house price model form input fields
 │   ├── loan_eligibility.json        # JSON configuration for loan eligibility model form input fields
-├── models/                         # Folder containing machine learning models
-│   ├── house_price/                # Example model directory (for house price prediction)
-│   │   ├── data/                   # Datasets used by the models
+│   ├── parkinson_detection.json     # JSON configuration for parkinson disease detection model form input fields
+│   ├── stress_detection.json        # JSON configuration for stress detection model form input fields
+├── models/                          # Folder containing machine learning models
+│   ├── PDF_malware_detection
+│   ├── customer_income
+│   ├── gold_price_prediction
+│   ├── house_price/                 # Example model directory (for house price prediction)
+│   │   ├── data/                    # Datasets used by the models
 │   │   ├── notebooks/               # Jupyter notebooks for training and experimentation
 │   │   │   ├── house_price.ipynb 
 │   │   ├── saved_models/            # Serialized (pickled) model files and scalers
@@ -20,13 +29,33 @@ predictive-calc/
 │   │   ├── model.py                 # Code to define and train the model
 │   │   ├── predict.py               # Code to make predictions using the trained model
 │   ├── modelEvaluation.py           # Model evaluation class
+│   ├── parkinson_disease_detector
+│   ├── stress_level_detect
+│   ├── text_sumarization
+│   ├── translator_app
 ├── pages/                           # Streamlit pages representing different calculators
+│   ├── Customer_Income_Estimator.py
+│   ├── Gold_Price_Predictor.py
 │   ├── House_Price_Estimator.py    
 │   ├── Loan_Eligibility_Estimator.py
+│   ├── PDF_Malware_Detection.py
+│   ├── Parkinson_Disease_Detector.py
+│   ├── Stress_Level_Detector.py
+│   ├── Text Summarizer.py
+│   ├── Translator.py
 │   ├── pages.json                   # Configuration file for managing page details and settings
+├── assets/images/                   # All assets using in the project
+│   ├── machine_learning.png
+│   ├── machine-learning.gif
+├── Dockerfile                       # Instructions for building a Docker image
+├── dev-requirements.txt             # List of development dependencies for the project
+├── docker-compose.debug.yml         # To debug inside the docker container using Debugpy
+├── docker-compose.yml               # To set up a docker container for streamlit
 ├── form_handler.py                  # Handles dynamic form generation based on JSON configs
 ├── page_handler.py                  # Manages the page rendering logic and handles model predictions
 ├── requirements.txt                 # List of Python dependencies
+├── packages.txt                     # List of Python packages
+├── readme.md                        # Overview of the project and setup instructions
 ```
 
 ### Key Components
@@ -59,4 +88,17 @@ The `form_configs/` folder contains JSON configuration files that define the inp
 This script dynamically generates the input forms based on the JSON configuration files. It maps user inputs to the model’s expected parameters and passes the data to the prediction logic.
 
 #### 8. `docs/`
-Contains the project's documentation. This is where you can find information about how the system is structured and how to contribute to the project.
+Contains the project's documentation. This is where you can find information about how the system is structured and how to contribute to the project, more specifically the `tutorial.md` and `project-stuctures.md` files.
+
+#### 9. `docker-compose.yml`
+This file helps you set up and run a Docker container for the Streamlit web application. It also monitors the app health to restart or alert if the app becomes unresponsive.
+- `docker-compose.debug.yml` file is configured to run a service for remote debugging using debugpy, a popular debugging tool.Debugpy allows external tools to connect and debug the Python app inside the container.
+
+#### 10. `dev-requirements.txt`
+This file lists packages that are used during the development of the project but are not necessary for running the Streamlit application in a production environment. These are typically used in developing, testing, and prototyping.
+
+#### 11. `Dockerfile`
+Used to create a Docker image that contains a Streamlit application. Thsi file sets up the environment, installs necessary dependencies, copies the application code, and specifies how to run the application. 
+
+#### 12. `assets/images/`
+This folder contains all the assets used in the main project.
