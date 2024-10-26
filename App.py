@@ -107,4 +107,16 @@ with st.expander("Gold Price Predictor - More Information"):
 	- **GLD**:  The price of SPDR Gold Shares (GLD), which is the target variable representing gold prices.
 		"""
 	)
+	
+#Text Summarization Section
 
+st.write(
+	"- *Text Summarizer*: Save time with concise, professional summaries of lengthy texts—tailored to meet your needs and streamline your reading experience."
+)
+with st.expander("Text Summarizer - More Information"):
+	st.subheader("Introduction")
+	st.write(
+		"""
+	Many struggle with summarizing large texts or learning from lengthy materials. This model simplifies the process, offering concise summaries that enhance understanding and speed up learning—perfect for students and professionals alike.
+	"""
+	)

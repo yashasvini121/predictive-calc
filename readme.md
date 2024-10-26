@@ -13,7 +13,7 @@ The project has been successfully tested in local environments, and current effo
 2. Or create new issues to discuss new ideas, suggest features, or report bugs.
 3. Fork the repository and create a new branch for your contribution.
 4. Implement your changes and submit a pull request with a clear description.
-5. Futher details can be found in the [contributing.md](contributing.md) file.
+5. Further details can be found in the [contributing.md](contributing.md) file.
 
 ## Setup Instructions
 1. Fork or clone the repository.
@@ -30,5 +30,18 @@ The project has been successfully tested in local environments, and current effo
    ```powershell
    streamlit run app.py
    ```
+## Docker Setup Instructions
+
+1. Install [Docker](https://docs.docker.com/get-docker/) on your machine.
+2. Windows user - Install [WSL](https://learn.microsoft.com/en-us/windows/wsl/install/) (Ubuntu-22.04).
+3. Run the application using Docker Compose:
+   ```powershell
+   docker-compose up
+   ```
+4. To stop the application:
+   ```powershell
+   docker-compose down
+   ```
+
 ## Our Valuable contributors
 [![Contributors](https://contrib.rocks/image?repo=yashasvini121/predictive-calc)](https://github.com/yashasvini121/predictive-calc/graphs/contributors)
