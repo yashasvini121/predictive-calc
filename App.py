@@ -3,10 +3,6 @@ import streamlit as st
 st.set_page_config(page_title="Predictive Calc - Machine Learning Models", page_icon="🤖")
 
 st.title("Welcome to Predictive Calc!")
-# Place image
-col1, col2, col3 = st.columns([1, 2, 1]) 
-with col2:
-    st.image('assets/images/machine_learning.png', caption='Your Hub for Predictive Insights', use_column_width=False, width=350)
 
 st.markdown("""
 ## Explore Cutting-Edge Machine Learning Models
@@ -224,7 +220,4 @@ for i in range(0, len(calculators), 2):
 st.markdown("## Get Started Today!")
 st.markdown("Explore our calculators and take control of your predictive analytics journey!")
 
-# Footer or additional information
-st.markdown("## Legal Information")
-st.write("© 2024 Yashasvini Sharma. All rights reserved.")
-st.write("This project is licensed under the MIT License.")
+st.write("Developed with ❤️ by Yashasvini Sharma | [Github](https://www.github.com/yashasvini121) | [LinkedIn](https://www.linkedin.com/in/yashasvini121/)")
