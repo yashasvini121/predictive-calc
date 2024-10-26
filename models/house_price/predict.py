@@ -1,6 +1,7 @@
 import pickle
 import pandas as pd
-from models.house_price.model import get_evaluator
+# from models.house_price.model import get_evaluator
+from models.house_price.ImprovedModel import get_evaluator
 
 """
 Predict.py file:
@@ -102,8 +103,8 @@ def get_prediction(
 	)
 
 	# Load the model and the scaler
-	model = load_model("models/house_price/saved_models/model_01.pkl")
-	scaler = load_model("models/house_price/saved_models/scaler_01.pkl")
+	model = load_model("models/house_price/saved_models/model_02.pkl")
+	scaler = load_model("models/house_price/saved_models/scaler_02.pkl")
 
 	# Scale the input data
 	input_scaled = scaler.transform(input_df)
