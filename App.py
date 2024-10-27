@@ -9,7 +9,6 @@ st.markdown("""
 **Predictive Calc** offers a powerful suite of machine learning models designed to assist you in making informed decisions. Whether it's predicting house prices, determining loan eligibility, or evaluating health risks, we have you covered.
 """)
 
-# Why Choose Calc?
 st.markdown("""
 ## Why Choose Predictive Calc? """)
 features = [
@@ -216,10 +215,7 @@ for i in range(0, len(calculators), 2):
                         st.write(calc["details"])
                     st.markdown("---")
 
-# Add a "Get Started" section at the bottom
 st.markdown("## Get Started Today!")
 st.markdown("Explore our calculators and take control of your predictive analytics journey!")
 
-
 st.write("Developed with ❤️ by Yashasvini Sharma | [Github](https://www.github.com/yashasvini121) | [LinkedIn](https://www.linkedin.com/in/yashasvini121/)")
-
