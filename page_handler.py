@@ -78,7 +78,7 @@ class PageHandler:
 		if model_details_function:
 			metrics, prediction_plot, error_plot, performance_plot = model_details_function().evaluate()
 
-			st.subheader(f"Model Accuracy: {metrics['Test_R2']:.2%}")
+			st.subheader(f"Model Accuracy: {metrics['Test_R2']:.2f}")
 
 			#mentioning the title of the scores 
 			st.subheader(f"Scores: Training: {metrics['Train_R2']:.2f}, Testing: {metrics['Test_R2']:.2f}")

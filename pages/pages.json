@@ -151,5 +151,51 @@
         "description": "The dataset used for this model contains daily financial data, including stock market indices, commodity prices, and currency exchange rates. The goal is to predict the gold price (GLD) using features such as the S&P 500 Index (SPX), crude oil price (USO), silver price (SLV), and the EUR/USD exchange rate."
       }
     ]
+  },
+  
+  "Malware_Detection": {
+  "title": "PDF Malware Detection",
+  "page_title": "PDF Malware Detection",
+  "page_icon": "\ud83d\udd12",
+  "model_predict_file_path": "models/pdf_malware_detection/predict.py",
+  "model_function": "get_prediction",
+  "model_detail_function": "model_details",
+  "form_config_path": "form_configs/pdf_malware_detection.json",
+  "tabs": [
+    {
+      "name": "Malware Detection Form",
+      "type": "form",
+      "form_name": "Malware Detection Form"
+    },
+    {
+      "name": "Model Details",
+      "type": "model_details"
+    }
+  ]
+},
+
+  "Insurance Cost Predictor": {
+    "title": "Insurance Cost Predictor",
+    "page_title": "Insurance Cost Predictor",
+    "page_icon": "\ud83d\udd12",
+    "model_predict_file_path": "models/insurance_cost_predictor/predict.py",
+    "model_function": "get_prediction",
+    "model_detail_function": "model_details",
+    "form_config_path": "form_configs/insurance_cost_predictor.json",
+    "tabs": [
+      {
+        "name": "Insurance Cost Form",
+        "type": "form",
+        "form_name": "Insurance Cost Form"
+      },
+      {
+        "name": "Model Details",
+        "type": "model_details",
+        "problem_statement": "The Insurance Cost Predictor estimates the insurance cost based on various personal factors such as age, BMI, number of children, smoker status, and region. By using machine learning, this tool provides accurate predictions to help users plan their insurance costs more effectively.",
+        "description": "This model uses a dataset containing demographic and health-related factors to predict the cost of insurance. The features include age, sex, BMI, children, smoker status, and region, with predictions made using the Random Forest algorithm for accurate results. Ensemble techniques like XGBoost will also be used to further enhance the prediction accuracy."
+      }
+    ]
   }
 }
+
+
