@@ -35,3 +35,7 @@ In the `pages/pages.json` file, add an entry for your new model. This configurat
 
 ### 7. Update the Main App
 In `app.py`, update the list of available pages
+
+### 8. Update and Test the Dependencies
+- If you've added or updated any dependencies (packages/modules/libraries) for your model, update the `requirements.txt` file accordingly.
+- After updating, test the entire project to ensure there are no version conflicts between packages. This helps maintain a stable and reproducible environment for all the contributors.
