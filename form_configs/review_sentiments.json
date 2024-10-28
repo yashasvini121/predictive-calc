@@ -1,11 +1,9 @@
 {
-    "title": "Review Sentiments",
-    "fields": [
-        {
-            "name": "Review",
-            "label": "Enter Review",
-            "type": "text",
-            "required": true
-        }
-    ]
+    "Review Sentiments Form": {
+		"Review": {
+			"field_name": "review",
+			"type": "text",
+			"required": true
+		}
+	}
 }
