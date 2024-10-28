@@ -21,6 +21,28 @@
       }
     ]
   },
+  "Credit Card Fraud Estimator": {
+    "title": "Credit Card Fraud Estimator",
+    "page_title": "Credit Card Fraud Estimator",
+    "page_icon": "\ud83d\udcb0",
+    "model_predict_file_path": "models/credit_card_fraud/predict.py",
+    "model_function": "get_prediction",
+    "form_config_path": "form_configs/credit_card_fraud.json",
+    "model_detail_function": "model_details",
+    "tabs": [
+      {
+        "name": "Estimator",
+        "type": "form",
+        "form_name": "Credit Card Fraud Estimator"
+      },
+      {
+        "name": "Model Details",
+        "type": "model_details",
+        "problem_statement": "The model predicts whether a credit card transaction is fraudulent based on input features such as transaction amount, transaction type, and customer profile.",
+        "description": "This model uses a Support Vector Machine (SVM) to classify credit card transactions as fraudulent or non-fraudulent. It leverages the SVM's ability to create an optimal decision boundary, learning from historical transaction data with both normal and fraudulent transactions to make accurate predictions. The model is particularly useful in identifying complex patterns and borderline cases in high-dimensional data."
+      }
+    ]
+  },
   "Loan Eligibility Estimator": {
     "title": "Loan Eligibility Estimator",
     "page_title": "Loan Eligibility Estimator",
@@ -151,16 +173,28 @@
     }
   ]
 },
-
-{
-  "pages": [
+  "Insurance Cost Predictor": {
+    "title": "Insurance Cost Predictor",
+    "page_title": "Insurance Cost Predictor",
+    "page_icon": "\ud83d\udd12",
+    "model_predict_file_path": "models/insurance_cost_predictor/predict.py",
+    "model_function": "get_prediction",
+    "model_detail_function": "model_details",
+    "form_config_path": "form_configs/insurance_cost_predictor.json",
+    "tabs": [
       {
-          "name": "Review Sentiment",
-          "icon": "speech-bubble",
-          "path": "review_sentiment_calculator.py"
+        "name": "Insurance Cost Form",
+        "type": "form",
+        "form_name": "Insurance Cost Form"
+      },
+      {
+        "name": "Model Details",
+        "type": "model_details",
+        "problem_statement": "The Insurance Cost Predictor estimates the insurance cost based on various personal factors such as age, BMI, number of children, smoker status, and region. By using machine learning, this tool provides accurate predictions to help users plan their insurance costs more effectively.",
+        "description": "This model uses a dataset containing demographic and health-related factors to predict the cost of insurance. The features include age, sex, BMI, children, smoker status, and region, with predictions made using the Random Forest algorithm for accurate results. Ensemble techniques like XGBoost will also be used to further enhance the prediction accuracy."
       }
-  ]
+    ]
+  }
 }
 
 
-}

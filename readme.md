@@ -13,7 +13,7 @@ The project has been successfully tested in local environments, and current effo
 2. Or create new issues to discuss new ideas, suggest features, or report bugs.
 3. Fork the repository and create a new branch for your contribution.
 4. Implement your changes and submit a pull request with a clear description.
-5. Futher details can be found in the [contributing.md](contributing.md) file.
+5. Further details can be found in the [contributing.md](contributing.md) file.
 
 ## Setup Instructions
 1. Fork or clone the repository.
