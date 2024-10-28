@@ -207,7 +207,7 @@
 			{
 				"name": "Heat Load Estimator",
 				"type": "form",
-				"form_name": "Heat Load Predictor Form"
+				"form_name": "Heat Load Prediction Form"
 			},
 			{
 				"name": "Model Details",
@@ -228,7 +228,7 @@
 			{
 				"name": "Cool Load Estimator",
 				"type": "form",
-				"form_name": "Cool Load Predictor Form"
+				"form_name": "Cool Load Prediction Form"
 			},
 			{
 				"name": "Model Details",
