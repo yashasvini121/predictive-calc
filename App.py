@@ -176,6 +176,46 @@ calculators = [
             Ideal for travel, business meetings, and language learning, breaking down language barriers effortlessly.
         """
     },
+    {
+        "name": "Heat Load Predictor",
+        "description": "Estimate the heat energy required for a building using machine learning algorithms based on architectural and environmental features.",
+        "details": """
+            ### Introduction  
+            The Heat Load Predictor uses building characteristics and machine learning algorithms to estimate the amount of heat energy required for a building. This tool helps in optimizing energy consumption based on specific architectural and environmental features.
+
+            ### Heat Load Dataset  
+            The dataset used for this model contains various features related to building design and environmental factors that impact energy efficiency. The goal is to predict the heat load (Y1) using features such as **Relative Compactness**, **Surface Area**, **Wall Area**, **Roof Area**, and other architectural elements.
+
+            ### Additional Variable Information  
+            - **Relative Compactness**: A measure of how compact the building's shape is, affecting its thermal properties.  
+            - **Surface Area**: The total external surface area of the building, impacting heat transfer.  
+            - **Wall Area**: The area covered by the external walls, which influences heat insulation.  
+            - **Roof Area**: The total area of the roof, which affects heat gain or loss.  
+            - **Overall Height**: The total height of the building, influencing the volume and energy needed for heating.  
+            - **Glazing Area**: The area of windows or glass surfaces, impacting heat gain through sunlight.  
+            - **Y1 (Heat Load)**: The predicted amount of heat energy required to maintain the desired indoor temperature.
+        """
+    },
+    {
+        "name": "Cool Load Predictor",
+        "description": "Predict the cooling energy required for a building using advanced machine learning models based on structural and environmental factors.",
+        "details": """
+            ### Introduction  
+            The Cool Load Predictor utilizes advanced machine learning models to estimate the cooling energy required for a building. By analyzing structural features and environmental factors, this tool predicts cooling loads and assists in optimizing energy efficiency.
+
+            ### Cool Load Dataset  
+            The dataset for this model contains features related to building design and environmental factors that affect cooling efficiency. The aim is to predict the cool load (Y2) using inputs such as **Relative Compactness**, **Surface Area**, **Roof Area**, and other architectural parameters.
+
+            ### Additional Variable Information  
+            - **Relative Compactness**: The compactness of the building’s shape, affecting the efficiency of cooling.  
+            - **Surface Area**: The total external surface area, impacting how much heat is absorbed or released.  
+            - **Wall Area**: The external wall area, influencing heat insulation and cooling needs.  
+            - **Roof Area**: The area of the roof, which affects heat transfer and the cooling load.  
+            - **Overall Height**: The building's height, which impacts volume and energy required for cooling.  
+            - **Glazing Area**: The area of windows or glass surfaces, which can increase or decrease cooling efficiency based on exposure to sunlight.  
+            - **Y2 (Cool Load)**: The predicted amount of cooling energy required to maintain optimal indoor temperatures.
+        """
+    }
 ]
 
 # Define shades of blue for calculators
