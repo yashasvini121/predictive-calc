@@ -1,7 +1,7 @@
 from joblib import load
 
 # Load the trained model for insurance cost prediction
-model = load('predictive-calc\models\insurance_cost_predictor\saved_models\insurance_model.pkl')
+model = load("models\insurance_cost_predictor\saved_models\insurance_model.pkl")
 
 def insurance_cost_prediction(age, sex, bmi, children, smoker, region):
     # Feature extraction and conversions
