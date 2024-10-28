@@ -63,7 +63,7 @@ matplotlib-inline==0.1.7
 mdurl==0.1.2
 mistune==3.0.2
 narwhals==1.8.1
-numpy==2.1.1
+numpy
 openpyxl==3.1.5
 overrides==7.7.0
 packaging==24.1
@@ -78,7 +78,7 @@ pluggy==1.5.0
 prometheus_client==0.20.0
 prompt_toolkit==3.0.47
 prophet==1.1.6
-protobuf==5.28.2
+protobuf==4.25.5
 psutil==6.0.0
 pure_eval==0.2.3
 pyarrow==17.0.0
@@ -138,3 +138,5 @@ webcolors==24.8.0
 webencodings==0.5.1
 websocket-client==1.8.0
 xgboost==2.1.1
+transformers==4.45.2
+tf_keras==2.17.0
