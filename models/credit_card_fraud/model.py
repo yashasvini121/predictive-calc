@@ -11,7 +11,7 @@ warnings.filterwarnings("ignore")
 
 
 # reading dataset
-data = pd.read_csv("models\credit_card_fraud\data\creditcardcsvpresent.csv")
+data = pd.read_csv("models/credit_card_fraud/data/creditcardcsvpresent.csv")
 df = data.copy(deep=True)
 
 # df.info()
