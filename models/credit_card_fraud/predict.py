@@ -67,7 +67,7 @@ def get_prediction(
     )
     # print(input_df.values)
     # Load the model
-    svm_model = load_model("models/credit_card_fraud/saved models/transaction_rf_model.pkl")
+    svm_model = load_model("models\credit_card_fraud\saved models\creditCardFraud_svc_model.pkl")
 
     # Predict using Random Forest
     predicted_value = svm_model.predict(input_df)
