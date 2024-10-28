@@ -1,11 +1,11 @@
-# models/tweet_sentiment_analysis/predict.py
-
 import joblib
 import pandas as pd
 
 # Load the model and vectorizer
-model = joblib.load('model (2).pkl')
-vectorizer = joblib.load('vectorizer.pkl')
+model = joblib.load("models/review_sentiments/saved_models/model (2).pkl")
+vectorizer = joblib.load(
+    "models/review_sentiments/saved_models/vectorizer.pkl"
+)
 
 def predict_sentiment(tweet):
     # Transform the input tweet
