@@ -1,7 +1,7 @@
 from joblib import load
 
-heat_model = load('models\Heat_Cool_Load_Predictor\saved_models\heat_model.pkl')
-cool_model = load('models\Heat_Cool_Load_Predictor\saved_models\cool_model.pkl')
+heat_model = load('models/Heat_Cool_Load_Predictor/saved_models/heat_model.pkl')
+cool_model = load('models/Heat_Cool_Load_Predictor/saved_models/cool_model.pkl')
 
 def heat_load_prediction(relative_compactness, surface_area, wall_area, roof_area, overall_height, orientation, glazing_area, glazing_area_distribution):
     features = [
