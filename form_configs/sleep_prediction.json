@@ -1,0 +1,105 @@
+{
+    "Sleep Prediction Form": {
+        "Age": {
+            "field_name": "Age",
+            "type": "number",
+            "min_value": 0,
+            "max_value": 120,
+            "default_value": 25,
+            "step": 1
+        },
+        "Sleep_Duration": {
+            "field_name": "Sleep_Duration",
+            "type": "float",
+            "min_value": 0.0,
+            "max_value": 24.0,
+            "default_value": 8.0,
+            "step": 0.1
+        },
+        "Heart_Rate": {
+            "field_name": "Heart_Rate",
+            "type": "number",
+            "min_value": 10,
+            "max_value": 200,
+            "default_value": 72,
+            "step": 1
+        },
+        "Daily_Steps": {
+            "field_name": "Daily_Steps",
+            "type": "number",
+            "min_value": 0,
+            "max_value": 1000000,
+            "default_value": 0,
+            "step": 10
+        },
+        "Systolic": {
+            "field_name": "Systolic",
+            "type": "float",
+            "min_value": 0.0,
+            "max_value": 250.0,
+            "default_value": 120.0,
+            "step": 0.1
+        },
+        "Diastolic": {
+            "field_name": "Diastolic",
+            "type": "float",
+            "min_value": 0.0,
+            "max_value": 250.0,
+            "default_value": 80.0,
+            "step": 0.1
+        },
+        "Occupation": {
+            "field_name": "Occupation",
+            "type": "dropdown",
+            "options": [
+                "Software Engineer" ,"Doctor" ,"Sales Representative","Teacher" ,"Nurse",
+ "Engineer" ,"Accountant" ,"Scientist", "Lawyer" ,"Salesperson" ,"Manager"
+            ],
+            "default_value": "Software Engineer" 
+        },
+        "Quality_of_Sleep": {
+            "field_name": "Quality_of_Sleep",
+            "type": "number",
+            "min_value": 0,
+            "max_value": 10,
+            "default_value": 0,
+            "step": 1
+        },
+        "Gender": {
+            "field_name": "Gender",
+            "type": "dropdown",
+            "options": [
+                "Male",
+                "Female"
+            ],
+            "default_value": "Male"
+            
+        },
+        "Physical_Activity_Level": {
+            "field_name": "Physical_Activity_Level",
+            "type": "number",
+            "min_value": 0,
+            "max_value": 200,
+            "default_value": 0,
+            "step": 1
+        },
+        "Stress_Level": {
+            "field_name": "Stress_Level",
+            "type": "number",
+            "min_value": 0,
+            "max_value": 10,
+            "default_value": 0,
+            "step": 1
+        },
+        "BMI_Category": {
+            "field_name": "BMI_Category",
+            "type": "dropdown",
+            "options": [
+                "Normal Weight",
+                "Obese",
+                "Overweight"
+            ],
+            "default_value": "Normal Weight"
+        }
+    }
+}
