@@ -195,7 +195,30 @@
         "description": "This model uses a dataset containing demographic and health-related factors to predict the cost of insurance. The features include age, sex, BMI, children, smoker status, and region, with predictions made using the Random Forest algorithm for accurate results. Ensemble techniques like XGBoost will also be used to further enhance the prediction accuracy."
       }
     ]
+  },
+  "Business Performance Forecasting": {
+    "title": "Business Performance Forecasting",
+    "page_title": "Business Performance Forecasting",
+    "page_icon": "\ud83c\udf3e",
+    "model_predict_file_path": "models/business_performance_forecasting/predict.py",
+    "model_function": "get_prediction",
+    "model_detail_function": "model_details",
+    "form_config_path": "form_configs/business_performance_forecasting.json",
+    "tabs": [
+      {
+        "name": "Business Forecast Form",
+        "type": "form",
+        "form_name": "Business Forecast Form"
+      },
+      {
+        "name": "Model Details",
+        "type": "model_details",
+        "problem_statement": "The Business Performance Forecasting model predicts future profits based on R&D spend, administration costs, marketing spend, and state. By utilizing machine learning, this tool assists businesses in making informed decisions about resource allocation.",
+        "description": "This model employs a dataset with features including R&D spend, administration costs, marketing spend, and geographic location to forecast profits. The predictions are generated using regression techniques, ensuring accuracy and reliability for business strategy planning."
+      }
+    ]
   }
+
 }
 
 
