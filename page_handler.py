@@ -85,11 +85,12 @@ class PageHandler:
 
 			# Display the scatter plot for predicted vs actual values
 			#used clear_figure to clear the plot once displayed to avoid conflict 
-			st.subheader("Model Prediction Plot")
-			st.pyplot(prediction_plot, clear_figure=True)
-
-			st.subheader("Error Plot")
-			st.pyplot(error_plot, clear_figure=True)
-			
-			st.subheader("Model Performance Plot")
-			st.pyplot(performance_plot, clear_figure=True)
+			if prediction_plot!=None:
+				st.subheader("Model Prediction Plot")
+				st.pyplot(prediction_plot, clear_figure=True)
+			if error_plot!=None:
+				st.subheader("Error Plot")
+				st.pyplot(error_plot, clear_figure=True)
+			if performance_plot!=None:
+				st.subheader("Model Performance Plot")
+				st.pyplot(performance_plot, clear_figure=True)
