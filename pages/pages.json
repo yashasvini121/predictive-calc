@@ -152,6 +152,28 @@
       }
     ]
   },
+  "Sleep Disorder Predictor": {
+    "title": "Sleep Disorder Predictor",
+    "page_title": "Sleep Disorder Predictor",
+    "model_predict_file_path": "models/sleep_disorder_predictor/predict.py",
+    "model_function": "get_prediction",
+    "model_detail_function": "model_details",
+    "form_config_path": "form_configs/sleep_prediction.json",
+    "tabs": [
+      {
+        "name": "Sleep Disorder Predictor",
+        "type": "form",
+        "form_name": "Sleep Prediction Form"
+      },
+      {
+        "name": "Model Details",
+        "type": "model_details",
+        
+          "problem_statement": "The model aims to predict the likelihood of an individual having a sleep disorder based on lifestyle, sleep quality, and health metrics.",
+          "description": "Using a XGBoost classifier, the model predicts whether an individual is likely to have a sleep disorder based on features such as sleep duration, stress level, physical activity level, cardiovascular health metrics, and demographic information."
+     }
+    ]
+  },
   
   "Malware_Detection": {
   "title": "PDF Malware Detection",

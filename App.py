@@ -131,6 +131,18 @@ calculators = [
         """
     },
     {
+    "name": "Sleep Disorder Prediction",
+    "description": "Assess your risk of developing a sleep disorder using advanced ML algorithms.",
+    "details": """
+        ### Introduction
+        Sleep disorders can have a significant impact on an individual's overall health and well-being. These disorders often result from a combination of poor sleep habits, lifestyle factors, stress, and underlying medical conditions.
+
+        ### Sleep Health and Lifestyle Dataset
+        The dataset consists of sleep, lifestyle, and health metrics collected from 400 individuals. The main goal is to predict the likelihood of an individual having a sleep disorder using the "Sleep Disorder" column, which contains categorical values indicating the presence or absence of a sleep disorder.
+
+        """
+},
+    {
         "name": "PDF Malware Detector",
         "description": "Identify and alert users about potential malware in PDF files.",
         "details": """
