@@ -1,0 +1,9 @@
+{
+    "Review Sentiments Form": {
+		"Review": {
+			"field_name": "review",
+			"type": "text",
+			"required": true
+		}
+	}
+}
