@@ -1,0 +1,31 @@
+{
+  "Business Forecast Form": {
+    "R&D Spend": {
+      "type": "number",
+      "min_value": 0.0,
+      "default_value": 100000.0,
+      "step": 1000.0,
+      "field_name": "RnD_Spend"
+    },
+    "Administration": {
+      "type": "number",
+      "min_value": 0.0,
+      "default_value": 50000.0,
+      "step": 1000.0,
+      "field_name": "Administration"
+    },
+    "Marketing Spend": {
+      "type": "number",
+      "min_value": 0.0,
+      "default_value": 100000.0,
+      "step": 1000.0,
+      "field_name": "Marketing_Spend"
+    },
+    "State": {
+      "type": "dropdown",
+      "options": ["New York", "California", "Florida"],
+      "default_value": "New York",
+      "field_name": "State"
+    }
+  }
+}

@@ -176,6 +176,22 @@ calculators = [
             Ideal for travel, business meetings, and language learning, breaking down language barriers effortlessly.
         """
     },
+    {
+        "name": "Business Performance Forecaster",
+        "description": "Forecast business profits based on various investment areas for better financial planning and budget allocation.",
+        "details": """
+            ### Overview  
+            The Business Performance Forecaster predicts company profit based on investment in R&D, administration, and marketing, using machine learning to analyze investment patterns and optimize budget allocation.
+
+            ### Key Features  
+            - **Profit Prediction**: Provides an estimated profit based on investment data.
+            - **Investment Analysis**: Evaluates how different spending areas impact overall profit.
+            - **Multi-Input Support**: Accounts for multiple variables like R&D, administration, and marketing expenses.
+
+            ### Use Cases  
+            Useful for companies looking to plan budgets, assess the impact of investments, and improve decision-making processes in financial forecasting.
+        """
+    }
 ]
 
 # Define shades of blue for calculators
