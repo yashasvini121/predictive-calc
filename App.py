@@ -243,6 +243,49 @@ for i in range(0, len(calculators), 2):
                         st.write(calc["details"])
                     st.markdown("---")
 
+calculator_inputs = {
+    "Income Estimator": ["Age", "Education Level", "Occupation", "Work Experience (years)", "Region"],
+    "Gold Price Predictor": ["S&P 500 Index (SPX)", "Crude Oil Price (USO)", "Silver Price (SLV)", "EUR/USD Exchange Rate"],
+    "House Price Estimator": ["Location", "Size (sq ft)", "Number of Bedrooms", "Number of Bathrooms", "Property Type"],
+    "Loan Eligibility": ["Credit Score", "Annual Income", "Loan Amount", "Loan Term (years)", "Employment Status"],
+    "Parkinson's Disease Risk": ["MDVP_Fo(Hz)", "MDVP_Jitter(%)", "MDVP_Shimmer(dB)", "NHR", "HNR", "DFA"],
+    "Sleep Disorder Prediction": ["Average Sleep Hours", "Exercise Frequency (per week)", "Stress Level", "Diet Quality", "Caffeine Intake (cups per day)"],
+    "PDF Malware Detector": ["File Name", "File Size (MB)", "File Type"],
+    "Stress Level Detector": ["Number of Daily Social Media Posts", "Sentiment of Posts", "Average Post Length (words)"],
+    "Text Summarizer": ["Text Length (words)", "Document Type", "Desired Summary Length (%)"],
+    "Real-Time Language Translator": ["Source Language", "Target Language", "Speech Speed (words per minute)"],
+    "Business Performance Forecaster": ["R&D Spend", "Administration Cost", "Marketing Spend", "Region", "Number of Employees"]
+}
+
+#Selecting a model to compare
+st.subheader("Comparison Mode")
+selected_model = st.selectbox("Select a calculator to compare", list(calculator_inputs.keys()))
+
+if selected_model:
+    num_inputs = st.slider(f"Select number of input sets for {selected_model} comparison", min_value=2, max_value=5, value=2)
+
+    st.markdown(f"### {selected_model} - Comparison Mode")
+    inputs = []
+    input_prompts = calculator_inputs[selected_model]
+
+    for i in range(num_inputs):
+        st.markdown(f"### Input Set {i + 1}")
+        input_data = {}
+        for prompt in input_prompts:
+            input_data[prompt] = st.text_input(f"{prompt} (Input {i + 1})", key=f"{prompt}_{i}")
+        inputs.append(input_data)
+
+    # Display results side-by-side
+    if st.button("Compare Results"):
+        st.markdown("### Comparison Results")
+        cols = st.columns(num_inputs)
+        for i, col in enumerate(cols):
+            with col:
+                st.write(f"Input Set {i + 1}:")
+                for k, v in inputs[i].items():
+                    st.write(f"{k}: {v}")
+                st.write("Result: (Prediction placeholder)")
+
 st.markdown("## Get Started Today!")
 st.markdown("Explore our calculators and take control of your predictive analytics journey!")
 
